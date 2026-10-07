@@ -53,7 +53,8 @@ p{margin:0 0 12px}
 .aside a{display:inline-flex;align-items:center;min-height:44px}
 .aside .divider{border-top:1px solid var(--line);padding-top:12px;margin-top:8px}
 .empty{padding:20px 0;color:var(--muted)}
-footer{border-top:1px solid var(--line);padding-top:12px;padding-bottom:16px!important;display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:12px;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding-top:12px;padding-bottom:16px!important;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;font-size:12px;color:var(--muted)}
+.footer-notice{flex-basis:100%;margin:0;font-size:13px;line-height:1.5;color:var(--muted)}
 footer a{display:inline-flex;align-items:center;min-height:44px;margin-left:16px}
 .article{max-width:750px;padding:16px 0 36px;overflow-wrap:anywhere}
 .article h1{font-size:28px;line-height:1.25;margin:0}
