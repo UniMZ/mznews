@@ -93,5 +93,10 @@ for p in POSTS:
     timestamp=datetime.fromisoformat(p['date']).replace(tzinfo=timezone(timedelta(hours=8)))
     for tag,value in [('title',p['title']['en']),('link',url),('guid',url),('description',p['summary']['en']+' / '+p['summary']['zh']),('category',p['category']),('pubDate',timestamp.strftime('%a, %d %b %Y %H:%M:%S %z'))]:ET.SubElement(item,tag).text=value
 write('feed.xml',ET.tostring(rss,encoding='unicode',xml_declaration=True))
+sitemap=ET.Element('urlset', xmlns='http://www.sitemaps.org/schemas/sitemap/0.9')
+for path in ['', 'news/', 'latest/', 'spotlight/', 'classics/', 'search/'] + [postpath(p,lang) for p in POSTS for lang in ('en','zh')]:
+    item=ET.SubElement(sitemap,'url');ET.SubElement(item,'loc').text=BASE+'/'+path
+write('sitemap.xml',ET.tostring(sitemap,encoding='unicode',xml_declaration=True))
+write('robots.txt','User-agent: *\nAllow: /\nSitemap: '+BASE+'/sitemap.xml\n')
 write('.nojekyll','')
 print(f'Built {len(POSTS)} posts, each in English and Chinese.')

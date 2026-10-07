@@ -29,6 +29,24 @@ class SiteTests(unittest.TestCase):
             self.assertIn('https://mzwiki.unimz.org',text);self.assertIn('hreflang="en"',text);self.assertIn('hreflang="zh"',text)
     def test_feed(self):
         items=ET.parse(ROOT/'feed.xml').findall('./channel/item');self.assertEqual(len(items),len(list((ROOT/'content/posts').glob('*.json'))));self.assertIn('mznews is live',[i.findtext('title') for i in items])
+    def test_custom_domain(self):
+        base='https://mznews.unimz.org'
+        self.assertEqual(json.loads((ROOT/'site.json').read_text())['url'],base)
+        self.assertEqual((ROOT/'CNAME').read_text().strip(),'mznews.unimz.org')
+        for file in [*ROOT.rglob('*.html'),ROOT/'feed.xml',ROOT/'sitemap.xml',ROOT/'robots.txt']:
+            text=file.read_text()
+            self.assertNotIn('unimz.github.io',text)
+            self.assertNotIn('/mznews/',text)
+        locations=ET.parse(ROOT/'sitemap.xml').findall('.//{http://www.sitemaps.org/schemas/sitemap/0.9}loc')
+        self.assertEqual(len(locations),6+2*len(list((ROOT/'content/posts').glob('*.json'))))
+        for location in locations:
+            self.assertTrue(location.text.startswith(base+'/'))
+            target=ROOT/location.text.removeprefix(base+'/')/'index.html'
+            self.assertTrue(target.exists(),str(target))
+        for file in ROOT.rglob('index.html'):
+            path=file.parent.relative_to(ROOT).as_posix()
+            expected=base+'/' if path=='.' else base+'/'+path+'/'
+            self.assertIn('<link rel="canonical" href="'+expected+'">',file.read_text())
     def test_public_content(self):
         for file in [*ROOT.rglob('*.html'),*ROOT.glob('content/posts/*.json'),ROOT/'feed.xml']:
             text=file.read_text().lower()

@@ -6,7 +6,7 @@ Mass spectrometry news and literature from UniMZ. A compact bilingual static pub
 
 Run `python scripts/build.py` with Python 3.10 or newer, then `python -m unittest discover -s tests`. No packages are required. Preview with `python -m http.server 8000`. Generated HTML, CSS, JavaScript and RSS are committed, so GitHub Pages can serve the repository root directly. The check workflow verifies that generated pages match their source.
 
-The existing GitHub Pages settings determine deployment. This project does not change those settings. Set `url` in `site.json` to the confirmed public site URL before building; it controls canonical and RSS links. Relative navigation supports both a custom domain and the GitHub project path. Preserve any existing CNAME file.
+The existing GitHub Pages settings determine deployment. This project does not change those settings. The confirmed public URL is `https://mznews.unimz.org`, recorded in `site.json`; it controls canonical, RSS and sitemap links. `CNAME` preserves this custom domain. Relative navigation supports both a custom domain and the GitHub project path. Preserve any existing CNAME file.
 
 ## Add or edit an article
 
