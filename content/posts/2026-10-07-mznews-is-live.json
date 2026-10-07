@@ -1,0 +1,13 @@
+{
+  "slug": "mznews-is-live",
+  "date": "2026-10-07",
+  "category": "News",
+  "title": {"en": "mznews is live", "zh": "mznews 现已上线"},
+  "summary": {"en": "A new home for mass spectrometry news and literature, from UniMZ.", "zh": "UniMZ 的质谱新闻与文献新空间。"},
+  "body": {
+    "en": ["mznews is now online as part of UniMZ. It brings together news, the latest mass spectrometry literature, focused paper introductions, and revisits to classic research. Explore Latest for literature selections, or visit mzwiki for concepts and learning guides."],
+    "zh": ["mznews 现已上线，成为 UniMZ 的一部分。这里汇集新闻消息、最新质谱文献、单篇论文介绍与经典研究回顾。你可以在 Latest 浏览文献精选，也可以前往 mzwiki 学习相关概念与方法。"]
+  },
+  "links": [{"label": "Latest", "url": "/latest/"}, {"label": "mzwiki", "url": "https://mzwiki.unimz.org"}],
+  "papers": []
+}

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mznews.unimz.org/sitemap.xml
