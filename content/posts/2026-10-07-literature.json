@@ -7,21 +7,19 @@
     "zh": "2026年10月7日文献简报"
   },
   "summary": {
-    "en": "Four recent methods papers on transferable retention-time prediction, self-supervised peptide spectra, targeted MRM and proteomics analysis, with evidence limits and publication dates made explicit.",
-    "zh": "四篇近期方法文献，涉及可迁移保留时间预测、肽段谱图自监督学习、靶向 MRM 和蛋白质组学分析，并明确发表日期与证据边界。"
+    "en": "Four recent papers on retention-time prediction, spectral representation learning, targeted MRM and proteomics analysis.",
+    "zh": "四篇近期方法文献，涵盖保留时间预测、谱图表征学习、靶向 MRM 与蛋白质组学分析。"
   },
   "body": {
     "en": [
-      "This October 7 issue brings together four catch-up selections from an overlapping 14-day look-back: three journal publications and one preprint. The listed versions first appeared online between September 29 and October 5, 2026; they were not all first published today. The journal versions of 2-step and PiProteline follow earlier preprints.",
-      "The selection moves from cross-system retention-time prediction and fragment-aware self-supervised learning to targeted quantification and downstream proteomics analysis. Across these topics, realistic transfer conditions, suitable data splits, simple baselines and transparent QC are central to interpreting the reported results.",
-      "Reading depth varies. Three papers received targeted checks of their main text or publisher method text; MRMhub was assessed from publisher preview/indexed text, metadata and official documentation. No independent experimental or computational reproduction was performed. The paper-specific reading scopes below state these limits.",
-      "Coverage is incomplete: some ACS ASAP, Molecular & Cellular Proteomics in-press, Talanta and date-filtered search pages were inaccessible. This issue does not claim to cover all newly published work. Unverified leads were excluded, and an indexing date alone was not treated as a first-online date."
+      "Today we introduce four recent papers on computational methods for mass spectrometry: three journal articles and one preprint. The listed versions appeared online between September 29 and October 5, 2026; 2-step and PiProteline had earlier preprints.",
+      "The papers cover retention-time prediction, self-supervised spectrum learning, targeted quantification and proteomics analysis, with attention to transfer conditions, evaluation baselines and quality control.",
+      "This digest is a selection with limited coverage of recent ACS, Molecular & Cellular Proteomics and Talanta articles. Reading scope is stated for each paper. No independent experimental or computational reproduction was performed."
     ],
     "zh": [
-      "本期于 2026 年 10 月 7 日发布，补入重叠的近 14 天回看窗口内四篇尚未报道的方法文献，包括三篇正式期刊论文和一篇预印本。所列版本首次在线日期为 2026 年 9 月 29 日至 10 月 5 日，并非全部在今天首次发表。2-step 和 PiProteline 的正式版之前均已有预印本。",
-      "本期依次讨论跨体系保留时间预测、关注碎片证据的自监督学习、靶向定量与下游蛋白质组学分析。理解这些结果，需要关注真实迁移条件、数据划分、简单基线和透明的质量控制。",
-      "阅读深度有所不同：三篇完成了正文或出版社方法文本的定向核查；MRMhub 依据出版社预览与索引文本、元数据和官方文档整理。本期均未开展独立实验或计算复现，具体阅读边界在各条文献中说明。",
-      "检索覆盖不完整：部分 ACS ASAP、Molecular & Cellular Proteomics in-press、Talanta 及日期筛选入口不可读取。本期不声称覆盖全部新文；未核实的线索未纳入，索引日期也不单独作为首次在线日期。"
+      "今天介绍四篇近期的质谱计算方法文献，包括三篇期刊论文和一篇预印本。所列版本首次在线日期为 2026 年 9 月 29 日至 10 月 5 日；2-step 和 PiProteline 此前已有预印本。",
+      "主题涵盖保留时间预测、谱图自监督学习、靶向定量与蛋白质组学分析，重点关注迁移条件、评测基线和质量控制。",
+      "本期仅选介部分近期研究，对 ACS、Molecular & Cellular Proteomics 和 Talanta 的覆盖有限。各篇均注明阅读范围；未进行独立实验或计算复现。"
     ]
   },
   "links": [
@@ -55,8 +53,8 @@
       "year": "2026",
       "url": "https://www.nature.com/articles/s41592-026-03243-2",
       "commentary": {
-        "en": "2-step separates retention-order prediction from conversion to absolute retention time in reversed-phase LC. A molecular graph model predicts order, then high-confidence anchors from the target system support a robust time mapping. In chemically heterogeneous splits, the authors report better performance on five of six datasets and a near tie on the sixth. The cross-system evaluation is informative, but the method still needs target-system anchors, column descriptors and pH. A network trained without target-system data therefore still relies on target-system information. HILIC remains outside the demonstrated scope; some biological examples lack confirmation with authentic standards, and even the more realistic splits may be optimistic.",
-        "zh": "2-step 将反相 LC 的保留顺序预测与绝对保留时间映射分开：分子图模型预测顺序，再以目标体系的高置信锚点进行稳健时间映射。作者在化学类别差异较大的划分中，于六个数据集上取得五胜一近似持平。跨体系评测设计值得关注，但方法仍需要目标体系锚点、柱参数和 pH；顺序网络未用目标体系数据训练，并不意味着迁移无需目标体系信息。HILIC 尚未解决，部分生物学示例缺少真实标准品确认，更贴近实际的划分也仍可能偏乐观。"
+        "en": "2-step predicts retention order with a molecular graph model, then maps it to retention times using high-confidence anchors from the target reversed-phase LC system. In chemically heterogeneous splits, the authors report better performance on five of six datasets and a near tie on the sixth. Even without target-system training data, transfer needs target-system anchors, column descriptors and pH. HILIC is outside the demonstrated scope; some biological examples lack authentic-standard confirmation, and the evaluation splits may remain optimistic.",
+        "zh": "2-step 先用分子图模型预测保留顺序，再以目标反相 LC 体系的高置信锚点映射为保留时间。在化学类别差异较大的划分中，作者报告六个数据集上五胜一近似持平。即使训练未用目标体系数据，迁移仍需其锚点、柱参数和 pH。HILIC 尚未验证；部分生物学示例缺少真实标准品确认，评测划分仍可能偏乐观。"
       },
       "first_online": "2026-10-01",
       "publication_status": {
@@ -82,8 +80,8 @@
       "year": "2026",
       "url": "https://arxiv.org/abs/2610.06282",
       "commentary": {
-        "en": "dIon builds self-supervised views from precursor-conditioned spectrum mixtures and partial spectra with the precursor withheld, encouraging representations that use fragment evidence rather than a precursor-only shortcut. Under matched downstream training conditions, the authors report gains of 2.3–8.4 percentage points in peptide precision over training from scratch. The frozen representation does not outperform a simple binned spectral-angle baseline, and the strongest retrieval results require supervised adaptation. Most evaluation labels come from search engines and may inherit selection and identification errors; computational cost is also substantial. This is a preprint, and its peptide/proteomics results do not establish transfer to metabolomics.",
-        "zh": "dIon 用前体条件化的混合谱和隐藏前体的局部谱构造自监督视图，鼓励模型利用碎片证据，减少仅凭前体信息学习的捷径。作者报告，在相同下游训练条件下，相对从头训练的肽段精确率提高 2.3–8.4 个百分点。冻结表征未超过简单的分箱谱角基线，最好的检索结果仍需要监督适配。多数评测标签来自搜索引擎，可能继承选择偏差与鉴定错误，计算成本也较高。该研究尚为预印本，其肽段与蛋白质组学结果不能证明向代谢组学的迁移效果。"
+        "en": "dIon learns from precursor-conditioned spectrum mixtures and precursor-withheld partial spectra to emphasize fragment evidence. Under matched downstream training, the authors report a 2.3–8.4 percentage-point gain in peptide precision over training from scratch. Frozen representations do not beat a simple binned spectral-angle baseline; the strongest retrieval needs supervised adaptation. Search-engine-derived labels may carry selection bias and identification errors, and computation is costly. This preprint evaluates peptides/proteomics; transfer to metabolomics is unproven.",
+        "zh": "dIon 用前体条件化混合谱和隐藏前体的局部谱学习表征，强调碎片证据。在相同下游训练条件下，作者报告肽段精确率较从头训练提高 2.3–8.4 个百分点。冻结表征未超过简单的分箱谱角基线，最佳检索结果仍需监督适配。搜索引擎标签可能带入选择偏差与鉴定错误，计算成本也较高。本研究为预印本，肽段与蛋白质组学结果尚不能证明向代谢组学的迁移效果。"
       },
       "first_online": "2026-10-05",
       "publication_status": {
@@ -121,8 +119,8 @@
       "year": "2026",
       "url": "https://www.nature.com/articles/s42255-026-01629-2",
       "commentary": {
-        "en": "MRMhub connects cross-sample peak integration, quantification and quality control for targeted MRM. INTEGRATOR uses chromatographic patterns across the analysis sequence to address retention-time drift and interference, while QUANT supports validation, quantification, artefact correction, filtering and QC reports. Official examples cover 937 samples with 503 features and 4,591 samples with 829 features. These examples demonstrate processing scale, not independent accuracy validation. The complete paper and supplementary benchmarks were not obtained, so claims of superior accuracy or a specific speedup cannot be assessed here. The scope is targeted MRM and does not establish untargeted metabolite identification performance.",
-        "zh": "MRMhub 将靶向 MRM 的跨样本峰积分、定量与质量控制串成可追溯流程。INTEGRATOR 利用分析序列中的色谱模式处理保留时间漂移与干扰，QUANT 提供数据验证、定量、伪影校正、过滤及 QC 报告。官方示例覆盖 937 样本与 503 特征，以及 4,591 样本与 829 特征，说明可处理的数据规模，但不是独立准确度评测。完整论文和补充基准尚未取得，因此本期无法判断准确度优势或特定提速倍数。其适用范围为靶向 MRM，不能泛化为非靶向代谢物鉴定。"
+        "en": "MRMhub integrates targeted MRM peak processing, quantification and QC. INTEGRATOR uses cross-sample chromatographic patterns to address retention-time drift and interference; QUANT handles validation, quantification, artefact correction, filtering and QC reports. Official examples cover 937 samples with 503 features and 4,591 samples with 829 features, demonstrating scale rather than independently validated accuracy. Without the complete paper and supplementary benchmarks, accuracy advantages or speedups cannot be assessed here. Its results do not establish untargeted metabolite identification performance.",
+        "zh": "MRMhub 整合靶向 MRM 峰处理、定量与 QC。INTEGRATOR 利用跨样本色谱模式处理保留时间漂移和干扰；QUANT 提供验证、定量、伪影校正、过滤及 QC 报告。官方示例包括 937 样本、503 特征和 4,591 样本、829 特征，说明处理规模，并非独立准确度评测。本期未取得完整论文及补充基准，无法判断准确度优势或提速幅度；结果也不能泛化为非靶向代谢物鉴定。"
       },
       "first_online": "2026-09-29",
       "publication_status": {
@@ -148,8 +146,8 @@
       "year": "2026",
       "url": "https://www.mdpi.com/2079-7737/15/19/1723",
       "commentary": {
-        "en": "PiProteline combines preprocessing of label-free abundance matrices, differential analysis, functional enrichment and protein-interaction network analysis in R and Shiny. On a known spike-in benchmark, the authors report performance similar to DEP and protti and below limma. Its main contribution is an integrated analysis route. Merging same-gene isoforms by the per-sample maximum loses isoform information. For weighted networks, the authors recommend 20–30 samples per group; relaxed completeness filtering uses pairwise-complete correlations, which do not resolve the missing-data mechanism. The empirical composite network measure is not a calibrated discovery probability. Input must be on the abundance scale, with no automatic conversion of log2 intensities back to linear abundance.",
-        "zh": "PiProteline 将无标记丰度矩阵的预处理、差异分析、功能富集和蛋白相互作用网络分析整合为 R/Shiny 流程。作者在已知掺样基准中报告，其表现与 DEP、protti 相近，弱于 limma，主要贡献在于分析流程整合。按逐样本最大值合并同基因异构体会丢失异构体信息。加权网络分析建议每组 20–30 个样本；放宽完整检出过滤后采用成对完整观测相关性，仍未解决缺失机制。经验性的网络综合指标不是校准后的发现概率。输入需使用丰度尺度，软件不会自动将 log2 强度转回线性丰度。"
+        "en": "PiProteline integrates label-free abundance preprocessing, differential analysis, enrichment and protein-interaction networks in R/Shiny. On a spike-in benchmark, the authors report performance similar to DEP and protti, below limma. Per-sample-maximum merging of same-gene isoforms loses isoform information. Weighted networks call for 20–30 samples per group; pairwise-complete correlations do not resolve missing-data mechanisms. The empirical composite network measure is not a calibrated discovery probability. Input must be abundance-scale; log2 intensities are not automatically back-transformed.",
+        "zh": "PiProteline 在 R/Shiny 中整合无标记丰度预处理、差异分析、功能富集和蛋白互作网络。作者在掺样基准中报告，其表现与 DEP、protti 相近，弱于 limma。按逐样本最大值合并同基因异构体会丢失异构体信息。加权网络建议每组 20–30 个样本；成对完整观测相关性仍未解决缺失机制，经验性网络综合指标也不是校准后的发现概率。输入须为丰度尺度，软件不会自动将 log2 强度转回线性丰度。"
       },
       "first_online": "2026-10-01",
       "publication_status": {
@@ -157,11 +155,10 @@
         "zh": "正式期刊论文；早期预印本发表于 2026-07-14（10.20944/preprints202607.0993.v1）。所列首次在线日期指正式版。"
       },
       "read_scope": {
-        "en": "Publisher text returned by search, including Methods, Results and Discussion, and the official repository checked. The PDF and supplements were not reviewed in full, and supplementary Figure S1 was not independently rerun.",
-        "zh": "已核查检索返回的出版社方法、结果、讨论文本及官方仓库；未完整阅读 PDF 和补充材料，未独立重跑补充图 S1，未复现。"
+        "en": "Available publisher text, including Methods, Results and Discussion, and the official repository checked. The PDF and supplements were not reviewed in full; supplementary Figure S1 was not independently rerun.",
+        "zh": "已核查可读取的出版社方法、结果、讨论文本及官方仓库；未完整阅读 PDF 和补充材料，未独立重跑补充图 S1，未复现。"
       },
       "doi": "10.3390/biology15191723"
     }
   ]
 }
-
