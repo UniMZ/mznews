@@ -6,16 +6,30 @@ a:hover{color:#0b3829}
 button,input{font:inherit}
 a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid #bc6b22;outline-offset:5px}
 .wrap{max-width:1080px;margin:auto;padding:0 32px}
-.skip{position:absolute;left:16px;top:-100px;background:white;padding:10px;z-index:4}
+.skip{position:absolute;left:16px;top:-100px;background:white;padding:10px;z-index:10}
 .skip:focus{top:8px}
-.masthead{display:flex;align-items:center;justify-content:space-between;padding-top:16px;padding-bottom:12px}
-.wordmark{text-decoration:none;color:var(--ink);font-weight:750;font-size:32px;letter-spacing:-1.5px}
-.brand{display:block;color:var(--green);font-size:11px;line-height:1.3;letter-spacing:2px;font-weight:700}
-.mast-note{font-size:12px;color:var(--muted);letter-spacing:.08em}
-.nav{display:flex;gap:22px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow-x:auto}
-.nav a{display:inline-flex;align-items:center;min-height:44px;white-space:nowrap;text-decoration:none;font-size:14px;font-weight:600;color:var(--muted)}
+.site-header{--ink:#153b3b;--green:#176052;--line:#d9e3da;background:rgba(250,251,247,.97);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.header-inner{max-width:1400px;margin:auto;display:flex;align-items:center;gap:28px;padding:17px 36px}
+.wordmark{display:inline-flex;align-items:center;gap:11px;min-height:44px;white-space:nowrap;text-decoration:none;color:var(--ink);font-size:25px;font-weight:750;letter-spacing:-1.5px;line-height:1.65}
+.wordmark em{font-family:Georgia,"Times New Roman",serif;font-weight:normal}
+.brand{font:10px/1.4 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:1.6px;color:var(--green)}
+.brand-mark{display:inline-flex;align-items:end;gap:3px;height:27px}
+.brand-mark i{width:3px;background:var(--green);display:block}
+.brand-mark i:nth-child(1){height:11px}
+.brand-mark i:nth-child(2){height:23px}
+.brand-mark i:nth-child(3){height:16px}
+.brand-mark i:nth-child(4){height:27px}
+.nav{margin-left:auto;display:flex;gap:25px;align-items:center}
+.nav a,.header-search{display:inline-flex;align-items:center;justify-content:center;min-height:44px;white-space:nowrap;text-decoration:none;font-size:13px;font-weight:600}
+.nav a{color:var(--ink)}
 .nav a[aria-current=page]{color:var(--green);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:7px}
+.header-search{border:1px solid var(--line);border-radius:6px;padding:6px 15px}
+.header-search[aria-current=page]{background:var(--soft);text-decoration:underline}
+html{scroll-padding-top:90px}
 .hero{display:flex;align-items:baseline;gap:4px 20px;padding:14px 0 12px}
+.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+.section-intro{padding:8px 0}
+.section-intro .intro{margin:0}
 .meta{font-size:12px;letter-spacing:.06em;color:var(--muted)}
 h1,h2,h3{font-family:Georgia,"Noto Serif SC",serif;line-height:1.2;font-weight:500;letter-spacing:-.035em}
 h1{font-size:28px;margin:0}
@@ -71,10 +85,6 @@ summary{cursor:pointer;color:var(--green);margin:12px 0}
 .date{white-space:nowrap}
 @media(max-width:720px){
  .wrap{padding-left:20px;padding-right:20px}
- .masthead{padding-top:12px;padding-bottom:10px}
- .mast-note{display:none}
- .nav{gap:16px}
- .nav a{font-size:13px}
  .hero{display:block;padding:12px 0}
  .hero h1{font-size:24px}
  .intro{margin-top:4px;font-size:15px}
@@ -89,3 +99,12 @@ summary{cursor:pointer;color:var(--green);margin:12px 0}
  .card h2{font-size:26px}
 }
 @media(prefers-reduced-motion:no-preference){a{transition:color .15s}}
+
+@media(max-width:760px){
+ .header-inner{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:0 15px;padding:13px 20px}
+ .wordmark{font-size:23px;justify-self:start}
+ .header-search{grid-column:2;grid-row:1;padding:4px 9px}
+ .nav{grid-column:1/-1;grid-row:2;display:grid;grid-template-columns:repeat(5,auto);gap:0 8px;justify-content:space-between;margin:0}
+ html{scroll-padding-top:126px}
+}
+@media(max-width:380px){.header-inner{padding-inline:12px;column-gap:8px}}
