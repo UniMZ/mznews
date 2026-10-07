@@ -27,12 +27,21 @@ def validate(post):
         assert set(link) == {'label','url'}
         assert link['url'].startswith(('https://','/')) and not link['url'].startswith('//')
     for paper in post['papers']:
-        assert set(paper) == {'title','authors','journal','year','url','commentary'}, 'Unexpected paper field'
+        required = {'title','authors','journal','year','url','commentary'}
+        optional = {'first_online','publication_status','read_scope','doi'}
+        assert required <= set(paper) <= required | optional, 'Unknown or missing paper field'
         assert all(isinstance(paper[k],str) and paper[k].strip() for k in ('title','journal','year','url'))
         assert paper['url'].startswith('https://')
         assert isinstance(paper['authors'],list) and paper['authors'] and all(isinstance(a,str) and a.strip() for a in paper['authors'])
         paired(paper['commentary'])
-    if post['category'] == 'Latest': assert len(post['papers']) >= 2, 'Latest is a complete multi-paper daily digest'
+        if 'first_online' in paper:
+            assert re.fullmatch(r'\d{4}-\d{2}-\d{2}',paper['first_online']), 'Expected YYYY-MM-DD'
+            date.fromisoformat(paper['first_online'])
+        for field in ('publication_status','read_scope'):
+            if field in paper: paired(paper[field])
+        if 'doi' in paper:
+            assert isinstance(paper['doi'],str) and re.fullmatch(r'10\.\d{4,9}/\S+',paper['doi']), 'Expected DOI identifier'
+    assert isinstance(post['papers'],list), 'Expected ordered paper list'
     if post['category'] in ('Spotlight','Classics'): assert len(post['papers']) == 1
     raw = json.dumps(post,ensure_ascii=False).lower()
     for forbidden in ('notion','mailto:','★','☆','recipient','rating','score'):
@@ -61,6 +70,15 @@ def shell(title,body,current='',active='Home',lang='en',description='Mass spectr
         alt=''.join(f'<link rel="alternate" hreflang="{l}" href="{BASE}/{p}">' for l,p in alternates.items())
     return f'''<!doctype html>
 <html lang="{'zh-CN' if lang=='zh' else 'en'}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{esc(title)} · mznews</title><meta name="description" content="{esc(description)}"><link rel="canonical" href="{BASE}/{current}">{alt}<link rel="stylesheet" href="{href('assets/style.css',current)}"><link rel="alternate" type="application/rss+xml" title="mznews" href="{href('feed.xml',current)}"></head><body><a class="skip" href="#main">Skip to content</a><header class="wrap"><div class="masthead"><a class="wordmark" href="{href('',current)}"><span class="brand">UniMZ</span>mznews</a><span class="mast-note">MASS SPECTROMETRY · NEWS & LITERATURE</span></div><nav class="nav" aria-label="Main navigation">{nav}</nav></header><main id="main" class="wrap">{body}</main><footer class="wrap"><span>© {date.today().year} UniMZ · mznews</span><div>{link('search/','Search',current)}{link('feed.xml','RSS',current)}{link('https://mzwiki.unimz.org','mzwiki',current)}</div></footer></body></html>'''
+def paper_metadata(paper,lang):
+    fields=[]
+    if 'first_online' in paper:
+        fields.append('First online: '+esc(paper['first_online']))
+    for field,label in (('publication_status','Publication status'),('read_scope','Reading scope')):
+        if field in paper: fields.append(label+': '+esc(paper[field][lang]))
+    if 'doi' in paper: fields.append('DOI: '+esc(paper['doi']))
+    return ''.join('<p class="bibliography">'+value+'</p>' for value in fields)
+
 def write(path,text):
     p=ROOT/path;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(text)
 def card(p,current,search=False):
@@ -79,7 +97,7 @@ for p in POSTS:
         current=postpath(p,lang)
         languages='<div class="language" aria-label="Article language"><span>Language</span>'+''.join(link(postpath(p,l),label,current,f'hreflang="{l}" lang="{l}"'+(' aria-current="page"' if l==lang else '')) for l,label in [('en','English'),('zh','中文')])+'</div>'
         prose=''.join(f'<p>{esc(x)}</p>' for x in p['body'][lang])
-        papers=''.join(f'''<section class="paper"><h2>{esc(paper['title'])}</h2><p class="authors">{esc('; '.join(paper['authors']))}</p><p class="bibliography">{esc(paper['journal'])} · {esc(paper['year'])}</p><p>{esc(paper['commentary'][lang])}</p>{link(paper['url'],'Read paper',current)}</section>''' for paper in p['papers'])
+        papers=''.join(f'''<section class="paper"><h2>{esc(paper['title'])}</h2><p class="authors">{esc('; '.join(paper['authors']))}</p><p class="bibliography">{esc(paper['journal'])} · {esc(paper['year'])}</p>{paper_metadata(paper,lang)}<p>{esc(paper['commentary'][lang])}</p>{link(paper['url'],'Read paper',current)}</section>''' for paper in p['papers'])
         links='<div class="article-links">'+''.join(link(l['url'],l['label']+' →',current) for l in p['links'])+'</div>'
         body=f'''<article class="article">{link(p['category'].lower()+'/','← '+p['category'],current,'class="back"')}<h1>{esc(p['title'][lang])}</h1><div class="meta"><span class="tag">{p['category']}</span><time datetime="{p['date']}">{p['date']}</time> · Beijing</div>{languages}<div class="article-body">{prose}{papers}{links}</div></article>'''
         write(current+'index.html',shell(p['title'][lang],body,current,p['category'],lang,p['summary'][lang],{l:postpath(p,l) for l in ('en','zh')}))
