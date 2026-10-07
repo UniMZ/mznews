@@ -97,7 +97,7 @@ for category,(title,description) in INTRO.items():
     current='' if category=='Home' else category.lower()+'/'
     selected=POSTS if category=='Home' else [p for p in POSTS if p['category']==category]
     stream=''.join(card(p,current) for p in selected) or '<p class="empty">No posts yet.</p>'
-    body=f'''<section class="section-intro"><h1 class="visually-hidden">{title}</h1><p class="intro">{description}</p></section><div class="layout"><section class="post-stream" aria-label="Posts">{stream}</section><aside class="aside"><h2>Part of UniMZ</h2><p>A place to follow mass spectrometry research and discover ideas worth reading.</p>{link('https://mzwiki.unimz.org','Explore mzwiki',current)}<div class="divider"><h2>Keep reading</h2>{link('search/','Search the archive →',current)}<br>{link('feed.xml','Subscribe via RSS →',current)}</div></aside></div>'''
+    body=f'''<h1 class="visually-hidden">{title}</h1><div class="layout"><section class="post-stream" aria-label="Posts">{stream}</section><aside class="aside"><h2>Part of UniMZ</h2><p>A place to follow mass spectrometry research and discover ideas worth reading.</p>{link('https://mzwiki.unimz.org','Explore mzwiki',current)}<div class="divider"><h2>Keep reading</h2>{link('search/','Search the archive →',current)}<br>{link('feed.xml','Subscribe via RSS →',current)}</div></aside></div>'''
     write(current+'index.html',shell(title,body,current,category,description=description))
 for p in POSTS:
     for lang in ('en','zh'):
@@ -110,7 +110,7 @@ for p in POSTS:
         write(current+'index.html',shell(p['title'][lang],body,current,p['category'],lang,p['summary'][lang],{l:postpath(p,l) for l in ('en','zh')}))
 body='<section class="hero"><h1>Search</h1><p class="intro">Find articles in English or Chinese.</p></section><section class="search"><label for="query">Search posts</label><input id="query" type="search" placeholder="Title, topic, or author" autocomplete="off"><p class="search-status" id="search-status" role="status" aria-live="polite"></p><noscript><p>Browse all articles below. Your browser’s Find feature can also search this page.</p></noscript>'+''.join(card(p,'search/',True) for p in POSTS)+'</section><script src="../assets/search.js" defer></script>'
 write('search/index.html',shell('Search',body,'search/',''))
-write('404.html',shell('Page not found','<section class="hero"><h1>Page not found</h1><p>Please return to the <a href="'+BASE+'/">mznews homepage</a>.</p></section>'))
+write('404.html',shell('Page not found','<section class="hero"><h1>Page not found</h1><p>Please return to the <a href="'+BASE+'/">mznews homepage</a>.</p></section>',active=''))
 rss=ET.Element('rss',version='2.0');channel=ET.SubElement(rss,'channel')
 for tag,value in [('title','mznews · UniMZ'),('link',BASE+'/'),('description','Mass spectrometry news and literature from UniMZ.'),('language','en')]:ET.SubElement(channel,tag).text=value
 for p in POSTS:
