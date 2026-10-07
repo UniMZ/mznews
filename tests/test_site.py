@@ -1,5 +1,5 @@
 import json, unittest, xml.etree.ElementTree as ET
-import copy, runpy
+import copy, runpy, re
 from pathlib import Path
 from html.parser import HTMLParser
 from urllib.parse import urlparse, unquote
@@ -41,6 +41,11 @@ class SiteTests(unittest.TestCase):
         for text in ('A private rating.', 'Private ratings: 5'):
             post['body']['en']=[text]
             with self.assertRaises(AssertionError): BUILD['validate'](post)
+
+    def test_browser_titles(self):
+        for file in ROOT.rglob('*.html'):
+            with self.subTest(page=str(file.relative_to(ROOT))):
+                self.assertEqual(re.findall(r'<title>(.*?)</title>',file.read_text(),re.S),['mznews'])
 
     def test_pages_and_links(self):
         for file in ROOT.rglob('*.html'):
