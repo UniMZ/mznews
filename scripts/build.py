@@ -44,8 +44,9 @@ def validate(post):
     assert isinstance(post['papers'],list), 'Expected ordered paper list'
     if post['category'] in ('Spotlight','Classics'): assert len(post['papers']) == 1
     raw = json.dumps(post,ensure_ascii=False).lower()
-    for forbidden in ('notion','mailto:','★','☆','recipient','rating','score'):
+    for forbidden in ('notion','mailto:','★','☆','recipient','score'):
         assert forbidden not in raw, f'Disallowed public content: {forbidden}'
+    assert not re.search(r'\bratings?\b',raw), 'Disallowed public content: rating'
     assert not re.search(r'[\w.+-]+@[\w.-]+\.[a-z]{2,}',raw), 'Email address in public content'
 
 POSTS = [json.loads(p.read_text()) for p in sorted((ROOT/'content/posts').glob('*.json'))]
@@ -73,11 +74,17 @@ def shell(title,body,current='',active='Home',lang='en',description='Mass spectr
 def paper_metadata(paper,lang):
     fields=[]
     if 'first_online' in paper:
-        fields.append('First online: '+esc(paper['first_online']))
-    for field,label in (('publication_status','Publication status'),('read_scope','Reading scope')):
-        if field in paper: fields.append(label+': '+esc(paper[field][lang]))
-    if 'doi' in paper: fields.append('DOI: '+esc(paper['doi']))
-    return ''.join('<p class="bibliography">'+value+'</p>' for value in fields)
+        fields.append(('First online',paper['first_online'],''))
+    if 'doi' in paper:
+        fields.append(('DOI',paper['doi'],''))
+    if 'publication_status' in paper:
+        fields.append(('Publication status',paper['publication_status'][lang],'publication-status'))
+    if not fields: return ''
+    return '<dl class="paper-metadata">'+''.join(f'<div class="{css}"><dt>{label}:</dt> <dd>{esc(value)}</dd></div>' for label,value,css in fields)+'</dl>'
+
+def paper_read_scope(paper,lang):
+    if 'read_scope' not in paper: return ''
+    return '<p class="reading-scope"><strong>Reading scope:</strong> '+esc(paper['read_scope'][lang])+'</p>'
 
 def write(path,text):
     p=ROOT/path;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(text)
@@ -97,7 +104,7 @@ for p in POSTS:
         current=postpath(p,lang)
         languages='<div class="language" aria-label="Article language"><span>Language</span>'+''.join(link(postpath(p,l),label,current,f'hreflang="{l}" lang="{l}"'+(' aria-current="page"' if l==lang else '')) for l,label in [('en','English'),('zh','中文')])+'</div>'
         prose=''.join(f'<p>{esc(x)}</p>' for x in p['body'][lang])
-        papers=''.join(f'''<section class="paper"><h2>{esc(paper['title'])}</h2><p class="authors">{esc('; '.join(paper['authors']))}</p><p class="bibliography">{esc(paper['journal'])} · {esc(paper['year'])}</p>{paper_metadata(paper,lang)}<p>{esc(paper['commentary'][lang])}</p>{link(paper['url'],'Read paper',current)}</section>''' for paper in p['papers'])
+        papers=''.join(f'''<section class="paper"><h2>{esc(paper['title'])}</h2><p class="authors">{esc('; '.join(paper['authors']))}</p><p class="bibliography">{esc(paper['journal'])} · {esc(paper['year'])}</p>{paper_metadata(paper,lang)}<p class="commentary">{esc(paper['commentary'][lang])}</p>{paper_read_scope(paper,lang)}{link(paper['url'],'Read paper',current,'class="paper-link"')}</section>''' for paper in p['papers'])
         links='<div class="article-links">'+''.join(link(l['url'],l['label']+' →',current) for l in p['links'])+'</div>'
         body=f'''<article class="article">{link(p['category'].lower()+'/','← '+p['category'],current,'class="back"')}<h1>{esc(p['title'][lang])}</h1><div class="meta"><span class="tag">{p['category']}</span><time datetime="{p['date']}">{p['date']}</time> · Beijing</div>{languages}<div class="article-body">{prose}{papers}{links}</div></article>'''
         write(current+'index.html',shell(p['title'][lang],body,current,p['category'],lang,p['summary'][lang],{l:postpath(p,l) for l in ('en','zh')}))

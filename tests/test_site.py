@@ -25,7 +25,7 @@ class SiteTests(unittest.TestCase):
         for lang,scope in [('en','Abstract only'),('zh','仅摘要')]:
             rendered=BUILD['paper_metadata'](paper,lang)
             self.assertIn('2026-10-07',rendered)
-            self.assertIn(scope,rendered)
+            self.assertIn(scope,BUILD['paper_read_scope'](paper,lang))
             self.assertIn('10.1234/example',rendered)
         post['papers']=[];post['body']['en']=[]
         with self.assertRaises(AssertionError): BUILD['validate'](post)
@@ -33,6 +33,14 @@ class SiteTests(unittest.TestCase):
             invalid=copy.deepcopy(paper);invalid[field]=value
             post['body']['en']=['Coverage statement.'];post['papers']=[invalid]
             with self.subTest(field=field),self.assertRaises((AssertionError,ValueError)): BUILD['validate'](post)
+
+    def test_rating_filter_word_boundaries(self):
+        post=json.loads((ROOT/'content/posts/2026-10-07-mznews-is-live.json').read_text())
+        post['body']['en']=['Examples demonstrating processing scale.']
+        BUILD['validate'](post)
+        for text in ('A private rating.', 'Private ratings: 5'):
+            post['body']['en']=[text]
+            with self.assertRaises(AssertionError): BUILD['validate'](post)
 
     def test_pages_and_links(self):
         for file in ROOT.rglob('*.html'):
@@ -73,6 +81,7 @@ class SiteTests(unittest.TestCase):
     def test_public_content(self):
         for file in [*ROOT.rglob('*.html'),*ROOT.glob('content/posts/*.json'),ROOT/'feed.xml']:
             text=file.read_text().lower()
-            for word in ('notion','rating','score','recipient','mailto:','★','☆'):
+            self.assertNotRegex(text,r'\bratings?\b')
+            for word in ('notion','score','recipient','mailto:','★','☆'):
                 self.assertNotIn(word,text,str(file))
 if __name__=='__main__':unittest.main()
