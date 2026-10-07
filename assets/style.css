@@ -52,9 +52,15 @@ p{margin:0 0 12px}
 .aside a{display:inline-flex;align-items:center;min-height:44px}
 .aside .divider{border-top:1px solid var(--line);padding-top:12px;margin-top:8px}
 .empty{padding:20px 0;color:var(--muted)}
-footer{border-top:1px solid var(--line);padding-top:12px;padding-bottom:16px!important;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;font-size:12px;color:var(--muted)}
-.footer-notice{flex-basis:100%;margin:0;font-size:13px;line-height:1.5;color:var(--muted)}
-footer a{display:inline-flex;align-items:center;min-height:44px;margin-left:16px}
+/* Footer baseline shared with UniMZ/mzwiki, 226cb6f. */
+footer{--line:#d9e3da;--muted:#526866;--green:#176052;border-top:1px solid var(--line);padding:27px 0;color:var(--muted);font:12px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+footer .container{max-width:1224px;margin:auto;padding:0 36px}
+.footer-inner{display:flex;justify-content:space-between;gap:20px}
+.footer-links{display:flex;gap:22px}
+.footer-notice{margin:12px 0 0;font-size:13px;line-height:1.6}
+footer a{color:var(--green);text-underline-offset:4px}
+footer a:hover{color:#9b482b}
+footer a:focus-visible{outline:3px solid #ae5c3c;outline-offset:4px}
 .article{max-width:750px;padding:16px 0 36px;overflow-wrap:anywhere}
 .article h1{font-size:28px;line-height:1.25;margin:0}
 .article-toolbar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0 16px;margin-top:4px}
@@ -97,13 +103,15 @@ summary{cursor:pointer;color:var(--green);margin:12px 0}
  .article-body{font-size:16px}
  .paper{padding-top:16px;margin-top:18px}
  .paper h2{font-size:24px}
- footer{flex-wrap:wrap}
  .card h2{font-size:26px}
 }
 @media(prefers-reduced-motion:no-preference){a{transition:color .15s}}
 
 @media(max-width:1100px){.tagline{display:none}}
 @media(max-width:760px){
+ footer .container{padding:0 22px}
+ .footer-inner{display:block}
+ .footer-links{margin-top:12px;flex-wrap:wrap}
  .header-inner{padding:13px 20px;gap:15px;flex-wrap:wrap;row-gap:8px}
  .header .brand{font-size:23px}
  .topnav{gap:12px;flex-wrap:wrap}
