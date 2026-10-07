@@ -15,17 +15,17 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 .nav{display:flex;gap:22px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow-x:auto}
 .nav a{display:inline-flex;align-items:center;min-height:44px;white-space:nowrap;text-decoration:none;font-size:14px;font-weight:600;color:var(--muted)}
 .nav a[aria-current=page]{color:var(--green);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:7px}
-.hero{padding:26px 0 22px;max-width:750px}
-.eyebrow,.meta{font-size:12px;letter-spacing:.06em;color:var(--muted)}
-.eyebrow{font-weight:700;text-transform:uppercase;color:var(--green)}
+.hero{display:flex;align-items:baseline;gap:4px 20px;padding:14px 0 12px}
+.meta{font-size:12px;letter-spacing:.06em;color:var(--muted)}
 h1,h2,h3{font-family:Georgia,"Noto Serif SC",serif;line-height:1.2;font-weight:500;letter-spacing:-.035em}
-h1{font-size:clamp(34px,4.5vw,48px);margin:8px 0 12px}
+h1{font-size:28px;margin:0}
 h2{font-size:29px;margin:8px 0}
 h3{font-size:24px}
 p{margin:0 0 12px}
-.intro{color:var(--muted);font-size:18px;max-width:640px;margin-bottom:0}
+.intro{color:var(--muted);font-size:16px;margin:0}
+.hero h1{flex-shrink:0;font-size:26px}
 .layout{display:grid;grid-template-columns:minmax(0,1fr) 230px;gap:40px;padding-bottom:36px}
-.stream-label{font-size:12px;text-transform:uppercase;letter-spacing:.12em;padding:0 0 10px;border-bottom:2px solid var(--ink);margin:0}
+.post-stream{border-top:1px solid var(--line)}
 .card{padding:16px 0;border-bottom:1px solid var(--line)}
 .card h2 a{color:var(--ink);text-decoration:none}
 .card h2 a:hover{text-decoration:underline}
@@ -39,12 +39,14 @@ p{margin:0 0 12px}
 .empty{padding:20px 0;color:var(--muted)}
 footer{border-top:1px solid var(--line);padding-top:12px;padding-bottom:16px!important;display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:12px;color:var(--muted)}
 footer a{display:inline-flex;align-items:center;min-height:44px;margin-left:16px}
-.article{max-width:750px;padding:20px 0 36px;overflow-wrap:anywhere}
-.article h1{font-size:clamp(32px,4.5vw,44px);margin-top:4px}
-.article-body{margin-top:16px}
+.article{max-width:750px;padding:16px 0 36px;overflow-wrap:anywhere}
+.article h1{font-size:28px;line-height:1.25;margin:0}
+.article-toolbar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0 16px;margin-top:4px}
+.article-toolbar .meta{display:flex;align-items:center;gap:10px}
+.article-category{display:inline-flex;align-items:center;min-height:44px;font-size:13px;font-weight:700}
+.article-body{margin-top:8px}
 .article-body p{line-height:1.65}
-.language{display:flex;gap:6px;align-items:center;margin:12px 0 0;font-size:14px}
-.language span{margin-right:6px;color:var(--muted)}
+.language{display:flex;gap:6px;align-items:center;margin:0;font-size:14px}
 .language a{display:inline-flex;align-items:center;min-height:44px;padding:5px 12px;border:1px solid var(--line);text-decoration:none;border-radius:4px}
 .language a[aria-current=page]{background:var(--green);color:white;border-color:var(--green)}
 .paper{border-top:1px solid var(--line);padding-top:18px;margin-top:20px}
@@ -66,7 +68,6 @@ label{display:block;font-weight:600;font-size:14px}
 input{width:100%;min-height:44px;padding:10px 14px;border:1px solid #84998b;background:white;border-radius:4px;color:var(--ink)}
 .search-status{font-size:13px;color:var(--muted);margin-top:8px}
 summary{cursor:pointer;color:var(--green);margin:12px 0}
-.back{display:inline-flex;align-items:center;min-height:44px;font-size:14px}
 .date{white-space:nowrap}
 @media(max-width:720px){
  .wrap{padding-left:20px;padding-right:20px}
@@ -74,7 +75,10 @@ summary{cursor:pointer;color:var(--green);margin:12px 0}
  .mast-note{display:none}
  .nav{gap:16px}
  .nav a{font-size:13px}
- .hero{padding:20px 0}
+ .hero{display:block;padding:12px 0}
+ .hero h1{font-size:24px}
+ .intro{margin-top:4px;font-size:15px}
+ .article h1{font-size:24px}
  .layout{grid-template-columns:1fr;gap:24px;padding-bottom:28px}
  .aside{max-width:none}
  .article{padding-top:12px;padding-bottom:28px}
