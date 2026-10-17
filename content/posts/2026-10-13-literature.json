@@ -1,0 +1,57 @@
+{
+  "slug": "literature-2026-10-13",
+  "date": "2026-10-13",
+  "category": "Latest",
+  "title": {
+    "en": "Literature digest · October 13, 2026",
+    "zh": "2026年10月13日文献简报"
+  },
+  "summary": {
+    "zh": "今天关注将信号提取、特征构建与代谢物暂定注释连接起来的 LC–HRMS 软件。",
+    "en": "Today’s focus is an LC–HRMS workflow connecting signal extraction, feature construction and putative metabolite annotation."
+  },
+  "body": {
+    "en": [
+      "Today’s focus is an LC–HRMS workflow connecting signal extraction, feature construction and putative metabolite annotation.",
+      "Further reading should examine cross-instrument generalization, parameter dependence and benchmark conditions. Coverage is incomplete because some journal and full-text sources were inaccessible."
+    ],
+    "zh": [
+      "今天关注将信号提取、特征构建与代谢物暂定注释连接起来的 LC–HRMS 软件。",
+      "值得进一步核查的是跨仪器泛化、参数依赖与基准比较条件。部分期刊和全文入口访问受限，本次覆盖不完整。"
+    ]
+  },
+  "links": [],
+  "papers": [
+    {
+      "title": "Emzing: A Deep Learning-Enabled Software Suite for End-to-End Analysis of High-Resolution LC-MS Metabolomics Data",
+      "authors": [
+        "Aviral Singh",
+        "Kasturi Nandi",
+        "Prerna Dubey",
+        "Nived Krishnan Santhosh",
+        "Shayantan Banerjee",
+        "Prajval Nakrani",
+        "Avinash Vellore Sunder",
+        "Deepti Sahasrabuddhe",
+        "Pramod P. Wangikar"
+      ],
+      "journal": "Analytical Chemistry",
+      "first_online": "2026-10-12",
+      "doi": "10.1021/acs.analchem.6c02696",
+      "url": "https://pubs.acs.org/doi/10.1021/acs.analchem.6c02696",
+      "commentary": {
+        "zh": "Emzing 将深度学习峰检测、自适应噪声估计、保留时间对齐与图分组整合为 LC–HRMS 代谢组分析流程，并提供谱库匹配的 MSI 2 级暂定注释。作者摘要报告基准改进及逾 110 个公共数据集再分析，但本次未取得全文，无法核查具体比较条件或把暂定注释视为确证身份。",
+        "en": "Emzing integrates deep-learning peak detection, adaptive noise estimation, retention-time alignment and graph grouping for LC–HRMS metabolomics, with MSI level-2 putative library annotations. The abstract reports benchmark improvements and over 110 reprocessed public datasets, but full-text comparison conditions were unavailable for assessment and putative matches are not confirmed identities."
+      },
+      "publication_status": {
+        "zh": "同行评审期刊论文，ASAP；前身为 MSOne／Emzing 预印本 10.26434/chemrxiv-2025-g03kr/v4。",
+        "en": "Peer-reviewed ASAP journal article, preceded by MSOne/Emzing preprint 10.26434/chemrxiv-2025-g03kr/v4."
+      },
+      "read_scope": {
+        "zh": "已核查官方新文列表、出版社摘要与元数据、软件页及预印本关联；未获取全文或独立复现。",
+        "en": "Official listing, publisher abstract/metadata, software page and preprint relationship checked; full text unavailable and no independent reproduction."
+      },
+      "year": "2026"
+    }
+  ]
+}

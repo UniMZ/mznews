@@ -1,0 +1,135 @@
+{
+  "slug": "literature-2026-10-10",
+  "date": "2026-10-10",
+  "category": "Latest",
+  "title": {
+    "en": "Literature digest · October 10, 2026",
+    "zh": "2026年10月10日文献简报"
+  },
+  "summary": {
+    "en": "Four recent papers examine proteomic representation learning, isotope-tracing feature pairing, DIA quantification benchmarks and isotope-guided metabolite discovery.",
+    "zh": "四篇近期文献，关注蛋白质组表征学习、同位素示踪特征配对、DIA 定量基准与同位素引导的代谢物发现。"
+  },
+  "body": {
+    "en": [
+      "Four recent papers examine proteomic representation learning, isotope-tracing feature pairing, DIA quantification benchmarks and isotope-guided metabolite discovery.",
+      "The most useful directions are realistic generalization tests and benchmarks with known quantitative changes. Coverage is partial: some ACS, MCP and Wiley pages were inaccessible; reading scope is stated for each paper."
+    ],
+    "zh": [
+      "四篇近期文献，关注蛋白质组表征学习、同位素示踪特征配对、DIA 定量基准与同位素引导的代谢物发现。",
+      "最值得深读的是贴近实际的泛化测试，以及具有已知定量变化的评测设计。部分 ACS、MCP 和 Wiley 页面不可读取，覆盖不完整；各篇已注明阅读范围。"
+    ]
+  },
+  "links": [],
+  "papers": [
+    {
+      "title": "ProFormer: generalizable classification of single-cell and plasma proteomes using deep learning",
+      "authors": [
+        "Karl K. Krull",
+        "Arlene Kühn",
+        "Julia Höhn",
+        "Syed Azmal Ali",
+        "Martin H. Otterbein",
+        "Titus J. Brinker",
+        "Jeroen Krijgsveld"
+      ],
+      "journal": "Nature Communications",
+      "url": "https://www.nature.com/articles/s41467-026-78143-2",
+      "commentary": {
+        "en": "ProFormer combines learnable peptide-ion aggregation with a transformer to classify samples from tabular MS1 features, including ion mobility. Its evaluation separates technical batch shifts from later biological and dose-response tests, making the paper useful for designing generalization benchmarks. The first test reused six cultures; DIA-NN/MaxQuant still supply MS2-informed features, and the plasma evaluation uses a random within-cohort split, not prospective clinical validation.",
+        "zh": "ProFormer 用可学习的肽离子聚合模块与 Transformer 对表格化 MS1 特征分类，并可纳入离子淌度。它区分技术批次、后续生物学及剂量响应测试，值得借鉴其泛化评估设计；首轮测试复用了六个培养物，输入仍依赖 DIA-NN/MaxQuant 的 MS2 辅助特征提取，血浆结果来自队列内随机划分，不能解读为临床前瞻验证。"
+      },
+      "first_online": "2026-10-05",
+      "publication_status": {
+        "en": "Peer-reviewed journal article.",
+        "zh": "正式期刊论文。"
+      },
+      "read_scope": {
+        "en": "Publisher-indexed abstract and selected Results/Methods; supplements and code not audited. No independent reproduction.",
+        "zh": "出版社索引摘要及部分结果、方法；未审计补充材料和代码，未独立复现。"
+      },
+      "doi": "10.1038/s41467-026-78143-2",
+      "year": "2026"
+    },
+    {
+      "title": "IsoPairFinder: A Computational Workflow for Prioritizing LC–MS Feature Pairs Representing Candidate Microbial Pathway Intermediates from Stable Isotope Tracing Metabolomics",
+      "authors": [
+        "Zhiwei Zhou",
+        "Yuanyuan Liu",
+        "Mingxun Wang",
+        "Dylan Dodd"
+      ],
+      "journal": "Journal of the American Society for Mass Spectrometry",
+      "url": "https://pubs.acs.org/jamsef/article/doi/10.1021/jasms.6c00253/5446772/IsoPairFinder-A-Computational-Workflow-for",
+      "commentary": {
+        "en": "IsoPairFinder combines differential analysis, redundant-feature consolidation and unlabeled/13C feature pairing to prioritize candidate microbial pathway intermediates. Its journal abstract demonstrates the workflow using Clostridium sporogenes uric-acid catabolism and reports R-package/GNPS2 implementations; prioritized pairs still require downstream structural validation.",
+        "zh": "IsoPairFinder 将差异分析、冗余特征合并及未标记/13C 特征配对结合，用于筛选微生物代谢通路中间体候选。期刊摘要以 Clostridium sporogenes 的尿酸分解通路展示用途，并提供 R 包和 GNPS2 工作流；候选配对仍需后续结构验证。"
+      },
+      "first_online": "2026-10-08",
+      "publication_status": {
+        "en": "Journal version of a 2025 preprint (10.1101/2025.08.18.670916). October 8 follows publisher metadata and journal homepage; an indexed contents page gives October 7.",
+        "zh": "2025 年预印本（10.1101/2025.08.18.670916）的正式版。10 月 8 日依据出版社元数据及期刊主页；一份索引目录显示 10 月 7 日。"
+      },
+      "read_scope": {
+        "en": "Journal abstract and publisher-deposited metadata; journal full text and supplements unavailable.",
+        "zh": "期刊摘要及出版社提交的元数据；未取得正式版全文和补充材料。"
+      },
+      "doi": "10.1021/jasms.6c00253",
+      "year": "2026"
+    },
+    {
+      "title": "Benchmarking ZenoSWATH-DIA and Rapid-Gradient Workflows for Plasma Proteomics",
+      "authors": [
+        "Haneen Alharbi",
+        "Amy Campbell",
+        "Richard D. Unwin"
+      ],
+      "journal": "Journal of Proteome Research",
+      "url": "https://pubs.acs.org/doi/10.1021/acs.jproteome.6c00487",
+      "commentary": {
+        "en": "This independent mixed-species benchmark varies E. coli abundance against constant human plasma to compare DIA-NN, Spectronaut and acquisition workflows by differential-abundance detection, rather than CV alone. The authors report that library-based DIA-NN with a 21-minute ZenoTOF 7600 gradient performed best in the tested setting. The transferable lesson is to benchmark true-change recovery; the result is specific to these samples and configurations, not a universal software ranking.",
+        "zh": "这项独立混合物种基准在恒定人血浆背景中改变大肠杆菌蛋白量，以差异丰度检出能力比较 DIA-NN、Spectronaut 和采集流程，而不只比较 CV。作者报告，所测条件下，21 分钟梯度 ZenoTOF 7600 搭配谱库模式 DIA-NN 表现最佳；可借鉴的是已知变化的检出评估，不能据此建立普适的软件排名。"
+      },
+      "first_online": "2026-10-05",
+      "publication_status": {
+        "en": "Peer-reviewed article, online ahead of issue assignment.",
+        "zh": "正式期刊论文，在线优先发表。"
+      },
+      "read_scope": {
+        "en": "Official abstract, bibliographic metadata and supporting-information inventory; full text and numerical supplement not read.",
+        "zh": "官方摘要、书目信息和补充材料目录；未阅读全文及数值补充材料。"
+      },
+      "doi": "10.1021/acs.jproteome.6c00487",
+      "year": "2026"
+    },
+    {
+      "title": "LC−MS-Based Chlorine-Signature Query Engine Strategy for Automated Discovery of Phosphate-Containing Metabolites",
+      "authors": [
+        "Xiaolin Chen",
+        "Yujie Li",
+        "Lanjia Ao",
+        "Xiqing Bian",
+        "Haoyuan Zeng",
+        "Na Li",
+        "Jian-Lin Wu"
+      ],
+      "journal": "Analytical Chemistry",
+      "url": "https://pubs.acs.org/ancham/article/doi/10.1021/acs.analchem.6c01854/5446556/LC-MS-Based-Chlorine-Signature-Query-Engine",
+      "commentary": {
+        "en": "Cl-SQE couples phosphate-directed chlorine tagging with automated mining of diagnostic isotope patterns, improving candidate discovery in LC–MS datasets. In cholestatic mouse liver, the abstract reports 318 potential derivatives and 189 metabolites identified or tentatively assigned; this hybrid chemistry/software method does not establish 189 confirmed identities.",
+        "zh": "Cl-SQE 将针对含磷酸基代谢物的氯标记与特征同位素模式自动挖掘结合，辅助从 LC–MS 数据中发现候选物。摘要报告在胆汁淤积小鼠肝脏中筛得 318 个潜在衍生物，189 个代谢物被鉴定或暂定归属；这并不等于 189 个均获确证鉴定。"
+      },
+      "first_online": "2026-10-07",
+      "publication_status": {
+        "en": "Peer-reviewed journal article.",
+        "zh": "正式期刊论文。"
+      },
+      "read_scope": {
+        "en": "Publisher-deposited abstract and metadata; full text, supplements and computational benchmarking not verified.",
+        "zh": "出版社提交的摘要及元数据；未核验全文、补充材料及计算性能基准。"
+      },
+      "doi": "10.1021/acs.analchem.6c01854",
+      "year": "2026"
+    }
+  ]
+}

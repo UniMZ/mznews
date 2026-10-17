@@ -1,0 +1,221 @@
+{
+  "slug": "literature-2026-10-12",
+  "date": "2026-10-12",
+  "category": "Latest",
+  "title": {
+    "en": "Literature digest · October 12, 2026",
+    "zh": "2026年10月12日文献简报"
+  },
+  "summary": {
+    "zh": "七篇近期文献，聚焦肽段映射、修饰 RNA 注释、可复现代谢组分析、淌度成像及多组学工具。",
+    "en": "Seven recent publications cover peptide mapping, modified-RNA annotation, reproducible metabolomics, ion-mobility imaging and multi-omics tools."
+  },
+  "body": {
+    "en": [
+      "Seven recent publications cover peptide mapping, modified-RNA annotation, reproducible metabolomics, ion-mobility imaging and multi-omics tools.",
+      "Prioritize efficient mapping of ambiguous sequences and executable, auditable MS workflows. Coverage remains incomplete because some ACS, MCP and Nature sources were inaccessible; no paper software was independently run."
+    ],
+    "zh": [
+      "七篇近期文献，聚焦肽段映射、修饰 RNA 注释、可复现代谢组分析、淌度成像及多组学工具。",
+      "最值得深入的是含歧义序列的高效映射，以及可执行、可审计的质谱分析流程。部分 ACS、MCP 和 Nature 入口访问受限，覆盖不完整；本次未独立运行论文软件。"
+    ]
+  },
+  "links": [],
+  "papers": [
+    {
+      "title": "Wild-AC: A fast, index-free multi-pattern string matching algorithm with wildcard support for proteomics",
+      "authors": [
+        "Chris Bielow"
+      ],
+      "journal": "BMC Bioinformatics",
+      "first_online": "2026-10-09",
+      "doi": "10.1186/s12859-026-06686-8",
+      "url": "https://link.springer.com/article/10.1186/s12859-026-06686-8",
+      "commentary": {
+        "zh": "Wild-AC 用分支与剪枝扩展 Aho–Corasick，将肽段集合映射至含歧义残基的蛋白序列，无需建立蛋白数据库索引。大查询集合表现更好，小集合有时仍以 FM-index 更快；连续通配符可能导致指数分支，因此需限制与剪枝。它是序列映射算法，不是原始谱鉴定或 FDR 估计器。",
+        "en": "Wild-AC extends Aho–Corasick with branching and pruning to map peptide sets onto protein sequences with ambiguous residues, without a protein-database index. Benchmarks favor large query sets, while FM-index can win for small sets; consecutive wildcards can cause exponential branching, requiring limits and pruning. This is sequence mapping, not raw-spectrum identification or FDR estimation."
+      },
+      "publication_status": {
+        "zh": "已同行评审的接受稿／Article in Press，尚未最终编辑排版。",
+        "en": "Peer-reviewed accepted manuscript / Article in Press, before final editing."
+      },
+      "read_scope": {
+        "zh": "已阅读出版社接受稿的方法和基准；未运行代码，计时比较不含 FM-index 建索引时间。",
+        "en": "Publisher accepted manuscript, methods and benchmarks read; code not rerun. Timings exclude FM-index construction."
+      },
+      "year": "2026"
+    },
+    {
+      "title": "RNabel─A Standalone Software Tool for Annotating Tandem Mass Spectra of Modified Ribonucleic Acids",
+      "authors": [
+        "Ge Song",
+        "Yi-Jie Nathan Du",
+        "Rui-Xiang Sun",
+        "Meng-Qiu Dong"
+      ],
+      "journal": "Analytical Chemistry",
+      "first_online": "2026-09-28",
+      "doi": "10.1021/acs.analchem.6c02176",
+      "url": "https://pubs.acs.org/ancham/article/doi/10.1021/acs.analchem.6c02176/5439638/RNabel-A-Standalone-Software-Tool-for-Annotating",
+      "commentary": {
+        "zh": "RNabel 是面向修饰 RNA 寡核苷酸串联质谱的 Mac/Windows 独立注释工具，支持九类骨架离子、196 种可编辑修饰、自定义残基/中性丢失及批量导入，并提供注释质量统计。可读内容未证明从头测序能力或全局 FDR 控制。",
+        "en": "RNabel is standalone Mac/Windows software for annotating modified RNA-oligonucleotide tandem spectra. It supports nine backbone-ion types, 196 editable modifications, custom residues/losses and batch imports, with annotation-quality statistics. The accessible text supports a flexible annotation workflow; it does not establish de novo sequencing or globally validated false-discovery control."
+      },
+      "publication_status": {
+        "zh": "正式期刊版；此前预印本 10.64898/2026.06.22.733900 发表于 2026 年 6 月 24 日。",
+        "en": "Journal version following preprint 10.64898/2026.06.22.733900, posted June 24, 2026."
+      },
+      "read_scope": {
+        "zh": "官方摘要和公开补充材料说明；未阅读全文或运行软件。",
+        "en": "Official abstract and public supplementary description; full text and software not evaluated."
+      },
+      "year": "2026"
+    },
+    {
+      "title": "Metabonaut: an open educational resource for learning reproducible, script-based untargeted LC-MS/MS metabolomics",
+      "authors": [
+        "Philippine Louail",
+        "Marilyn De Graeve",
+        "Alexandru Mahmoud",
+        "Daniel Marques de Sá e Silva",
+        "Kozo Nishida",
+        "Vilhelm Suksi",
+        "Anna Tagliaferri",
+        "Gabriele Tomè",
+        "Vinicius Verri Hernandes",
+        "Johannes Rainer"
+      ],
+      "journal": "Metabolomics",
+      "first_online": "2026-10-03",
+      "doi": "10.1007/s11306-026-02538-x",
+      "url": "https://link.springer.com/article/10.1007/s11306-026-02538-x",
+      "commentary": {
+        "zh": "Metabonaut 是教学综述与可复用分析资源，以九个可执行 R/Bioconductor 教程串联预处理、质控、注释、对齐与标准化导出，并连接 Python/SIRIUS。教学数据展示了质控样本来源不匹配可能恶化校正；本次未独立复跑。",
+        "en": "Metabonaut teaches reproducible untargeted LC-MS/MS analysis through nine executable R/Bioconductor vignettes covering preprocessing, QC, annotation, alignment and standardized export, with Python/SIRIUS interoperability. This is versioned, containerized training rather than a new algorithm. Its imperfect teaching dataset illustrates how mismatched QC samples can worsen correction; workflows were not independently rerun."
+      },
+      "publication_status": {
+        "zh": "已同行评审的方法／教学综述。",
+        "en": "Peer-reviewed methods / educational review."
+      },
+      "read_scope": {
+        "zh": "已阅读出版社正文的教程、复现设计和局限；未复跑工作流。",
+        "en": "Publisher main text, workflow design and limitations read; no workflow rerun."
+      },
+      "year": "2026"
+    },
+    {
+      "title": "From Pixels to Chemical Knowledge: Interpreting Ion Mobility-Enabled Multidimensional Mass Spectrometry Imaging",
+      "authors": [
+        "Kittisak Taoma",
+        "Pattipong Wisanpitayakorn",
+        "Kwanjeera Wanichthanarak",
+        "David R. Gang",
+        "Sakda Khoomrung"
+      ],
+      "journal": "ACS Measurement Science Au",
+      "first_online": "2026-10-06",
+      "doi": "10.1021/acsmeasuresciau.6c00282",
+      "url": "https://pubs.acs.org/amachv/article/doi/10.1021/acsmeasuresciau.6c00282/5445578/From-Pixels-to-Chemical-Knowledge-Interpreting-Ion",
+      "commentary": {
+        "zh": "这篇方法综述比较四维离子淌度质谱成像的逐像素与平均谱预处理，梳理空间过滤、灵敏度与计算代价的权衡，以及淌度信息保留、互操作性和 CCS 辅助注释。其价值是流程设计参考；文中的 AI 扩展方向不能视为已验证的新算法。",
+        "en": "This methods review compares per-pixel and averaged-spectrum preprocessing for four-dimensional ion-mobility MSI, including spatially informed filtering and sensitivity/runtime tradeoffs. It maps mobility-preserving data-access gaps and CCS-supported annotation, separating existing tools from proposed AI extensions. Its practical value is workflow design and interoperability guidance; it introduces no newly validated algorithm."
+      },
+      "publication_status": {
+        "zh": "已同行评审的方法／教学综述。",
+        "en": "Peer-reviewed methods / educational review."
+      },
+      "read_scope": {
+        "zh": "出版社索引正文中的数据访问、预处理、CCS 注释及展望；未重测所引软件。",
+        "en": "Selected publisher-indexed main text on data access, preprocessing and CCS annotation; cited tools not retested."
+      },
+      "year": "2026"
+    },
+    {
+      "title": "TurbOmics: a web-based platform for the analysis of metabolomics data using a multi-omics integrative approach",
+      "authors": [
+        "Rafael Barrero-Rodríguez",
+        "Jose Manuel Rodríguez",
+        "Thomas Naake",
+        "Wolfgang Huber",
+        "María Juárez-Fernández",
+        "Almudena R. Ramiro",
+        "Jesús Vázquez",
+        "Annalaura Mastrangelo",
+        "Alessia Ferrarini"
+      ],
+      "journal": "Genome Biology",
+      "first_online": "2026-10-10",
+      "doi": "10.1186/s13059-026-04272-y",
+      "url": "https://link.springer.com/article/10.1186/s13059-026-04272-y",
+      "commentary": {
+        "zh": "TurbOmics 将 CMM/TurboPutative 暂定注释、MOFA 和 PathIntegrate 整合进统一界面，支持代谢组、蛋白组与转录组联合分析。案例重分析展示了完整流程；但联合分析需要配对样本，暂定注释不等于确证身份，检出更多候选也不证明在相同错误控制下更优。",
+        "en": "TurbOmics integrates CMM/TurboPutative annotations, MOFA and PathIntegrate for combined metabolomic, proteomic and transcriptomic analysis. Reanalysis examples demonstrate the workflow, but integration requires paired samples, putative annotations are not confirmed identities, and additional candidates do not establish superiority under matched error control."
+      },
+      "publication_status": {
+        "zh": "已同行评审的接受稿／Article in Press，尚待正式排版。",
+        "en": "Peer-reviewed accepted manuscript / Article in Press, before the final Version of Record."
+      },
+      "read_scope": {
+        "zh": "官方文章页与接受稿 PDF 中的结果、方法及局限定向核查；未审计补充数据或运行软件。",
+        "en": "Official article page and selected accepted-manuscript results, methods and limitations; supplements and software not audited."
+      },
+      "year": "2026"
+    },
+    {
+      "title": "ThermoTargetMiner as a proteome integral solubility alteration target database for prospective drugs against lung cancer",
+      "authors": [
+        "Hezheng Lyu",
+        "Hassan Gharibi",
+        "Bohdana Sokolova",
+        "Mücahit Varli",
+        "Anna Voiland",
+        "Brady Nilsson",
+        "Zhaowei Meng",
+        "Massimiliano Gaetani",
+        "Amir Ata Saei",
+        "Roman A. Zubarev"
+      ],
+      "journal": "Communications Chemistry",
+      "first_online": "2026-10-02",
+      "doi": "10.1038/s42004-026-02207-z",
+      "url": "https://www.nature.com/articles/s42004-026-02207-z",
+      "commentary": {
+        "zh": "ThermoTargetMiner 对 67 种化合物、四类 PISA 条件整合 TMT 定量、OPLS-DA 与对照驱动的离群过滤，以跨条件重复出现来排序候选靶点。实际采用 k=2；随机重叠检验却支持 k≥3 更可靠。离群显著性与重复性不能直接证明结合或靶点层面的校准 FDR。",
+        "en": "Across 67 compounds and four PISA contexts, ThermoTargetMiner combines normalized TMT LC-MS/MS measurements with drug-versus-other-drugs OPLS-DA and control-tuned outlier filtering. Recurrence supports prioritization, but the chosen k=2 criterion is operational: randomized-overlap analysis favored k≥3 for statistical reliability. Outlier significance and recurrence do not establish direct binding or calibrated target-level FDR."
+      },
+      "publication_status": {
+        "zh": "正式期刊论文。",
+        "en": "Peer-reviewed journal article."
+      },
+      "read_scope": {
+        "zh": "已阅读出版社正文及统计方法；未复核补充数据或运行应用。",
+        "en": "Publisher main text and statistical methods read; supplementary data and application not independently tested."
+      },
+      "year": "2026"
+    },
+    {
+      "title": "PSA-GUI: A Windows-Based Graphical User Interface for the Projected Superposition Approximation Collision Cross-Section Calculation",
+      "authors": [
+        "Farhad Zahedi",
+        "Christian Bleiholder"
+      ],
+      "journal": "Journal of Mass Spectrometry",
+      "first_online": "2026-09-28",
+      "doi": "10.1002/jms.70116",
+      "url": "https://doi.org/10.1002/jms.70116",
+      "commentary": {
+        "zh": "PSA-GUI 在 Windows/WSL 中封装现有 PSA 碰撞截面计算，整合参数设置、PDB/XYZ 导入、多构象提取、资源感知批处理和实时监控，便于组织结构模型与离子淌度质谱的比较。可读摘要未证明精度提升或计算加速。",
+        "en": "PSA-GUI packages established projected superposition approximation CCS calculations in a Windows/WSL workflow. It combines parameter setup, PDB/XYZ import, conformer extraction, resource-aware batch runs and live monitoring, making model-to-ion-mobility comparisons easier to organize. The accessible abstract does not demonstrate improved CCS accuracy or numerical speedups."
+      },
+      "publication_status": {
+        "zh": "正式期刊版；此前 ChemRxiv 预印本 10.26434/chemrxiv.15002715/v1 发表于 2026 年 5 月 5 日。",
+        "en": "Journal version following ChemRxiv preprint 10.26434/chemrxiv.15002715/v1, posted May 5, 2026."
+      },
+      "read_scope": {
+        "zh": "期刊摘要、PubMed 及出版社元数据；未阅读全文。",
+        "en": "Journal abstract, PubMed and publisher-deposited metadata; full text not read."
+      },
+      "year": "2026"
+    }
+  ]
+}
