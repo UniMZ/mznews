@@ -1,0 +1,111 @@
+{
+  "slug": "literature-2026-10-16",
+  "date": "2026-10-16",
+  "category": "Latest",
+  "title": {
+    "en": "Literature digest · October 16, 2026",
+    "zh": "2026年10月16日文献简报"
+  },
+  "summary": {
+    "en": "This edition focuses on continuous QC for large proteomics cohorts, quantitative benchmarks with defined microbial communities, and interactive downstream analysis.",
+    "zh": "本期关注大规模蛋白组的持续质控、已知微生物群落的定量基准，以及交互式下游分析。"
+  },
+  "body": {
+    "en": [
+      "This edition focuses on continuous QC for large proteomics cohorts, quantitative benchmarks with defined microbial communities, and interactive downstream analysis.",
+      "The priority is to connect continuous QC with benchmarks that measure quantitative accuracy as well as identification depth. Several journal sources were inaccessible, so coverage is incomplete."
+    ],
+    "zh": [
+      "本期关注大规模蛋白组的持续质控、已知微生物群落的定量基准，以及交互式下游分析。",
+      "值得深入的是将持续质控与同时考察定量准确度、鉴定深度的基准结合。部分期刊来源不可访问，本次覆盖不完整。"
+    ]
+  },
+  "links": [],
+  "papers": [
+    {
+      "title": "LAMPrEY: a Python-Based Automated Quality Control Tool for Large-Scale Proteomics Datasets",
+      "authors": [
+        "Mario E. Valdés-Tresanco",
+        "Soren Wacker",
+        "Mario S. Valdés-Tresanco",
+        "Andriy Plakhotnyk",
+        "Nicholas I. Brodie",
+        "Morgan Hepburn",
+        "Annegret Ulke-Lemée",
+        "Edward L. Huttlin",
+        "Ian A. Lewis"
+      ],
+      "journal": "Analytical Chemistry",
+      "first_online": "2026-10-14",
+      "doi": "10.1021/acs.analchem.6c02944",
+      "url": "https://pubs.acs.org/doi/10.1021/acs.analchem.6c02944",
+      "year": "2026",
+      "commentary": {
+        "en": "LAMPrEY integrates MaxQuant, RawTools, interactive QC dashboards and an API into a traceable processing workflow for large TMT cohorts. The authors demonstrate longitudinal monitoring with TMT11 data from 910 Enterococcus faecium isolates, offering a practical design for embedding QC in continuously operating analysis pipelines. The abstract and software documentation do not establish anomaly-detection error rates, cross-instrument performance or gains over other QC tools.",
+        "zh": "LAMPrEY 将 MaxQuant、RawTools、交互式质控面板和程序接口整合为 TMT 大队列的自动处理流程，并记录处理参数以支持可追溯分析。作者以 910 株屎肠球菌的 TMT11 数据展示纵向监测，值得借鉴的是把批次质控接入持续运行的数据处理系统。当前仅核查摘要及官方软件说明，尚不能判断异常检测误差、跨仪器适用性或相对其他质控工具的增益。"
+      },
+      "publication_status": {
+        "en": "Version of record; earlier May 2026 preprint",
+        "zh": "正式版；此前已有 2026 年 5 月预印本"
+      },
+      "read_scope": {
+        "en": "Reviewed the publisher-deposited Crossref abstract, full authorship and online-date metadata, plus the official software homepage; publisher full text was inaccessible, and supplements and code were not audited or reproduced.",
+        "zh": "已读出版社提交至 Crossref 的摘要、完整作者和首发元数据及官方软件首页；出版社正文入口不可读，未核查全文、补充材料或复现。"
+      }
+    },
+    {
+      "title": "Asymmetric Track Lossless Analyzer Mass Spectrometry Improves Metaproteomic Analysis of a Complex Taxonomic Ground-Truth Microbial Community",
+      "authors": [
+        "Nicole M. Nightingale",
+        "Jana Richter",
+        "Nicolas Hartel",
+        "Mak A. Saito",
+        "Manuel Kleiner",
+        "Timothy J. Griffin",
+        "Pratik D. Jagtap"
+      ],
+      "journal": "Journal of the American Society for Mass Spectrometry",
+      "first_online": "2026-10-14",
+      "doi": "10.1021/jasms.6c00283",
+      "url": "https://pubs.acs.org/doi/10.1021/jasms.6c00283",
+      "year": "2026",
+      "commentary": {
+        "en": "A defined community of 30 organisms spanning a wide abundance range benchmarks Astral against Orbitrap Fusion metaproteomics, including FAIMS trade-offs. The authors report that FAIMS increases peptide identifications while reducing precision and throughput, underscoring why known-composition benchmarks should evaluate quantification and taxonomic assignment rather than identification counts alone. Only the abstract was reviewed: numerical gains, search settings and error control remain unchecked, and instrument-vendor coauthors mean this is not a fully independent evaluation.",
+        "zh": "研究用 30 种生物组成、丰度跨度较大的已知混合群落，比较 Astral 与 Orbitrap Fusion 的宏蛋白组测量深度、准确度和精密度，并评估 FAIMS。作者报告 FAIMS 增加肽段鉴定，却降低精密度与通量，提示软件基准不能只比较鉴定数量；这一已知组成设计也适合检验低丰度物种的定量与分类归属。当前仅读摘要，未核验具体增益、搜索与错误率设置，且研究包含仪器厂商作者，不能视为完全独立的算法评测。"
+      },
+      "publication_status": {
+        "en": "Version of record",
+        "zh": "正式版"
+      },
+      "read_scope": {
+        "en": "Reviewed the publisher abstract, byline, online date and supplement description; main text and supplementary benchmarks were not reviewed or reproduced.",
+        "zh": "已核查出版社摘要、作者、首发日期及补充材料目录；未读正文或补充评测，未复现。"
+      }
+    },
+    {
+      "title": "Manchester Proteome Profiler: A User-Friendly Platform for Quantitative Proteomic Analysis",
+      "authors": [
+        "Stuart A. Cain",
+        "Mahak Fatima",
+        "Martin J. Humphries"
+      ],
+      "journal": "Journal of Proteome Research",
+      "first_online": "2026-10-15",
+      "doi": "10.1021/acs.jproteome.5c01140",
+      "url": "https://pubs.acs.org/doi/10.1021/acs.jproteome.5c01140",
+      "year": "2026",
+      "commentary": {
+        "en": "Manchester Proteome Profiler combines protein-intensity filtering, normalization, imputation, differential analysis and clustering in an R Shiny interface, with SAINTexpress support for affinity-purification and proximity-labeling experiments. A KRAS proximity-biotinylation example illustrates reproducible protein clusters and a useful multi-input interactive workflow. The abstract does not provide systematic tests of missingness assumptions, statistical error control or competing pipelines, so it does not establish more accurate imputation or differential analysis.",
+        "zh": "Manchester Proteome Profiler 用 R Shiny 整合蛋白强度表的过滤、归一化、缺失值填补、差异分析与聚类，并接入 SAINTexpress 处理亲和纯化和邻近标记数据。作者以 KRAS 邻近生物素化数据展示可重复的蛋白聚类，适合借鉴其多软件输入和交互式分析设计。摘要尚未提供缺失机制、统计错误率或替代流程的系统比较，不能据此认为其填补与差异分析更准确。"
+      },
+      "publication_status": {
+        "en": "Version of record; earlier preprint posted 18 May 2026",
+        "zh": "正式版；此前已有 2026 年 5 月 18 日预印本"
+      },
+      "read_scope": {
+        "en": "Reviewed the publisher-deposited Crossref abstract, full authorship and online-date metadata, plus the authors’ institutional preprint record; publisher full text was inaccessible, and supplements and code were not audited or reproduced.",
+        "zh": "已读出版社提交至 Crossref 的摘要、完整作者和首发元数据，并核查作者机构的预印本记录；出版社正文入口不可读，未核查全文、补充材料或复现。"
+      }
+    }
+  ]
+}

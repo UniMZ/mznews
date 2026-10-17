@@ -1,0 +1,216 @@
+{
+  "slug": "literature-2026-10-11",
+  "date": "2026-10-11",
+  "category": "Latest",
+  "title": {
+    "en": "Literature digest · October 11, 2026",
+    "zh": "2026年10月11日文献简报"
+  },
+  "summary": {
+    "zh": "本日精选七篇近期方法文献，涵盖同位素预测、结构建模、分子式与聚合物组成辨识、生物药数据分析及采集集成。",
+    "en": "Seven recent papers cover isotope prediction, structural modeling, formula and polymer-composition analysis, biologics data interpretation and acquisition integration."
+  },
+  "body": {
+    "en": [
+      "Seven recent papers cover isotope prediction, structural modeling, formula and polymer-composition analysis, biologics data interpretation and acquisition integration.",
+      "The central question is how to incorporate experimental constraints into testable models while distinguishing simulations, author-reported results and independent validation. Coverage is incomplete because some ACS, MCP and other journal sources were inaccessible."
+    ],
+    "zh": [
+      "本日精选七篇近期方法文献，涵盖同位素预测、结构建模、分子式与聚合物组成辨识、生物药数据分析及采集集成。",
+      "值得深入的是如何把实验约束融入可验证的模型，并区分模拟基准、作者报告和独立验证。部分 ACS、MCP 及其他期刊入口不可读取，本次覆盖并不完整。"
+    ]
+  },
+  "links": [],
+  "papers": [
+    {
+      "title": "Evaluating a Lightweight Neural Network for Aggregate Isotope Distribution Prediction",
+      "authors": [
+        "John G. Pavek",
+        "Josiah Grimes",
+        "Brian L. Frey",
+        "Nathan V. Welham",
+        "Lloyd M. Smith",
+        "Michael T. Marty"
+      ],
+      "journal": "Journal of Proteome Research",
+      "url": "https://doi.org/10.1021/acs.jproteome.6c00685",
+      "commentary": {
+        "zh": "IsoGen 在傅里叶变换计算之外提供轻量神经网络，用于聚合同位素包络预测，并可迁移训练到偏离天然丰度的分布。作者报告天然丰度条件下的相近预测表现，并展示直接利用实验包络训练的能力；其价值在于适配难以预先规定的同位素组成，而非普遍替代 FFT，也不等于预测精细同位素结构。",
+        "en": "IsoGen adds lightweight neural-network prediction of aggregate isotope envelopes alongside Fourier-transform calculation and supports retraining for perturbed isotope ratios. The authors report comparable prediction under natural ratios and demonstrate training from experimental envelopes, making adaptation to poorly specified isotope compositions the main attraction; this is neither a universal replacement for FFT nor fine-isotope-structure prediction."
+      },
+      "first_online": "2026-10-09",
+      "publication_status": {
+        "en": "Peer-reviewed journal article.",
+        "zh": "正式期刊论文。"
+      },
+      "read_scope": {
+        "zh": "出版社摘要、元数据及官方仓库说明；未阅读全文或审计实现。",
+        "en": "Publisher abstract/metadata and official repository documentation; full paper and implementation not audited."
+      },
+      "doi": "10.1021/acs.jproteome.6c00685",
+      "year": "2026"
+    },
+    {
+      "title": "Methods for inferring interaction potentials from cross-linking mass spectrometry data",
+      "authors": [
+        "Börries von Seggern",
+        "Mohsen Sadeghi"
+      ],
+      "journal": "The Journal of Chemical Physics",
+      "url": "https://doi.org/10.1063/5.0346848",
+      "commentary": {
+        "zh": "该框架将交联接触信息与逆统计力学联系起来，比较梯度和预测—校正算法，以拟合可发生相分离的多组分粗粒化相互作用势。十组分及三相模型展示了参数恢复能力；但验证采用模拟参考体系和合成交联型观测，尚不能等同于真实 XL-MS 数据的实验验证或配位数的唯一反演。",
+        "en": "This framework connects cross-link contact observables with inverse statistical mechanics and compares gradient and predictor–corrector algorithms for fitting coarse-grained interactions in phase-separating mixtures. Ten-component and three-phase models demonstrate parameter recovery, but validation uses simulated reference systems and synthetic XL-MS-like observations, not new measured XL-MS experiments or unique inversion of coordination numbers."
+      },
+      "first_online": "2026-10-09",
+      "publication_status": {
+        "en": "Journal version; an earlier preprint appeared on June 4, 2026. October 9 is the online date; October 14 is the issue date.",
+        "zh": "正式期刊版；此前已有 2026 年 6 月 4 日预印本。10 月 9 日为在线日期，10 月 14 日为卷期日期。"
+      },
+      "read_scope": {
+        "zh": "出版社索引中的理论、计算细节及结论定向核查；未审计代码或独立复现。",
+        "en": "Selected publisher-indexed theory, computational details and conclusions; no code audit or independent reproduction."
+      },
+      "doi": "10.1063/5.0346848",
+      "year": "2026"
+    },
+    {
+      "title": "Integrating Ion Mobility Mass Spectrometry Data with AlphaFold and Rosetta Improves Protein Complex Structure Prediction",
+      "authors": [
+        "Akshaya Narayanasamy",
+        "Zachary C. Drake",
+        "S. M. Bargeen A. Turzo",
+        "Amber D. Rolland",
+        "James S. Prell",
+        "Vicki H. Wysocki",
+        "Steffen Lindert"
+      ],
+      "journal": "Analytical Chemistry",
+      "url": "https://doi.org/10.1021/acs.analchem.6c01893",
+      "commentary": {
+        "zh": "方法以 AlphaFold 预测亚基、Rosetta 对接，再利用实测或模拟碰撞截面筛选复合物模型。正式版摘要报告，相比 AlphaFold-Multimer，38 个复合物中 26 个的归一化 RMSD100 改善，其中 14 个由大于 4 Å 降至小于 4 Å；这支持将整体形状约束引入模型选择，但不是所有复合物均改善，也未在此独立复现。",
+        "en": "AlphaFold-predicted subunits are docked with Rosetta, then selected using measured or simulated collision cross sections. The journal abstract reports better normalized RMSD100 for 26 of 38 complexes than AlphaFold-Multimer, including 14 moving from above 4 Å to below 4 Å; global-shape constraints are promising for model selection, but improvement is not universal and was not independently reproduced here."
+      },
+      "first_online": "2026-10-08",
+      "publication_status": {
+        "en": "Journal version. Results quoted here use the journal’s normalized RMSD100 and 14 threshold-crossing cases, not the earlier preprint figures.",
+        "zh": "正式期刊版；本文采用正式版的归一化 RMSD100 与 14 个跨阈值结果，而非早期预印本数值。"
+      },
+      "read_scope": {
+        "zh": "正式版摘要、作者、发表记录及补充材料目录；未阅读全文或补充数据。",
+        "en": "Journal abstract, author metadata, publication history and supplementary inventory; full text and supplementary data not read."
+      },
+      "doi": "10.1021/acs.analchem.6c01893",
+      "year": "2026"
+    },
+    {
+      "title": "Improving Molecular Formula Assignment of Nitrogen- and Sulfur-Rich DOM in Ultrahigh-Resolution Mass Spectrometry: Validation of Oligopeptides",
+      "authors": [
+        "Peter Herzsprung",
+        "Oliver J. Lechtenfeld",
+        "Wolf von Tümpling",
+        "Norbert Kamjunke",
+        "Shuxian Gao"
+      ],
+      "journal": "Analytical Chemistry",
+      "url": "https://doi.org/10.1021/acs.analchem.6c04588",
+      "commentary": {
+        "zh": "该研究以肽的元素组成和氨基酸组合约束，检验富氮、富硫溶解有机质中仅凭精确质量难以区分的分子式。摘要报告两类近等质量替换歧义中，约 36% 和 30% 的富氮分子式获得肽化学计量支持；可借鉴的是可解释的化学约束，但这种一致性不等于确证寡肽序列或唯一结构。",
+        "en": "Peptide elemental composition and amino-acid combinations constrain ambiguous molecular formulas in nitrogen- and sulfur-rich dissolved organic matter. The abstract reports stoichiometric support for about 36% and 30% of nitrogen-rich formulas in two near-isobaric substitution families; these interpretable constraints help assess formula plausibility but do not establish peptide sequence or unique structure."
+      },
+      "first_online": "2026-10-10",
+      "publication_status": {
+        "en": "Peer-reviewed journal article.",
+        "zh": "正式期刊论文。"
+      },
+      "read_scope": {
+        "en": "Official journal listing and publisher-deposited abstract/metadata; full paper not read.",
+        "zh": "官方期刊目录及出版社提交的摘要、元数据；未阅读全文。"
+      },
+      "doi": "10.1021/acs.analchem.6c04588",
+      "year": "2026"
+    },
+    {
+      "title": "BioDRUMs: An Open-Source Python Pipeline for Automated Mean Drug-to-Antibody Ratio and Biologics Structural Integrity Analysis from High-Resolution Mass Spectrometry Data",
+      "authors": [
+        "Andrea Di Ianni",
+        "Francesco Molinaro",
+        "Luca M. Barbero",
+        "Kyra Cowan",
+        "Federico Riccardi Sirtori"
+      ],
+      "journal": "Journal of the American Society for Mass Spectrometry",
+      "url": "https://doi.org/10.1021/jasms.6c00289",
+      "commentary": {
+        "zh": "BioDRUMs 对去卷积后的完整质量表进行厂商无关的后处理，自动生成降解假设、平均药物抗体比和结构完整性汇总，并提供图形与网页界面。论文给出体外稳定性和体内样本等应用示例；它会报告同量候选的歧义，而非分离其各自贡献，尚不能据此认定优于其他软件或推断药效。",
+        "en": "BioDRUMs performs vendor-neutral postprocessing of deconvoluted intact-mass tables, generating degradation hypotheses, mean drug-to-antibody ratios and structural-integrity summaries through Python and graphical interfaces. Reported use cases include in-vitro stability and in-vivo samples; it flags isobaric candidate ambiguity rather than separating individual contributions, and neither general software superiority nor drug efficacy follows from these results."
+      },
+      "first_online": "2026-10-05",
+      "publication_status": {
+        "en": "Peer-reviewed journal article.",
+        "zh": "正式期刊论文。"
+      },
+      "read_scope": {
+        "en": "Selected original publisher-indexed Methods, Results and Conclusions; no complete manuscript download or independent reproduction.",
+        "zh": "出版社索引中部分方法、结果和结论定向核查；未下载完整论文，未独立复现。"
+      },
+      "doi": "10.1021/jasms.6c00289",
+      "year": "2026"
+    },
+    {
+      "title": "Lost in Overlap: Mapping Local Composition Landscapes to Predict the Upper Measurable Mass Limit of Copolymers and Terpolymers by MALDI-TOF MS",
+      "authors": [
+        "Gergő Róth",
+        "Ákos Kuki",
+        "Tibor Nagy",
+        "Sándor Kéki"
+      ],
+      "journal": "Analytical Chemistry",
+      "url": "https://doi.org/10.1021/acs.analchem.6c05591",
+      "commentary": {
+        "zh": "该算法枚举共聚物及三元共聚物在局部 m/z 区域的可行组成，并结合单体掺入统计、同位素分布和实测峰宽，预测谱峰重叠及可区分组成的质量上限。其价值在于将化学组成密度与仪器分辨本领共同纳入可辨识性评估；具体上限依赖仪器条件和判据，并非分析物的普适常数。",
+        "en": "The algorithm enumerates feasible local copolymer and terpolymer compositions and combines monomer-incorporation statistics, isotope distributions and measured peak widths to predict overlap and an upper mass limit for compositional discrimination. It connects chemical ambiguity with instrumental resolution, but numerical limits depend on the instrument and discrimination criterion rather than being universal analyte constants."
+      },
+      "first_online": "2026-10-08",
+      "publication_status": {
+        "en": "Peer-reviewed journal article.",
+        "zh": "正式期刊论文。"
+      },
+      "read_scope": {
+        "en": "Official ACS listing and publisher-deposited abstract/metadata; full text, code and numerical benchmarks not audited.",
+        "zh": "ACS 官方目录及出版社提交的摘要、元数据；未审计全文、代码和数值基准。"
+      },
+      "doi": "10.1021/acs.analchem.6c05591",
+      "year": "2026"
+    },
+    {
+      "title": "TherMIDAS: An Integrated Data Acquisition System for FT-ICR Mass Spectrometry",
+      "authors": [
+        "Jesse D. Canterbury",
+        "Michael W. Senko",
+        "Lydia Babcock-Adams",
+        "Marek Polák",
+        "Christopher L. Hendrickson",
+        "Kristina Håkansson",
+        "Chad R. Weisbrod"
+      ],
+      "journal": "Journal of the American\nSociety for Mass Spectrometry",
+      "url": "https://pubs.acs.org/doi/10.1021/jasms.6c00273",
+      "commentary": {
+        "zh": "TherMIDAS 将新版 PXIe 控制板与厂商控制软件整合，使 Orbitrap Eclipse 前端能够联用 14.5 T 和 21 T FT-ICR，并由统一软件控制各质量分析器。作者报告并行运行改善了占空比；值得借鉴的是异构仪器的采集与处理集成，但摘要未给出可直接比较的增益数值，不能据此推断通用性能优势。",
+        "en": "TherMIDAS integrates newer PXIe control boards with vendor software to couple an Orbitrap Eclipse front end to 14.5 T and 21 T FT-ICR instruments. The authors report duty-cycle gains from parallel analyzers, making it useful for instrument-control and data-processing integration; the abstract provides no comparable numerical gain and does not establish general performance superiority."
+      },
+      "first_online": "2026-10-08",
+      "publication_status": {
+        "en": "Peer-reviewed journal article.",
+        "zh": "正式期刊论文。"
+      },
+      "read_scope": {
+        "en": "Official ACS contents and publisher-deposited abstract/metadata; full text and implementation details not reviewed.",
+        "zh": "ACS 官方目录及出版社提交的摘要、元数据；未阅读全文和实现细节。"
+      },
+      "doi": "10.1021/jasms.6c00273",
+      "year": "2026"
+    }
+  ]
+}

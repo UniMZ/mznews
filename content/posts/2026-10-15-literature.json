@@ -1,0 +1,94 @@
+{
+  "slug": "literature-2026-10-15",
+  "date": "2026-10-15",
+  "category": "Latest",
+  "title": {
+    "en": "Literature digest · October 15, 2026",
+    "zh": "2026年10月15日文献简报"
+  },
+  "summary": {
+    "en": "Today’s papers address reusable training data for proteomics and integrated analysis of mass cytometry.",
+    "zh": "今天关注蛋白质组学训练数据的可复用性，以及质谱流式分析的统一工作流。"
+  },
+  "body": {
+    "en": [
+      "Today’s papers address reusable training data for proteomics and integrated analysis of mass cytometry.",
+      "MassNet is the priority for deeper reading, especially the distinction between scaling gains and cross-domain generalization. Several journal sources were inaccessible, so coverage is incomplete."
+    ],
+    "zh": [
+      "今天关注蛋白质组学训练数据的可复用性，以及质谱流式分析的统一工作流。",
+      "最值得深读的是 MassNet，尤其要区分扩大训练数据的收益与跨域泛化能力。部分期刊来源不可访问，本次覆盖不完整。"
+    ]
+  },
+  "links": [],
+  "papers": [
+    {
+      "title": "MassNet: billion-scale AI-ready mass spectral corpus empowering scalable deep learning in proteomics",
+      "authors": [
+        "Jun A.",
+        "Xiang Zhang",
+        "Xiaofan Zhang",
+        "Jiaqi Wei",
+        "Te Zhang",
+        "Yamin Deng",
+        "Pu Liu",
+        "Zongxiang Nie",
+        "Yiwen Yu",
+        "Yi Chen",
+        "Nanqing Dong",
+        "Zhiqiang Gao",
+        "Siqi Sun",
+        "Tiannan Guo"
+      ],
+      "journal": "Nature Methods",
+      "first_online": "2026-10-14",
+      "doi": "10.1038/s41592-026-03247-y",
+      "url": "https://www.nature.com/articles/s41592-026-03247-y",
+      "year": "2026",
+      "commentary": {
+        "en": "MassNet standardizes 1.54 billion DDA spectra across 35 species in the traceable MSDT format and supports XuanjiNovo, a nonautoregressive sequencing model trained with progressively masked peptide labels. On peptide-disjoint validation, scaling training from 30 million to 100 million PSMs raised peptide recall from about 0.54 to 0.68. Cross-platform gains are uneven: the 100-million model trails competitors on most nine-species benchmark datasets until additional fine-tuning, making domain-shift evaluation as important as data scale.",
+        "zh": "MassNet 用可追溯的 MSDT 格式组织 35 个物种的 15.4 亿张 DDA 谱，并以逐步遮蔽肽段标签的课程学习训练非自回归测序模型 XuanjiNovo。在肽段序列互斥的验证集上，训练量从 3000 万增至 1 亿 PSM 后，肽段召回率约从 0.54 升至 0.68。跨平台优势并不一致：1 亿模型在九物种基准的大多数数据集上仍落后于其他方法，追加微调后才改善，提示规模扩张需同时检验分布迁移。"
+      },
+      "publication_status": {
+        "en": "Version of record; earlier bioRxiv preprint in 2025",
+        "zh": "正式版；此前已有 2025 年 bioRxiv 预印本"
+      },
+      "read_scope": {
+        "en": "Reviewed indexed publisher main-text, methods, benchmark and author sections; supplementary tables, raw data and code were not audited or reproduced.",
+        "zh": "已定向核查出版社索引中的正文、方法、评测和作者信息；未核查补充表、原始数据或复现代码。"
+      }
+    },
+    {
+      "title": "Seumetry: a versatile and comprehensive R toolkit to accelerate high-dimensional flow and mass cytometry data analysis",
+      "authors": [
+        "Malte Borggrewe",
+        "Markus Flosbach",
+        "Lucia Testa",
+        "Cedric Ly",
+        "Martin Baumdick",
+        "Immo Prinz",
+        "Hamburg Intestinal Tissue Study Group",
+        "Elena Billeb",
+        "Stefan Bonn",
+        "Madeleine J Bunders"
+      ],
+      "journal": "Bioinformatics",
+      "first_online": "2026-10-13",
+      "doi": "10.1093/bioinformatics/btag730",
+      "url": "https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btag730/8913743",
+      "year": "2026",
+      "commentary": {
+        "en": "Seumetry combines flow- and mass-cytometry processing with Seurat for quality control, visualization, population-abundance testing and protein-expression analysis. The authors report agreement with manual gating on public datasets alongside an intestinal immune-cell example. Its value is an integrated workflow for single-cell marker intensities; the abstract does not establish numerical gains, rare-population error rates or superiority over other toolkits.",
+        "zh": "Seumetry 将流式及质谱流式的专用处理接入 Seurat，整合质控、可视化、细胞群丰度检验和蛋白表达分析。作者在肠道免疫细胞数据及公共数据上报告了与人工门控的一致性。其价值是面向单细胞标记强度的质谱流式工作流整合；摘要尚不足以判断具体增益、稀有群体误差或相对其他工具的优势。"
+      },
+      "publication_status": {
+        "en": "Accepted manuscript; earlier 2024 bioRxiv preprint",
+        "zh": "接受稿；此前已有 2024 年 bioRxiv 预印本"
+      },
+      "read_scope": {
+        "en": "Publisher abstract, full byline including consortium, date and accepted-manuscript status reviewed; PDF, supplementary benchmarks and code not reviewed or reproduced.",
+        "zh": "已核查出版社摘要、含协作组的完整作者顺序、日期及接受稿状态；未读 PDF、补充评测或审查、复现代码。"
+      }
+    }
+  ]
+}

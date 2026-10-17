@@ -1,0 +1,81 @@
+{
+  "slug": "literature-2026-10-17",
+  "date": "2026-10-17",
+  "category": "Latest",
+  "title": {
+    "en": "Literature digest · October 17, 2026",
+    "zh": "2026年10月17日文献简报"
+  },
+  "summary": {
+    "zh": "本日关注两种提高预测可信度的思路：以谱图证据重排从头测序候选，以及用严格的数据划分检验保留时间模型。",
+    "en": "Today's papers examine spectral evidence for de novo candidate reranking and stricter validation of retention-time prediction."
+  },
+  "body": {
+    "zh": [
+      "本日关注两种提高预测可信度的思路：以谱图证据重排从头测序候选，以及用严格的数据划分检验保留时间模型。",
+      "最值得深入的是把模型输出与可验证证据连接起来，并让评测划分真正对应新肽、新骨架或新实验条件。",
+      "本次核查覆盖可访问的主要期刊目录及出版社索引；部分 ACS、MCP 与 Nature 页面访问受限，不能视为完整覆盖。"
+    ],
+    "en": [
+      "Today's papers examine spectral evidence for de novo candidate reranking and stricter validation of retention-time prediction.",
+      "The key direction is connecting model outputs to verifiable evidence and matching evaluation splits to the intended deployment setting.",
+      "This selection draws on accessible journal listings and publisher-indexed records; access restrictions prevented complete coverage of some ACS, MCP and Nature pages."
+    ]
+  },
+  "links": [],
+  "papers": [
+    {
+      "title": "ScopeNovo: a De Novo Peptide Sequencing Method Using Spectrum-Spectrum Similarity to Refine the Prediction Accuracy",
+      "authors": [
+        "Zhi Song",
+        "Zejian Ding",
+        "Lusheng Wang"
+      ],
+      "journal": "Bioinformatics",
+      "year": "2026",
+      "doi": "10.1093/bioinformatics/btag755",
+      "url": "https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btag755/8923629",
+      "first_online": "2026-10-15",
+      "publication_status": {
+        "en": "Accepted manuscript",
+        "zh": "接受稿"
+      },
+      "read_scope": {
+        "en": "Publisher abstract and repository README; manuscript, supplementary analyses and code execution not checked",
+        "zh": "已读出版社摘要及仓库 README；未核验稿件全文、补充分析或运行代码"
+      },
+      "commentary": {
+        "zh": "ScopeNovo 对 π-PrimeNovo 生成的候选肽进行谱图相似度重排序：优先匹配参考谱库，缺失时使用 Prosit 预测谱，避免只依赖解码分数。作者在九物种基准的两套数据上报告，注释充分设定下准确率为 0.711/0.737，RankNovo 为 0.687/0.682。值得借鉴的是将候选生成与谱图证据验证分开；收益依赖参考谱可得性，仍需检查谱库与测试集隔离及错误率校准，不能把准确率提升等同于 FDR 受控。",
+        "en": "ScopeNovo reranks π-PrimeNovo candidates using spectral similarity, prioritizing library spectra and falling back to Prosit predictions. In the well-annotated setting, the authors report peptide accuracies of 0.711/0.737 on two nine-species benchmarks, versus 0.687/0.682 for RankNovo. Separating candidate generation from spectral verification is useful, but library availability, library–test separation and error calibration need scrutiny; accuracy gains do not establish FDR control."
+      }
+    },
+    {
+      "title": "Hybrid Graph Neural Network Ensemble with Stacked Meta-Learning for Laboratory-Conditioned Chromatographic Retention-Time Prediction",
+      "authors": [
+        "Shengnan Wang",
+        "Qi Zhang",
+        "Xucheng Liu",
+        "Zixuan Wang",
+        "Jiangke Cheng",
+        "Haolong Hong"
+      ],
+      "journal": "The Journal of Physical Chemistry B",
+      "year": "2026",
+      "doi": "10.1021/acs.jpcb.6c03944",
+      "url": "https://pubs.acs.org/doi/10.1021/acs.jpcb.6c03944",
+      "first_online": "2026-10-15",
+      "publication_status": {
+        "en": "Peer-reviewed article, online ahead of issue",
+        "zh": "同行评审论文，在线先行发表"
+      },
+      "read_scope": {
+        "en": "Indexed publisher abstract, author metadata and supplementary-material description; full text and supplementary analyses not checked",
+        "zh": "已核验出版社索引中的摘要、作者及补充材料说明；未读全文和补充分析"
+      },
+      "commentary": {
+        "zh": "该方法结合 GAT、GCN、分子指纹网络与 ExtraTrees，并显式学习实验室条件，用于小分子保留时间预测。作者在 23 家实验室的 3,776 条观测上报告，按分子身份分组验证的 MAE 为 0.360 分钟，按骨架划分则为 0.670 分钟，清楚展示了评测难度对结果的影响。最值得借鉴的是防止同一分子跨训练测试泄漏并单独检验集成增益；结果限于已覆盖实验室标签，不能解释为对新实验室的泛化。",
+        "en": "This retention-time model combines GAT, GCN and fingerprint networks with ExtraTrees and learned laboratory embeddings. Across 3,776 observations from 23 laboratories, the authors report MAE values of 0.360 minutes under molecular-identity grouping and 0.670 minutes under scaffold-aware validation. Identity-safe splits and explicit ensemble comparisons are particularly useful, but the demonstrated scope is new chemical groups within represented laboratory labels, not generalization to unseen laboratories."
+      }
+    }
+  ]
+}

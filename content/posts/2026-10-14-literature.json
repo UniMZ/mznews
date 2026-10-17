@@ -1,0 +1,111 @@
+{
+  "slug": "literature-2026-10-14",
+  "date": "2026-10-14",
+  "category": "Latest",
+  "title": {
+    "en": "Literature digest · October 14, 2026",
+    "zh": "2026年10月14日文献简报"
+  },
+  "summary": {
+    "en": "Today’s papers connect small-molecule spectral prediction, mobility-resolved peptide identification and transferable single-cell statistics.",
+    "zh": "今天关注小分子谱图预测、离子淌度肽段鉴定，以及可借鉴的单细胞统计方法。"
+  },
+  "body": {
+    "en": [
+      "Today’s papers connect small-molecule spectral prediction, mobility-resolved peptide identification and transferable single-cell statistics.",
+      "The key questions are generalization beyond training chemistry and reliable precursor–fragment pairing. Some publisher full texts were inaccessible; coverage is incomplete."
+    ],
+    "zh": [
+      "今天关注小分子谱图预测、离子淌度肽段鉴定，以及可借鉴的单细胞统计方法。",
+      "值得深入核查的是训练化学空间之外的泛化能力，以及前体与碎片配对的可靠性。部分出版社全文不可访问，本次覆盖不完整。"
+    ]
+  },
+  "links": [],
+  "papers": [
+    {
+      "title": "SPHERE-MS: Hybrid Fragment–Vocabulary Modeling for Accurate and Efficient Tandem Mass Spectra Prediction",
+      "authors": [
+        "Yitong Guan",
+        "Doudou Lou",
+        "Dong Cheng",
+        "Mengyuan Liu",
+        "Yuan Zhu",
+        "Shuqiang Zhao",
+        "Xiangying Zhang"
+      ],
+      "journal": "Analytical Chemistry",
+      "first_online": "2026-10-13",
+      "doi": "10.1021/acs.analchem.6c01723",
+      "url": "https://doi.org/10.1021/acs.analchem.6c01723",
+      "year": "2026",
+      "commentary": {
+        "en": "SPHERE-MS combines graph-neural-network bond breaking with a fragment/secondary-loss vocabulary to predict small-molecule MS/MS spectra without exhaustive bond-combination enumeration. The journal abstract reports better spectral prediction and retrieval than single-strategy baselines across NIST-20, MSnLib, CASMI2022 and MassSpecGym, but numerical gains and split/leakage controls could not be checked without the full paper. Official code supports protonated/deprotonated inputs with collision-energy and instrument settings; retraining requires separately licensed NIST-20 data.",
+        "zh": "SPHERE-MS 将图神经网络断键与碎片/次级中性丢失词表结合，避免穷举断键组合来预测小分子 MS/MS 谱。正式版摘要报告其在 NIST-20、MSnLib、CASMI2022 和 MassSpecGym 上优于单一策略基线，但本次未取得正文，无法核查具体增益及数据划分、泄漏控制。官方代码支持带碰撞能量和仪器条件的正、负离子预测；重新训练需另行获得 NIST-20 授权。"
+      },
+      "publication_status": {
+        "en": "Peer-reviewed ASAP article; follows preprint 10.26434/chemrxiv.10002044/v1",
+        "zh": "同行评审 ASAP 论文；前身为预印本 10.26434/chemrxiv.10002044/v1"
+      },
+      "read_scope": {
+        "en": "Read publisher-deposited journal abstract and full bibliographic metadata in Crossref; checked official ACS ASAP listing, ChemRxiv version metadata and official repository README. Journal main text, supplementary benchmarks and preprint PDF were not obtained; no reproduction.",
+        "zh": "已核查出版社提交至 Crossref 的正式版摘要、完整作者及日期，ACS 在线优先列表、预印本版本元数据和官方仓库 README；未取得正式版正文、补充基准或预印本 PDF，未复现。"
+      }
+    },
+    {
+      "title": "xTracer: Integrating Chromatogram and Mobilogram Correlations for Untargeted Peptide Identification in SLIM-Based PAMAF Data",
+      "authors": [
+        "Jian Song",
+        "Liulin Deng",
+        "Lauren Royer",
+        "Bennett Kalafut",
+        "Daniel DeBord",
+        "Jesse G. Meyer"
+      ],
+      "journal": "Analytical Chemistry",
+      "first_online": "2026-10-09",
+      "doi": "10.1021/acs.analchem.6c01034",
+      "url": "https://doi.org/10.1021/acs.analchem.6c01034",
+      "year": "2026",
+      "commentary": {
+        "en": "xTracer pairs precursors and fragments using both chromatographic and ion-mobility correlations, converting quadrupole-free SLIM-PAMAF acquisitions into pseudo-spectra for conventional DDA database searching. The journal abstract reports improved peptide identification over single-domain correlation variants and diaTracer across the tested sample loads and throughputs; this does not establish superiority for conventional DDA/DIA acquisitions. Current software requires Windows and a separately obtained MOBILion MBI SDK, and the journal’s full benchmark details were unavailable for verification.",
+        "zh": "xTracer 联合色谱与离子淌度相关性配对前体和碎片，将无四极杆隔离的 SLIM-PAMAF 数据重建为可供常规 DDA 搜库的伪谱。正式版摘要报告其在所测进样量与通量下，肽段鉴定优于单维相关性变体和 diaTracer，但不能据此推断对常规 DDA/DIA 采集也有优势。当前软件需 Windows 及单独获取的 MOBILion MBI SDK；本次未取得正式版完整基准细节。"
+      },
+      "publication_status": {
+        "en": "Peer-reviewed ASAP article; follows preprint 10.64898/2026.02.11.705440",
+        "zh": "同行评审 ASAP 论文；前身为预印本 10.64898/2026.02.11.705440"
+      },
+      "read_scope": {
+        "en": "Read publisher-deposited journal abstract/full metadata, indexed primary preprint method/results/conclusion text, and current official repository README. Formal journal main text and supplements were not obtained; no software or experimental reproduction.",
+        "zh": "已阅读出版社提交的正式版摘要和元数据、索引中的原始预印本方法/结果/结论文本，以及当前官方仓库 README；未取得正式版正文及补充材料，未开展软件或实验复现。"
+      }
+    },
+    {
+      "title": "Quantifying distribution shifts in single-cell data with scXMatch",
+      "authors": [
+        "Anna Möller",
+        "Miriam Schnitzerlein",
+        "Eric Greto",
+        "Vasily Zaburdaev",
+        "Stefan Uderhardt",
+        "David B Blumenthal"
+      ],
+      "journal": "Bioinformatics",
+      "first_online": "2026-10-03",
+      "doi": "10.1093/bioinformatics/btag706",
+      "url": "https://doi.org/10.1093/bioinformatics/btag706",
+      "year": "2026",
+      "commentary": {
+        "en": "scXMatch uses sparse nearest-neighbor graph matching to test whether two experimentally defined cell populations have different multivariate distributions, including shifts in spread. The authors evaluated RNA, chromatin-accessibility and cell-morphology data, reporting about 25 minutes and under 5 GB RAM for roughly 70,000 cells; application to single-cell proteomics remains an untested transfer opportunity. Inferred clusters must not be reused as test labels, and P-value rankings are not reliable effect-size rankings.",
+        "zh": "scXMatch 用稀疏近邻图匹配检验两个实验定义细胞群的多变量分布是否不同，也能响应离散程度变化。作者在 RNA、染色质可及性和细胞形态数据上验证，约7万细胞耗时25分钟、峰值内存低于5GB；用于单细胞蛋白质组仍只是待验证的迁移方向。不能将同一数据推导的聚类再当作检验标签，P 值排序也不能直接视为效应量排序。"
+      },
+      "publication_status": {
+        "en": "Peer-reviewed journal article",
+        "zh": "同行评审期刊论文"
+      },
+      "read_scope": {
+        "en": "Targeted reading of official full-text HTML: author/history, abstract, method overview, benchmark results and discussion. Supplementary appendices not independently checked; no reproduction.",
+        "zh": "已定向阅读出版社完整 HTML 中的作者/历史、摘要、方法概述、基准结果及讨论；未独立核查补充附录，未复现。"
+      }
+    }
+  ]
+}
