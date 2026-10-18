@@ -1,0 +1,266 @@
+{
+  "slug": "literature-2026-10-18",
+  "date": "2026-10-18",
+  "category": "Latest",
+  "title": {
+    "en": "October 18, 2026 Literature Brief",
+    "zh": "2026年10月18日文献简报"
+  },
+  "summary": {
+    "en": "Spectrum representations, spatial associations and uncertainty-aware analysis across proteomics and metabolomics.",
+    "zh": "关注谱图表征、空间关联，以及蛋白组和代谢组分析中的不确定性。"
+  },
+  "body": {
+    "en": [
+      "This selection examines reusable spectrum representations, complementary spatial patterns and uncertainty in quantification and annotation. MSstats+ receives expanded journal validation; MassBank Human is a preprint.",
+      "Quality-aware missingness models and annotation-error calibration deserve closer reading. Some publisher full texts and feeds were unavailable; each entry states the evidence read."
+    ],
+    "zh": [
+      "本日关注可复用的谱图表征、互补空间分布，以及定量与注释中的不确定性。MSstats+ 的期刊版本扩展了验证范围；MassBank Human 仍为预印本。",
+      "值得深入的是结合质量信息的缺失值模型，以及注释错误率的校准。部分出版社全文和目录未能访问，各篇已注明实际阅读范围。"
+    ]
+  },
+  "links": [],
+  "papers": [
+    {
+      "title": "Accounting for longitudinal peak quality metrics with MSstats+ enhances differential analysis in proteomic experiments with data-independent acquisition",
+      "authors": [
+        "Devon Kohler",
+        "Eralp Dogu",
+        "Mrittika Bhattacharya",
+        "Ozge Karayel",
+        "Manuel Magana",
+        "Anthony Wu",
+        "Veronica G. Anania",
+        "Olga Vitek"
+      ],
+      "journal": "Nature Communications",
+      "first_online": "2026-10-17",
+      "doi": "10.1038/s41467-026-78591-w",
+      "url": "https://www.nature.com/articles/s41467-026-78591-w",
+      "year": "2026",
+      "publication_status": {
+        "en": "Accepted article; early version",
+        "zh": "接受稿，早期版本"
+      },
+      "read_scope": {
+        "en": "Abstract and publisher metadata; journal full text not read",
+        "zh": "摘要及出版社元数据；未读期刊全文"
+      },
+      "commentary": {
+        "en": "MSstats+ combines DIA intensities with peak-quality metrics and their run-order profiles to downweight unreliable measurements, including imputed values, during differential analysis. This journal version expands the abstract’s validation from four experiments to five, including a second clinical study, and explicitly includes DIA-NN alongside Spectronaut; quantitative gains and detailed validation conditions were not verified from full text.",
+        "zh": "MSstats+ 将 DIA 强度、色谱峰质量指标及其随进样顺序的变化结合起来，在差异分析中降低不可靠测量值及插补值的权重。相比预印本，期刊版摘要中的验证由四项实验扩展至五项，增加了第二项临床研究，并明确列出 DIA-NN 与 Spectronaut；具体性能增益和验证条件尚未通过全文核实。"
+      }
+    },
+    {
+      "title": "MassBank Human: The annotated human metabolome",
+      "authors": [
+        "Fumio Matsuda",
+        "Ryosuke Hayasaka",
+        "Taihei Torigoe",
+        "Masatomo Takahashi",
+        "Yushi Takahashi",
+        "Akiyasu C. Yoshizawa",
+        "Hiroshi Tsugawa",
+        "Shujiro Okuda",
+        "Steffen Neumann",
+        "Emma L. Schymanski",
+        "Yoshihiro Izumi",
+        "Akiyoshi Hirayama"
+      ],
+      "journal": "bioRxiv",
+      "year": "2026",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.10.758200v1",
+      "doi": "10.64898/2026.10.10.758200",
+      "first_online": "2026-10-16",
+      "publication_status": {
+        "en": "Preprint, version 1; not peer reviewed",
+        "zh": "预印本第 1 版，未经同行评审"
+      },
+      "read_scope": {
+        "en": "bioRxiv abstract, metadata and repository README; manuscript not read",
+        "zh": "bioRxiv 摘要、元数据及仓库 README；未读稿件全文"
+      },
+      "commentary": {
+        "en": "MassBank Human condenses 36.5 million spectra from 76 public human datasets into 203,886 curated spectra and combines three annotation tools through Zipf-Bayesian rank aggregation with reported FDR control. The preprint reports 14,198 spectra with planar-structure annotations and an increase in colorectal-cancer-cell annotation coverage from 10.6% to 21.2%. Reusable spectra and uncertainty-aware aggregation are promising, but spectrum counts are not unique compounds or confirmed identities, and the FDR calibration and library–test independence remain unchecked here.",
+        "zh": "MassBank Human 将 76 个公开人体数据集的约 3650 万张谱整理为 203,886 张高质量谱，并通过 Zipf–贝叶斯秩聚合整合三种注释工具，报告了 FDR 控制。预印本报告 14,198 张谱获得平面结构注释，结直肠癌细胞分析中的结构注释覆盖率由 10.6% 增至 21.2%。可复用谱库与不确定性感知的聚合值得关注，但谱图数不等于独立化合物数或确证身份，本次未核验 FDR 校准及谱库与测试数据的独立性。"
+      }
+    },
+    {
+      "title": "Beyond Co-Localization: DeepCoEx Learns Exclusion-Aware Spatial Representations in Mass Spectrometry Imaging via Dual-Contrastive Learning",
+      "authors": [
+        "Jingjing Xu",
+        "Xin Diao",
+        "Siyang Liu",
+        "Thomas Ka-Yam Lam",
+        "Yusong Zhang",
+        "Shuang Gao",
+        "Lingli Deng",
+        "Weiji Chen",
+        "Lei Guo",
+        "Zongwei Cai",
+        "Jiyang Dong"
+      ],
+      "journal": "Analytical Chemistry",
+      "year": "2026",
+      "doi": "10.1021/acs.analchem.6c02338",
+      "url": "https://pubs.acs.org/ancham/article/doi/10.1021/acs.analchem.6c02338/5452672/Beyond-Co-Localization-DeepCoEx-Learns-Exclusion",
+      "first_online": "2026-10-16",
+      "publication_status": {
+        "en": "Peer-reviewed journal version, online ahead of issue",
+        "zh": "同行评审正式期刊版，在线先行发表"
+      },
+      "read_scope": {
+        "en": "Publisher-deposited abstract and metadata; full text not read",
+        "zh": "出版社提交的摘要及元数据；未读全文"
+      },
+      "commentary": {
+        "en": "DeepCoEx uses dual-contrastive learning to retain spatial consistency while distinguishing complementary ion distributions, reducing reliance on labeled negative pairs. The abstract reports more consistent retrieval than conventional similarity and dimensionality-reduction baselines, illustrated in rat brain and barley seeds. Modeling spatial exclusion alongside co-localization is useful, but these associations do not establish biochemical antagonism; numerical performance and robustness were not verified here.",
+        "zh": "DeepCoEx 通过双重对比学习保持空间一致性，同时区分互补的离子分布，减少对空间负关联样本标注的依赖。摘要报告其检索结果比传统相似性及降维基线更一致，并以大鼠脑和大麦种子为例展示。将空间排斥与共定位一起建模值得借鉴，但空间关联不能证明生化拮抗，本次未核实数值性能与稳健性。"
+      }
+    },
+    {
+      "title": "Pretrained spectrum representations for diverse tandem mass spectrometry proteomics tasks",
+      "authors": [
+        "Justin Sanders",
+        "Melih Yilmaz",
+        "Jacob H. Russell",
+        "Wout Bittremieux",
+        "William E. Fondrie",
+        "Nicholas M. Riley",
+        "Sewoong Oh",
+        "William S. Noble"
+      ],
+      "journal": "Molecular & Cellular Proteomics",
+      "first_online": "2026-10-07",
+      "doi": "10.1016/j.mcpro.2026.101673",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1535947626001696",
+      "year": "2026",
+      "publication_status": {
+        "en": "Journal pre-proof",
+        "zh": "期刊校样前版本"
+      },
+      "read_scope": {
+        "en": "Abstract and publisher metadata; journal full text not read",
+        "zh": "摘要及出版社元数据；未读期刊全文"
+      },
+      "commentary": {
+        "en": "The Casanovo-based framework reuses a de novo sequencing encoder for spectrum-quality, chimericity, phosphorylation and glycosylation prediction, then improves task performance through fine-tuning. These are spectrum-level prediction tasks rather than demonstrated improvements in identification or PTM-site localization; the abstract does not establish transfer across arbitrary instruments or acquisition settings.",
+        "zh": "这一基于 Casanovo 的框架将从头测序编码器复用于谱图质量、嵌合性、磷酸化及糖基化预测，并通过微调提升任务表现。这些属于谱图层面的预测任务，不能直接等同于鉴定率或修饰位点定位能力的提升；摘要也未证明其可泛化至任意仪器与采集条件。"
+      }
+    },
+    {
+      "title": "Empirical-Bayes and Bayesian Hierarchical Modelling for Missingness and Differential Expression in Proteomics",
+      "authors": [
+        "Mengchun Li",
+        "Venkatesh Mallikarjun",
+        "Andrew Frey",
+        "Emmanuel O. Ogundimu",
+        "Matthias Trost"
+      ],
+      "journal": "Molecular & Cellular Proteomics",
+      "first_online": "2026-10-07",
+      "doi": "10.1016/j.mcpro.2026.101677",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1535947626001738",
+      "year": "2026",
+      "publication_status": {
+        "en": "Journal pre-proof",
+        "zh": "期刊校样前版本"
+      },
+      "read_scope": {
+        "en": "Abstract and publisher metadata; journal full text not read",
+        "zh": "摘要及出版社元数据；未读期刊全文"
+      },
+      "commentary": {
+        "en": "missBayes models observed intensities and intensity-dependent missingness jointly, using empirical Bayes estimation and posterior sampling rather than filling in fixed values before differential analysis. The publisher reports comparison against ten workflows; inference remains conditional on the missingness model, and the accessible text does not establish universally better performance or computational cost.",
+        "zh": "missBayes 对观测强度与强度依赖的缺失机制进行联合建模，通过经验贝叶斯估计和后验采样开展差异分析，而非先填入固定插补值。出版方称其与十种流程进行了比较；推断仍依赖缺失机制假设，可访问文本不足以证明其全面优于其他方法或评估计算开销。"
+      }
+    },
+    {
+      "title": "NuXLApp: Interactive data analysis and visualization for protein-nucleic acid crosslinking mass spectrometry",
+      "authors": [
+        "Arslan Siraj",
+        "Sergei Moshkovskii",
+        "Tom David Müller",
+        "Henning Urlaub",
+        "Oliver Kohlbacher",
+        "Timo Sachsenberg"
+      ],
+      "journal": "Protein Science",
+      "first_online": "2026-10-15",
+      "doi": "10.1002/pro.70820",
+      "url": "https://doi.org/10.1002/pro.70820",
+      "year": "2026",
+      "publication_status": {
+        "en": "Journal article",
+        "zh": "正式期刊论文"
+      },
+      "read_scope": {
+        "en": "Abstract and publisher metadata; journal full text not read",
+        "zh": "摘要及出版社元数据；未读期刊全文"
+      },
+      "commentary": {
+        "en": "NuXLApp brings protein–RNA/DNA crosslink searches, peptide-property-based rescoring, crosslink-aware visualization and DIA-library generation into one workflow. Its contribution is practical integration for discovery and quantitative follow-up; the accessible abstract does not establish benchmark gains or site-level error calibration.",
+        "zh": "NuXLApp 将蛋白质–RNA/DNA 交联检索、基于肽段性质预测的重评分、交联谱图可视化及 DIA 谱库生成整合到同一工作流中。其价值在于贯通发现与定量后续实验；可访问摘要不足以核实性能增益或位点层面的错误率校准。"
+      }
+    },
+    {
+      "title": "Unlabelled Spatial Metabolic Covariance Analysis (US-MCA) Reveals Tumor-Associated Reorganization of Interorgan Choline Metabolic Response Patterns in Lung Cancer",
+      "authors": [
+        "Xiaoyu Fan",
+        "Xiangyi Wang",
+        "Rong Yan",
+        "Yiran Zhao",
+        "Hongtao Jin",
+        "Jiuming He"
+      ],
+      "journal": "Analytical Chemistry",
+      "year": "2026",
+      "doi": "10.1021/acs.analchem.6c03732",
+      "url": "https://pubs.acs.org/ancham/article/doi/10.1021/acs.analchem.6c03732/5452684/Unlabelled-Spatial-Metabolic-Covariance-Analysis",
+      "first_online": "2026-10-16",
+      "publication_status": {
+        "en": "Peer-reviewed journal version, online ahead of issue",
+        "zh": "同行评审正式期刊版，在线先行发表"
+      },
+      "read_scope": {
+        "en": "Publisher-deposited abstract and metadata; full text not read",
+        "zh": "出版社提交的摘要及元数据；未读全文"
+      },
+      "commentary": {
+        "en": "US-MCA combines whole-body AFADESI-MSI with perturbation-based, semi-quantitative covariance analysis to compare interorgan metabolic responses. D9-choline tracing supported concordant patterns for reliably detected choline-derived signals, with limited coverage of downstream one-carbon metabolites. The transferable element is spatial response coordination; the study does not establish biochemical flux, instantaneous rates or direct interorgan transport.",
+        "zh": "US-MCA 将全身 AFADESI-MSI 与扰动后的半定量协变分析结合，用于比较跨器官代谢响应。D9-胆碱示踪在可靠检出的胆碱衍生信号中支持一致的响应模式，但下游一碳代谢物覆盖有限。可借鉴的是空间响应协调性的分析框架，研究并未测定生化通量、瞬时反应速率或直接跨器官运输。"
+      }
+    },
+    {
+      "title": "Parameter-Based Prioritization of Time-Resolved LC–HRMS Ion Tracks for Untargeted Reaction Monitoring",
+      "authors": [
+        "Igor Ilyasov",
+        "Arcady Braun",
+        "Vera Olicheva",
+        "Valery Goman",
+        "Victoria Grikh",
+        "Anastasiya Zhevlakova",
+        "Irina Selivanova",
+        "Vladimir Beloborodov"
+      ],
+      "journal": "International Journal of Molecular Sciences",
+      "year": "2026",
+      "url": "https://www.mdpi.com/1422-0067/27/19/8852",
+      "doi": "10.3390/ijms27198852",
+      "first_online": "2026-10-04",
+      "publication_status": {
+        "en": "Journal article",
+        "zh": "正式期刊论文"
+      },
+      "read_scope": {
+        "en": "Indexed publisher text: selected Methods, Results and Limitations; supplements not read",
+        "zh": "出版社索引文本中的部分方法、结果与局限；未读补充材料"
+      },
+      "commentary": {
+        "en": "This Java workflow filters time-resolved m/z–intensity tracks using intensity, correlation, MinMax and early-change descriptors, retaining 29 tracks across three naringenin–ABTS reaction replicates. Its transparent trajectory prioritization complements existing LC–MS processing, but it omits chromatographic alignment, MS/MS, isotope and adduct relationships, so tracks need not represent distinct compounds. Thresholds were tuned to one reaction system, and chemical false-positive/negative rates were not established.",
+        "zh": "该 Java 工作流以强度、相关性、MinMax 和早期变化等指标筛选时间分辨 m/z–强度轨迹，在三次柚皮素–ABTS 反应重复中保留 29 条轨迹。其透明的轨迹筛选可补充现有 LC–MS 处理，但不包含色谱对齐、MS/MS、同位素或加合物关系，轨迹不一定代表独立化合物。阈值针对单一反应体系调节，尚未确立化学假阳性或假阴性率。"
+      }
+    }
+  ]
+}
