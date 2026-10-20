@@ -1,0 +1,89 @@
+{
+  "slug": "literature-2026-10-20",
+  "date": "2026-10-20",
+  "category": "Latest",
+  "title": {
+    "en": "October 20, 2026 Literature Brief",
+    "zh": "2026年10月20日文献简报"
+  },
+  "summary": {
+    "en": "Auditable omics reanalysis, single-cell graph clustering and local metabolomics workflows.",
+    "zh": "可审计组学重分析、单细胞图聚类与本地代谢组工作流。"
+  },
+  "body": {
+    "en": [
+      "Three papers explore reproducible data reuse and analysis: agent-supported reanalysis, spectral filters for single-cell clustering, and an integrated R metabolomics workflow.",
+      "The most useful next step is to examine intervention logging and graph-filter ablations. Coverage is limited to accessible publisher and indexed records; some online-first feeds and full texts were unavailable."
+    ],
+    "zh": [
+      "本日介绍三项面向数据复用与分析的软件研究：智能体辅助重分析、单细胞聚类的谱图滤波，以及整合式 R 代谢组工作流。",
+      "值得深入的是人工干预记录与图滤波消融设计。本次依据可访问的出版社和索引记录筛选，部分在线先行目录及全文未能读取。"
+    ]
+  },
+  "links": [],
+  "papers": [
+    {
+      "title": "Omics data discovery agents: Agent-supported retrieval, reanalysis, and synthesis of published omics data",
+      "authors": ["Alexandre Hutton", "Jesse G. Meyer"],
+      "journal": "PLOS Computational Biology",
+      "year": "2026",
+      "url": "https://doi.org/10.1371/journal.pcbi.1014822",
+      "doi": "10.1371/journal.pcbi.1014822",
+      "first_online": "2026-10-06",
+      "publication_status": {
+        "en": "Journal article; earlier preprint available",
+        "zh": "正式论文；已有早期预印本"
+      },
+      "read_scope": {
+        "en": "Publisher main text; no independent reproduction",
+        "zh": "已读出版社正文；未独立复现"
+      },
+      "commentary": {
+        "zh": "ODDA 将文献参数提取、数据定位和容器化重分析连接起来，并记录来源与人工干预，适合借鉴其可审计的流程设计。作者完成了 5 项重分析（其中 1 项 DDA、2 项 DIA），但每项均需人工指导或流程调整，不能据此推断无人值守成功率；大规模文献提取也尚无独立准确率基准。",
+        "en": "ODDA connects parameter extraction, data retrieval and containerized reanalysis with provenance and intervention records, offering a useful design for auditable workflows. The authors completed five reanalyses, including one DDA and two DIA studies, but every case needed human guidance or workflow accommodations; these demonstrations do not establish unattended success rates, and corpus-scale extraction lacks an independent accuracy benchmark."
+      }
+    },
+    {
+      "title": "scProfiterole: Clustering of Single-Cell Proteomic Data Using Graph Contrastive Learning via Spectral Filters",
+      "authors": ["Mustafa Coşkun", "Filipa Blasco Lopes", "Pınar Kubilay Tolunay", "Mark R. Chance", "Mehmet Koyutürk"],
+      "journal": "Journal of Computational Biology",
+      "year": "2026",
+      "url": "https://doi.org/10.1177/15578666261491608",
+      "doi": "10.1177/15578666261491608",
+      "first_online": "2026-10-09",
+      "publication_status": {
+        "en": "Online-first journal article; earlier preprint available",
+        "zh": "期刊在线先行论文；已有早期预印本"
+      },
+      "read_scope": {
+        "en": "Journal abstract and selected earlier-preprint Methods/Results; journal full text and supplements not verified",
+        "zh": "已读期刊摘要及早期预印本部分方法与结果；未核验期刊全文与补充材料"
+      },
+      "commentary": {
+        "zh": "scProfiterole 用 Arnoldi 正交化稳定谱图滤波器的多项式插值，并学习滤波系数，以改善单细胞蛋白组相似图上的对比学习与聚类。早期预印本在 SCoPE2 及合并的 N2/nanoPOTS 数据上比较滤波器和聚类基线，支持借鉴其初始化与消融设计；样本类型有限，构图依赖上游处理，不能把聚类改善等同于缺失值恢复或广泛跨平台泛化。",
+        "en": "scProfiterole stabilizes polynomial interpolation of spectral graph filters through Arnoldi orthonormalization and learns filter coefficients for contrastive clustering of single-cell proteomics. The earlier preprint compares filters and clustering baselines on SCoPE2 and combined N2/nanoPOTS data, making its initialization and ablation design useful; limited cell types and dependence on upstream graph construction constrain generalization, and better clustering does not establish missing-value recovery."
+      }
+    },
+    {
+      "title": "mums2: an R package for database-dependent and -independent analysis of untargeted metabolomics data",
+      "authors": ["Gregory Johnson, Jr.", "Allison R. Mason", "Joseph M. Krampen", "Jennifer N. T. Nguyen", "Marcy J. Balunas", "Patrick D. Schloss"],
+      "journal": "Microbiology Resource Announcements",
+      "year": "2026",
+      "url": "https://doi.org/10.1128/mra.00780-26",
+      "doi": "10.1128/mra.00780-26",
+      "first_online": "2026-10-14",
+      "publication_status": {
+        "en": "Journal software announcement",
+        "zh": "期刊软件公告"
+      },
+      "read_scope": {
+        "en": "Publisher main text and project documentation; software not run",
+        "zh": "已读出版社正文及项目文档；未运行软件"
+      },
+      "commentary": {
+        "zh": "mums2 在本地 R 工作流中整合特征质控、谱库匹配、分子式预测和谱图聚类，将特征组织为操作性代谢组单元（OMU）以连接生态统计。作者报告 267 个样本在 14 线程下约需 7.6 分钟和 6 GB 内存；这是单一运行示例而非全面基准，OMU 也不等于已确认的化合物，价值主要在模块整合与数据接口。",
+        "en": "mums2 integrates feature QC, library matching, formula prediction and spectral clustering in a local R workflow, organizing features into operational metabolomic units (OMUs) for ecological analysis. The authors report 7.6 minutes and 6 GB RAM for 267 samples on 14 threads; this is a runtime example, not a comprehensive benchmark, and OMUs are not confirmed compounds. Its main value lies in modular integration and interoperable data structures."
+      }
+    }
+  ]
+}
