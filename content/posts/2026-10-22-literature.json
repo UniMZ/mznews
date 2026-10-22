@@ -1,0 +1,113 @@
+{
+  "slug": "literature-2026-10-22",
+  "date": "2026-10-22",
+  "category": "Latest",
+  "title": {
+    "en": "October 22, 2026 Literature Brief",
+    "zh": "2026年10月22日文献简报"
+  },
+  "summary": {
+    "en": "Benchmark design, proteomics outlier detection and reusable metabolomics integration.",
+    "zh": "聚焦评测划分偏差、蛋白组异常检测与公共代谢组数据整合。"
+  },
+  "body": {
+    "en": [
+      "Today's three papers examine how data choices shape computational mass spectrometry: structural benchmark partitions, sample-level proteomics quality control, and cross-study metabolomics integration.",
+      "The check also covered accessible listings and indexed records for lipidomics, imaging, ion mobility, DDA/DIA and modified peptides. Some ACS and MCP online-first pages were inaccessible, and other listings may lag publication; coverage is not exhaustive."
+    ],
+    "zh": [
+      "今天的三篇论文关注数据选择如何影响质谱计算结论：结构鉴定评测集划分、蛋白组样本级质量控制，以及跨研究代谢组数据整合。",
+      "本次也检查了脂质组、成像、离子淌度、DDA/DIA与修饰肽的可读目录及索引记录。部分ACS和MCP在线先行页面无法访问，其他目录亦可能滞后，本次覆盖并非穷尽。"
+    ]
+  },
+  "links": [],
+  "papers": [
+    {
+      "title": "Critical Mass: Structure-Disjoint Splits Drift With the Libraries They Are Built On",
+      "authors": [
+        "Tomo Oga",
+        "Devesh Shah",
+        "Cailum M. K. Stienstra",
+        "Gabriel Asher",
+        "Antonio H. de O. Fonseca",
+        "Niall O'Connor",
+        "Michael Widrich"
+      ],
+      "journal": "arXiv",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2610.12694",
+      "doi": "10.48550/arXiv.2610.12694",
+      "first_online": "2026-10-08",
+      "publication_status": {
+        "en": "Preprint, v1",
+        "zh": "预印本，v1"
+      },
+      "read_scope": {
+        "en": "Abstract and selected main-text sections; no reproduction",
+        "zh": "摘要及正文关键章节；未复现"
+      },
+      "commentary": {
+        "zh": "工作通过可采纳界与并查集跳过策略，在不改变分区的前提下，将结构不相交划分所需的整数规划从约260亿次降至1150万次；在227,690个分子的谱库中，MCES阈值10产生的最大连通分量包含95.5%的分子。结果提示，这种划分会把结构泛化与分子大小外推混在一起，适合用于重新审查谱图到结构模型的评测设计；结论依赖所研究谱库及阈值，尚不能推广到所有化学空间。",
+        "en": "Admissible bounds and union-find skipping reduce the integer programs needed for an unchanged structure-disjoint partition from about 26 billion to 11.5 million. At 227,690 molecules, MCES threshold 10 puts 95.5% in one component, exposing a benchmark bias that mixes structural novelty with extrapolation to larger molecules. This informs evaluation design, but remains specific to the libraries and threshold studied."
+      }
+    },
+    {
+      "title": "MCOD: a memory-constrained deep learning framework for robust outlier detection in quantitative proteomics",
+      "authors": [
+        "Jinze Huang",
+        "Huanyue Liao",
+        "Bo Meng",
+        "Guangkui Fan",
+        "Dong An",
+        "Xinhua Dai",
+        "Xiang Fang",
+        "Yang Zhao"
+      ],
+      "journal": "Briefings in Bioinformatics",
+      "year": "2026",
+      "url": "https://academic.oup.com/bib/article/27/5/bbag507/8836554",
+      "doi": "10.1093/bib/bbag507",
+      "first_online": "2026-09-26",
+      "publication_status": {
+        "en": "Journal article",
+        "zh": "正式期刊论文"
+      },
+      "read_scope": {
+        "en": "Abstract and selected Methods, Results and Discussion sections; no reproduction",
+        "zh": "摘要及部分方法、结果、讨论；未复现"
+      },
+      "commentary": {
+        "zh": "MCOD利用历史潜在表征约束和按训练稳定性自适应加权，缓解小样本高维蛋白组异常检测中的过拟合；作者在HeLa模拟扰动中比较18种基线，并在两项癌症DDA队列考察质控表现。其动态正则设计值得借鉴，但真实异常缺少独立真值，最小值插补及方法间分组设置差异可能影响结果，不能直接外推至DIA或磷酸化数据。",
+        "en": "MCOD constrains an autoencoder using historical latent representations and stability-dependent weights. Tests compare 18 baselines on simulated HeLa perturbations and examine two cancer DDA cohorts. The regularization design is useful, but independent anomaly labels, imputation sensitivity and consistent group handling need further evaluation; generalization to DIA and phosphoproteomics is unproven."
+      }
+    },
+    {
+      "title": "Metabolomics workbench: data-driven classification and correlation analysis between metabolite classes, biomarkers, and drugs",
+      "authors": [
+        "Mikhail M Khandokhin",
+        "Aleksandr Sokolov",
+        "Nikolay Oskolkov",
+        "Robert Fredriksson",
+        "Olga E Titova",
+        "Helgi B Schiöth"
+      ],
+      "journal": "Briefings in Bioinformatics",
+      "year": "2026",
+      "url": "https://academic.oup.com/bib/article/27/5/bbag576/8936825",
+      "doi": "10.1093/bib/bbag576",
+      "first_online": "2026-10-19",
+      "publication_status": {
+        "en": "Journal article",
+        "zh": "正式期刊论文"
+      },
+      "read_scope": {
+        "en": "Publisher-indexed abstract and selected Methods, Results and Discussion excerpts; no reproduction",
+        "zh": "出版商索引中的摘要及方法、结果、讨论节选；未复现"
+      },
+      "commentary": {
+        "zh": "该框架统一代谢物命名，结合结构嵌入与研究内秩统计聚合，对182项血液代谢组研究、44,165个样本及6752种代谢物进行可重复的跨研究分析。其价值在于为公共质谱代谢组资料提供可迁移的软件化整合路线，而非重新处理全部原始谱图；原始研究质量、注释与测量差异仍可能影响关联，相关性不代表因果关系。",
+        "en": "The framework harmonizes metabolite names and combines structural embeddings with study-level rank statistics across 182 blood-metabolomics studies, 44,165 samples and 6,752 metabolites. It provides a reusable route for integrating public MS-derived data, not uniform reprocessing of raw spectra. Study quality, annotation and measurement heterogeneity remain limitations, and associations are not causal."
+      }
+    }
+  ]
+}
