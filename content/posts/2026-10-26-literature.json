@@ -1,0 +1,74 @@
+{
+  "slug": "literature-2026-10-26",
+  "date": "2026-10-26",
+  "category": "Latest",
+  "title": {
+    "en": "Literature Brief — October 26, 2026",
+    "zh": "2026年10月26日文献简报"
+  },
+  "summary": {
+    "en": "Topographic correction in 3D ToF-SIMS and transformation-guided metabolite annotation.",
+    "zh": "三维 ToF-SIMS 形貌校正与转化规则驱动的代谢物注释。"
+  },
+  "body": {
+    "en": [
+      "Two studies highlight how explicit calibration assumptions and traceable structural evidence can improve mass-spectrometry analysis.",
+      "This selection covers imaging reconstruction and small-molecule annotation. Proteomics and ion-mobility sources were also checked, but access and metadata gaps remain; coverage is not exhaustive."
+    ],
+    "zh": [
+      "两篇研究分别讨论成像重建的校准假设和代谢物注释的结构证据，强调在质谱分析软件中保留可解释的证据边界。",
+      "本次涵盖成像重建与小分子注释，也检查了蛋白组及离子淌度方向；部分来源和元数据仍有限，覆盖并非穷尽。"
+    ]
+  },
+  "links": [],
+  "papers": [
+    {
+      "title": "Correcting topographic artifacts in three-dimensional ToF-SIMS: A practical guide from data-only reconstruction to correlative AFM",
+      "authors": [
+        "Jacob Shusterman",
+        "Anton V. Ievlev"
+      ],
+      "doi": "10.48550/arXiv.2610.28593",
+      "url": "https://arxiv.org/abs/2610.28593",
+      "journal": "arXiv",
+      "first_online": "2026-10-20",
+      "year": "2026",
+      "publication_status": {
+        "en": "Preprint, arXiv v1",
+        "zh": "预印本，arXiv v1"
+      },
+      "read_scope": {
+        "en": "Original abstract and metadata only; no full-text review or reproduction.",
+        "zh": "原始摘要及元数据阅读；未读全文，未复现。"
+      },
+      "commentary": {
+        "zh": "比较仅用质谱数据、起止 AFM 和多阶段 AFM 的三类三维 ToF-SIMS 形貌校正，在已知几何结构的器件上检验重建。仅数据方案的深度标尺依赖层厚假设，起止 AFM 难以处理局部溅射速率变化；多阶段方案改善重建但增加成像成本，为软件明确了校准边界，单一器件结果尚不能代表广泛样本验证。",
+        "en": "This comparison tests SIMS-only, endpoint-AFM and multistage-AFM topographic corrections on a device with known geometry. Data-only depth calibration depends on layer-thickness assumptions; endpoint AFM misses changing local sputter rates, while multistage imaging improves reconstruction at extra acquisition cost. These calibration boundaries are useful for reconstruction software, but one device does not establish broad sample validation."
+      }
+    },
+    {
+      "title": "A Transformation-Guided Mass Spectrometry Workflow for Expanding In Vivo Metabolite Coverage and Revealing Noncanonical Metabolism of Epigallocatechin Gallate",
+      "authors": [
+        "Zongde Jiang",
+        "Shengmin Sang"
+      ],
+      "doi": "10.1021/acs.analchem.6c02274",
+      "url": "https://doi.org/10.1021/acs.analchem.6c02274",
+      "journal": "Analytical Chemistry",
+      "first_online": "2026-10-21",
+      "year": "2026",
+      "publication_status": {
+        "en": "Peer-reviewed article",
+        "zh": "同行评审正式论文"
+      },
+      "read_scope": {
+        "en": "Publisher-indexed abstract and selected methods passages; no complete full-text/supplement review or reproduction.",
+        "zh": "出版商索引中的摘要及部分方法段落；未完整核验全文及补充材料，未复现。"
+      },
+      "commentary": {
+        "zh": "将迭代采集、转化规则、FISh 碎片预测与多级质谱证据串联，用于小分子代谢物注释；EGCG 案例检出 702 个候选，其中 343 个分级注释，另 359 个仍结构未明。研发价值在于规则扩展与可追溯证据链，不能把候选数量视为确证鉴定量；单一母体案例及人工核查也限制了对通用自动化性能的推断。",
+        "en": "The workflow combines iterative acquisition, transformation rules, FISh fragment prediction and multistage MS evidence for metabolite annotation. Its EGCG case yielded 702 candidates, including 343 tiered annotations and 359 structurally unresolved signals; the reusable lesson is traceable evidence, not equating candidates with confirmed identifications. Generalization beyond one parent compound and manual review remains unestablished."
+      }
+    }
+  ]
+}

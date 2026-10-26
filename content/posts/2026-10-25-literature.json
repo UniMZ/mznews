@@ -1,0 +1,56 @@
+{
+  "slug": "literature-2026-10-25",
+  "date": "2026-10-25",
+  "category": "Latest",
+  "title": {
+    "en": "Literature briefing: 25 October 2026",
+    "zh": "2026年10月25日文献简报"
+  },
+  "summary": {
+    "en": "A benchmark examines how DIA search and quantitative-analysis choices interact, emphasizing accuracy and false-discovery control alongside identification depth.",
+    "zh": "DIA 搜索与定量分析的组合评测，把倍数变化准确性和假发现率控制与鉴定深度放在同一评价框架中。"
+  },
+  "body": {
+    "en": [
+      "Reliable quantitative proteomics depends on the entire analysis pipeline, not just a search engine. Today's selection examines the interaction between identification and downstream statistical tools.",
+      "The review also covered metabolomics, spectral searching, ion mobility and spatial metabolomics. Some recent candidates could not be included because original records or complete author information remained unverified; coverage is not exhaustive."
+    ],
+    "zh": [
+      "可靠的定量蛋白组分析取决于整条处理流程，而不只是搜索引擎。今天的研究聚焦鉴定工具与下游统计方法之间的配合。",
+      "本轮同时关注代谢组、谱库检索、离子淌度及空间代谢组。部分近期候选的原始记录或完整作者信息尚未核实，未纳入本篇；覆盖并非穷尽。"
+    ]
+  },
+  "links": [
+    {
+      "label": "Publisher article",
+      "url": "https://doi.org/10.1021/acs.jproteome.6c00778"
+    }
+  ],
+  "papers": [
+    {
+      "title": "Comparison Study of Data Processing Workflows for Label-Free DIA Quantitative Proteomics",
+      "authors": [
+        "Valeriy I. Postoenko",
+        "Mikhail V. Gorshkov",
+        "Mark V. Ivanov"
+      ],
+      "journal": "Journal of Proteome Research",
+      "year": "2026",
+      "url": "https://doi.org/10.1021/acs.jproteome.6c00778",
+      "doi": "10.1021/acs.jproteome.6c00778",
+      "first_online": "2026-10-21",
+      "publication_status": {
+        "en": "Peer-reviewed article",
+        "zh": "同行评审正式论文"
+      },
+      "read_scope": {
+        "en": "Publisher abstract and indexed metadata; full text not read and results not reproduced.",
+        "zh": "出版商摘要及索引元数据阅读；未读全文，未复现。"
+      },
+      "commentary": {
+        "zh": "研究将 DIA-NN、DIA-Umpire、diaTracer 和 MSFragger-DIA 四种搜索流程与 directLFQ、AlphaPeptStats、Triqler 及简单 t 检验四种定量分析工具组合，在两个加标基准数据集上同时评价鉴定数、差异检测灵敏度、倍数变化准确性与定量假发现率控制。其价值在于把检索与下游统计作为联动流程评测，而非仅按鉴定数量选工具；摘要未披露具体优胜组合或效应量，不能据此给出软件排名，且两个加标数据集对真实异质样本的外推仍需全文核查。",
+        "en": "The study combines four DIA search workflows (DIA-NN, DIA-Umpire, diaTracer and MSFragger-DIA) with four quantitative-analysis tools (directLFQ, AlphaPeptStats, Triqler and a simple t test), evaluating identification counts, differential-detection sensitivity, fold-change accuracy and quantitative false-discovery-rate control on two spike-in benchmarks. Its practical value is to assess search and downstream statistics as a coupled pipeline rather than select tools by identification count alone; the abstract does not disclose winning combinations or effect sizes, and generalization from two spike-in datasets to heterogeneous real samples requires full-text assessment."
+      }
+    }
+  ]
+}

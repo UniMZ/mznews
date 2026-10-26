@@ -1,0 +1,34 @@
+{
+  "slug": "literature-2026-10-23",
+  "date": "2026-10-23",
+  "category": "Latest",
+  "title": {
+    "en": "October 23, 2026 Literature Brief",
+    "zh": "2026年10月23日文献简报"
+  },
+  "summary": {
+    "en": "New spatial-proteomics and DIA workflow reports are visible, but their verification is incomplete.",
+    "zh": "出现空间蛋白组与DIA流程新报告，但论文信息核验尚不完整。"
+  },
+  "body": {
+    "en": [
+      "No new papers are presented as fully verified selections today. The Nature Methods listing dates OpenDVP to October 22, and the Journal of Proteome Research listing includes a new comparison of DIA data-processing workflows. Complete authorship, abstract evidence or version details remain unverified, so neither is presented as a reviewed paper.",
+      "The check covered accessible publisher listings and indexed records for proteomics, metabolomics and small molecules, lipidomics, imaging, ion mobility and signal processing. Some online-first pages could not be accessed and listings may lag publication. This does not imply an absence of new research."
+    ],
+    "zh": [
+      "今天没有作为已完成核验的精选论文介绍的新条目。Nature Methods目录显示OpenDVP于10月22日发表，Journal of Proteome Research目录也出现新的DIA数据处理流程比较；完整作者、摘要证据或版本细节仍未核实，因此暂不将其作为已审阅论文介绍。",
+      "本次检查覆盖蛋白组、代谢组与小分子、脂质组、成像、离子淌度及信号处理的可读出版商目录与索引。部分在线先行页面无法访问，目录也可能滞后；这不表示没有新研究发表。"
+    ]
+  },
+  "links": [
+    {
+      "label": "Nature Methods articles",
+      "url": "https://www.nature.com/nmeth/articles"
+    },
+    {
+      "label": "Journal of Proteome Research",
+      "url": "https://pubs.acs.org/journal/jprobs"
+    }
+  ],
+  "papers": []
+}
