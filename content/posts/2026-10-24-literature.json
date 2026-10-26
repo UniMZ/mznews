@@ -1,0 +1,128 @@
+{
+  "slug": "literature-2026-10-24",
+  "date": "2026-10-24",
+  "category": "Latest",
+  "title": {
+    "en": "October 24, 2026 Literature Brief",
+    "zh": "2026年10月24日文献简报"
+  },
+  "summary": {
+    "en": "Reusable workflows for spatial proteomics, protein isoforms and cross-link-guided structural modeling.",
+    "zh": "聚焦空间蛋白组、蛋白异构体及交联约束结构建模的可复用流程。"
+  },
+  "body": {
+    "en": [
+      "Today's papers connect complementary evidence to mass spectrometry: image-guided sampling through OpenDVP, long-read-informed protein isoform analysis through LRP2, and cross-link-guided structural modeling. Their reusable components address different analytical stages, with important limits on spatial resolution, identification evidence and structural validation.",
+      "The check also covered accessible publisher listings and indexed records for small molecules, lipidomics, imaging, ion mobility, signal processing and modified peptides. Some ACS, MCP, PROTEOMICS and preprint pages were inaccessible or had incomplete metadata; coverage is not exhaustive."
+    ],
+    "zh": [
+      "今天的论文将互补证据与质谱分析连接起来：OpenDVP整合图像引导采样，LRP2利用长读长信息分析蛋白异构体，交联约束则辅助柔性蛋白结构建模。这些可复用组件覆盖不同分析环节，同时需要关注空间分辨率、鉴定证据与结构验证的边界。",
+      "本次也检查了小分子、脂质组、成像、离子淌度、信号处理及修饰肽的可读出版商目录与索引。部分ACS、MCP、PROTEOMICS及预印本页面无法访问或元数据不完整，本次覆盖并非穷尽。"
+    ]
+  },
+  "links": [],
+  "papers": [
+    {
+      "title": "OpenDVP: an experimental and computational framework for community-empowered deep visual proteomics",
+      "authors": [
+        "Jose Nimo",
+        "Sonja Fritzsche",
+        "Daniela S. Valdes",
+        "Minh Trinh",
+        "Tancredi Pentimalli",
+        "Melissa Klingeberg",
+        "Simon Schallenberg",
+        "Frederick Klauschen",
+        "Florian Herse",
+        "Stefan Florian",
+        "Nikolaus Rajewsky",
+        "Fabian Coscia"
+      ],
+      "journal": "Nature Methods",
+      "year": "2026",
+      "url": "https://www.nature.com/articles/s41592-026-03262-z",
+      "doi": "10.1038/s41592-026-03262-z",
+      "first_online": "2026-10-22",
+      "publication_status": {
+        "en": "Version of record",
+        "zh": "正式发表版"
+      },
+      "read_scope": {
+        "en": "Selected main-text sections and figure captions; supplements not read; no reproduction",
+        "zh": "正文重点章节及图注；未读补充材料，未复现"
+      },
+      "commentary": {
+        "zh": "OpenDVP将图像处理、细胞表型与邻域分析、激光显微切割和质谱蛋白组数据连接为模块化流程，并通过AnnData/SpatialData支持跨模态整合。作者展示三类存档组织应用，报告11张全切片中634万个细胞的分割用时不足2小时；在三阴性乳腺癌的匹配采样基准中，邻域采样相较逐细胞轮廓汇集约加快100倍组织收集，平均增加26%的蛋白鉴定。可组合接口与空间采样设计值得借鉴，但邻域采样牺牲细胞分辨率，效果依赖染色、分割与切割质量，不能将局部基准推广至任意组织和硬件。",
+        "en": "OpenDVP connects image processing, cell phenotyping and neighborhood analysis, laser microdissection, and MS proteomics through modular AnnData/SpatialData interfaces. The authors demonstrate three archival tissue applications and segment 6.34 million cells across 11 whole-slide images in under two hours; in a matched triple-negative breast cancer benchmark, neighborhood sampling accelerates tissue collection about 100-fold and increases protein identifications by an average of 26% relative to pooled individual-cell contours. The interfaces and sampling design are reusable, but neighborhoods sacrifice cellular resolution, and results depend on staining, segmentation and collection quality rather than establishing universal gains."
+      }
+    },
+    {
+      "title": "LRP2: A proteogenomics pipeline for long-read informed protein isoform analysis and discovery",
+      "authors": [
+        "Megan D Schertzer",
+        "Julia T Lewandowski",
+        "Emily F Watts",
+        "Will Rosenow",
+        "Madison M Mehlferber",
+        "Erin D Jeffery",
+        "Scott I Adamson",
+        "Jocelyne Bruand",
+        "Elizabeth Tseng",
+        "Yaseswini Neelamraju",
+        "Francine E Garrett-Bakelman",
+        "Egor Dolzhenko",
+        "David A Knowles",
+        "Gloria Sheynkman"
+      ],
+      "journal": "Bioinformatics",
+      "year": "2026",
+      "url": "https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btag790/8985543",
+      "doi": "10.1093/bioinformatics/btag790",
+      "first_online": "2026-10-23",
+      "publication_status": {
+        "en": "Accepted manuscript",
+        "zh": "接受稿"
+      },
+      "read_scope": {
+        "en": "Publisher abstract and metadata only; no reproduction",
+        "zh": "摘要阅读及出版商元数据；未复现"
+      },
+      "commentary": {
+        "zh": "LRP2以Nextflow整合长读长转录本发现、伪影过滤、开放阅读框与蛋白异构体分类、差异分析及FragPipe的DDA/DIA质谱证据，并用剪接位点和坐标生成确定性异构体标识，方便跨数据集比较。摘要报告流程可扩展至数百样本，并支持新肽段发现和蛋白异构体推断，但未给出定量性能比较；其价值主要是减少长读长蛋白基因组学的流程拼接成本，尚不宜据摘要认定鉴定精度优于其他方案。",
+        "en": "LRP2 integrates long-read transcript discovery, artifact filtering, open-reading-frame prediction, protein isoform classification, differential analysis, and FragPipe DDA/DIA evidence in a Nextflow workflow. Deterministic splice-junction and coordinate-based identifiers support cross-dataset comparisons, while the abstract reports scaling to hundreds of samples and supporting novel peptide discovery and isoform inference. It could reduce workflow assembly costs, but the abstract provides no quantitative benchmark establishing superior identification accuracy."
+      }
+    },
+    {
+      "title": "Cross-linking mass spectrometry guided structure prediction of disordered Encephalitozoon hellem proteins",
+      "authors": [
+        "Elizabeth Weyer",
+        "Yongliang Wang",
+        "Tadakimi Tomita",
+        "Carlos Madrid-Aliste",
+        "Prithviraj Nandigrami",
+        "Andras Fiser",
+        "Simone Sidoli",
+        "Jennifer T. Aguilan",
+        "Bing Han",
+        "Louis M. Weiss"
+      ],
+      "journal": "mBio",
+      "year": "2026",
+      "url": "https://journals.asm.org/doi/10.1128/mbio.02261-26",
+      "doi": "10.1128/mbio.02261-26",
+      "first_online": "2026-10-20",
+      "publication_status": {
+        "en": "Journal article",
+        "zh": "正式期刊论文"
+      },
+      "read_scope": {
+        "en": "Publisher-indexed abstract and main-text excerpts; live article unavailable; no reproduction",
+        "zh": "出版商摘要及正文索引摘录阅读；原文页面未能打开，未复现"
+      },
+      "commentary": {
+        "zh": "该研究将AlphaLink单体建模与MODELLER约束精修、对接连接起来，在各阶段引入交联质谱距离约束，为低同源性、柔性蛋白复合物提供可复用的整合建模流程，并公开配套脚本。Swp1b–EnP1模型得到另行生成的交联数据支持，且进行了删减约束的稳健性分析；但验证集中于一个复合物，约束吻合不等于原子级结构正确，其跨体系泛化仍需独立评测。",
+        "en": "This study combines AlphaLink monomer modeling with MODELLER refinement and docking, incorporating XL-MS distance restraints throughout a reusable workflow for low-homology, flexible protein complexes and supplying accompanying scripts. Independently generated cross-links and restraint-removal tests support the Swp1b–EnP1 model, but validation centers on one complex: agreement with restraints does not establish atomic accuracy or broad generalization."
+      }
+    }
+  ]
+}
