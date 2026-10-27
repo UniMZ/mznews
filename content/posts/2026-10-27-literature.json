@@ -1,0 +1,120 @@
+{
+  "slug": "literature-2026-10-27",
+  "date": "2026-10-27",
+  "category": "Latest",
+  "title": {
+    "en": "October 27, 2026 Literature Brief",
+    "zh": "2026年10月27日文献简报"
+  },
+  "summary": {
+    "en": "Diagnostic-ion validation for glycopeptide searches, ambiguity-aware spatial pathways, and scalable mass spectrometry imaging.",
+    "zh": "糖肽搜索的诊断离子验证、保留注释歧义的空间通路分析与大规模质谱成像计算。"
+  },
+  "body": {
+    "en": [
+      "Three studies address complementary computational challenges: reviewing glycopeptide identifications, interpreting ambiguous spatial metabolite assignments, and compressing large imaging datasets without losing regional information.",
+      "Coverage spans accessible primary metadata and abstracts across proteomics, small molecules, lipids, ion mobility and imaging. Some publisher pages and feeds were unavailable; this is not an exhaustive survey. All three assessments are abstract-based, and two papers are preprints."
+    ],
+    "zh": [
+      "三项研究分别关注糖肽鉴定的谱图证据审查、保留注释歧义的空间代谢解释，以及兼顾区域信息的大规模成像数据压缩。",
+      "本次覆盖蛋白组、小分子、脂质、离子淌度和成像的可访问原始元数据与摘要；部分出版商页面及 feed 不可访问，不能视为穷尽检索。三篇均为摘要阅读，其中两篇为预印本。"
+    ]
+  },
+  "links": [],
+  "papers": [
+    {
+      "title": "Benchmarking Glycoproteomics Software Using Diagnostic Ion Based Post-Validation for Glycopeptide Identification",
+      "authors": [
+        "Hiroaki Sakaue",
+        "Kunio Kawanishi",
+        "Azusa Tomioka",
+        "Chiaki Nagai-Okatani",
+        "Hiroyuki Kaji",
+        "Atsushi Kuno"
+      ],
+      "journal": "Journal of Proteome Research",
+      "year": "2026",
+      "url": "https://doi.org/10.1021/acs.jproteome.6c00345",
+      "doi": "10.1021/acs.jproteome.6c00345",
+      "first_online": "2026-10-01",
+      "publication_status": {
+        "en": "Peer-reviewed article",
+        "zh": "同行评审论文"
+      },
+      "read_scope": {
+        "en": "Original abstract and bibliographic metadata only; no full-text review or reproduction",
+        "zh": "仅原始摘要与书目元数据；未阅读全文或复现"
+      },
+      "commentary": {
+        "en": "A comparison of five glycopeptide search tools on BJAB-K20 cell data found that approximately one-third of identifications were unique to individual tools. Post-validation using diagnostic oxonium and Y0/Y1 or b/y ions offers a transferable way to review complementary search results. The study focuses on rare NeuGc/KDN glycans; spectral-evidence tiers are not calibrated error-rate estimates, and broader transferability requires validation. Abstract only.",
+        "zh": "在 BJAB-K20 细胞数据上比较五款糖肽搜索工具，约三分之一的鉴定仅由单个工具给出。作者利用诊断氧鎓离子及 Y0/Y1 或 b/y 离子对搜索结果分层，为互补使用搜索引擎和搜索后审查提供可迁移流程。研究聚焦稀有 NeuGc/KDN 糖型；这种谱图证据分层不能等同于经过校准的错误率估计，跨样本的适用性仍需验证（仅读摘要）。"
+      }
+    },
+    {
+      "title": "SpacePath enables pathway and molecular-family analysis beyond annotation ambiguity in spatial metabolomics and lipidomics",
+      "authors": [
+        "Johanna Galvis",
+        "Mélanie Moreau",
+        "Sebastian Lillo",
+        "Doriane Bomont",
+        "Léa Ledoux",
+        "Yanis Zirem",
+        "Michel Salzet",
+        "Isabelle Fournier",
+        "Nicolas Desbenoit",
+        "Thomas Daubon",
+        "Macha Nikolski"
+      ],
+      "journal": "bioRxiv",
+      "year": "2026",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.16.759546v1",
+      "doi": "10.64898/2026.10.16.759546",
+      "first_online": "2026-10-22",
+      "publication_status": {
+        "en": "Preprint v1; not peer reviewed",
+        "zh": "预印本 v1，未经同行评审"
+      },
+      "read_scope": {
+        "en": "Original abstract and bibliographic metadata only; no full-text review or reproduction",
+        "zh": "仅原始摘要与书目元数据；未阅读全文或复现"
+      },
+      "commentary": {
+        "en": "SpacePath preserves ion-to-compound ambiguity while combining spatial pathway scoring with chemically similar molecular families; four public spatial-lipidomics datasets recovered known patterns, and MS/MS supported four tumor-associated features in new glioblastoma data. Abstract only: the reported increase from about 1% to 24% concerns assignment coverage, not identification accuracy; the useful design is broader spatial interpretation without hiding annotation uncertainty.",
+        "zh": "SpacePath保留离子到候选化合物的多重对应，将空间通路评分与化学相似性分子家族结合，在四个公开空间脂质组数据集恢复既有空间模式，并以MS/MS支持新胶质母细胞瘤数据中的四个肿瘤相关特征。仅阅读摘要；从约1%到24%的是分子指派的表征覆盖率而非结构鉴定准确率，其研发价值在于保留注释不确定性、拓展经典通路之外的空间解释。"
+      }
+    },
+    {
+      "title": "CPMsi: a data-driven Computational Pipeline for fast, large-scale Mass Spectrometry Imaging analysis",
+      "authors": [
+        "Paola Tasca",
+        "Iulia Sidorov",
+        "Hans J. Dalebout",
+        "Nina Ogrinc",
+        "Ron M. A. Heeren",
+        "Aiko P. de Vries",
+        "Jesper Kers",
+        "Manfred Wuhrer",
+        "Ton J. Rabelink",
+        "Martin Giera",
+        "Yassene Mohammed"
+      ],
+      "journal": "bioRxiv",
+      "year": "2026",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.15.758756v1",
+      "doi": "10.64898/2026.10.15.758756",
+      "first_online": "2026-10-21",
+      "publication_status": {
+        "en": "Preprint v1; not peer reviewed",
+        "zh": "预印本 v1，未经同行评审"
+      },
+      "read_scope": {
+        "en": "Original abstract and bibliographic metadata only; no full-text review or reproduction",
+        "zh": "仅原始摘要与书目元数据；未阅读全文或复现"
+      },
+      "commentary": {
+        "en": "CPMsi combines global spectral binning, molecular-region detection and consensus spectra for large MSI datasets and cross-section or multimodal integration; the authors report approximately 30-fold faster region detection than vendor software on brain sections with roughly 500,000–600,000 pixels. Abstract only: this stage-specific benchmark does not establish an end-to-end or clinical-cohort speedup, but the region-preserving compression and cross-section mapping are useful computational designs.",
+        "zh": "CPMsi将全局谱图分箱对齐、分子相似区域识别与共识谱压缩串联，用于大规模MSI及连续切片、多模态数据整合；作者在约50万–60万像素的脑切片数据中报告区域识别较厂商软件快约30倍。仅阅读摘要，速度优势限于其测试场景，尚不能推及端到端流程或临床队列；值得借鉴的是保留区域差异的数据压缩与跨切片映射设计。"
+      }
+    }
+  ]
+}
