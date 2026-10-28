@@ -1,0 +1,81 @@
+{
+  "slug": "literature-2026-10-28",
+  "date": "2026-10-28",
+  "category": "Latest",
+  "title": {
+    "en": "October 28, 2026 Literature Brief",
+    "zh": "2026年10月28日文献简报"
+  },
+  "summary": {
+    "en": "Cross-gradient LC-HRMS feature correspondence and cross-fragmentation spectral-library matching.",
+    "zh": "跨梯度 LC-HRMS 特征对应与跨碎裂方式谱库匹配。"
+  },
+  "body": {
+    "en": [
+      "Two studies connect measurements acquired under different conditions: retention-time transfer links chromatographic feature tables, while paired EAD/CID spectra help evaluate cross-fragmentation library searches. Both emphasize coverage, ambiguity and the limits of annotation.",
+      "Coverage spans accessible primary metadata and scientific excerpts across proteomics, small molecules, lipids, ion mobility and imaging. Some publisher pages and feeds were unavailable; this is not an exhaustive survey. Reading scope is stated for each paper; no results were reproduced."
+    ],
+    "zh": [
+      "两项研究连接不同采集条件下的质谱测量：保留时间迁移用于对应色谱特征表，配对 EAD/CID 谱则支持评估跨碎裂方式谱库搜索。两者均需关注覆盖率、歧义和注释边界。",
+      "本次覆盖蛋白组、小分子、脂质、离子淌度和成像等方向的可访问原始元数据与科学内容片段；部分出版商页面及 feed 不可访问，不能视为穷尽检索。每篇均注明实际阅读范围，未进行实验复现。"
+    ]
+  },
+  "links": [],
+  "papers": [
+    {
+      "title": "Retention-Time Bridging across Gradients for LC-HRMS Feature Correspondence",
+      "authors": [
+        "Wentao Zhu",
+        "Elle Harwood",
+        "Daniel Raftery"
+      ],
+      "journal": "Journal of the American Society for Mass Spectrometry",
+      "year": "2026",
+      "url": "https://doi.org/10.1021/jasms.6c00226",
+      "doi": "10.1021/jasms.6c00226",
+      "first_online": "2026-10-22",
+      "publication_status": {
+        "en": "Peer-reviewed article",
+        "zh": "同行评审论文"
+      },
+      "read_scope": {
+        "en": "Publisher-indexed abstract and article metadata; full text and supplements not read; no reproduction.",
+        "zh": "原始出版商索引可读摘要及文章元数据；未读全文或补充材料，未复现。"
+      },
+      "commentary": {
+        "en": "RTBridge selects mass-unique, cross-method mass-consistent and abundance-concordant anchors to link short- and long-gradient LC-HRMS feature tables without molecular structures, comparing six retention-time transfer models. PCHIP recovered 5,595 primary feature pairs across four matrix/mode datasets with a mean median RT error of 0.0232 minutes; residual-based hard filtering slightly improved error but reduced coverage, highlighting an accuracy–recovery tradeoff. This establishes feature correspondence, not metabolite identification; transfer across platforms, columns and laboratories remains unvalidated.",
+        "zh": "RTBridge 利用同一样本的质荷比唯一性、跨方法质量一致性与丰度一致性选择锚点，在不依赖分子结构的情况下连接短、长梯度 LC-HRMS 特征表，并比较六种保留时间迁移模型。PCHIP 在四组基质/模式数据中得到 5,595 对主要特征，平均中位保留时间误差为 0.0232 分钟；残差硬筛选仅略降误差，却损失匹配覆盖，提示研发中应共同评估精度与保留率。该方法建立的是特征对应而非代谢物鉴定，跨平台、色谱柱及实验室迁移仍需直接验证。"
+      }
+    },
+    {
+      "title": "From Single Injection to Dual Insights: Integrating EAD and CID Acquisition for Spectral Library Generation and EAD–CID Spectral Matching",
+      "authors": [
+        "Lisa Panzenboeck",
+        "Christina Brenner",
+        "Veronika Fitz",
+        "Mingxun Wang",
+        "Patrick Mueller",
+        "Evelyn Rampler",
+        "Yasin El Abiead",
+        "Gunda Koellensperger"
+      ],
+      "journal": "Analytical Chemistry",
+      "year": "2026",
+      "url": "https://doi.org/10.1021/acs.analchem.6c01204",
+      "doi": "10.1021/acs.analchem.6c01204",
+      "first_online": "2026-10-02",
+      "publication_status": {
+        "en": "Peer-reviewed article",
+        "zh": "同行评审论文"
+      },
+      "read_scope": {
+        "en": "Publisher-indexed article metadata and results/conclusion excerpts, with author-institution and PubMed author verification; full article and supplements not read in entirety; no reproduction.",
+        "zh": "原始出版商索引可读文章元数据及结果/结论段落，辅以作者机构记录与 PubMed 核对作者；未完整通读全文或补充材料，未复现。"
+      },
+      "commentary": {
+        "en": "A single-injection, multi-energy EAD/CID workflow generated a resource of 459 CID and 414 EAD spectra from 45 steroid standards, supporting spectral-library expansion and fragmentation-model development. EAD spectra could also match existing CID/HCD libraries, but isomer mismatches remained prominent: public-data hits are putative annotations, not substitutes for orthogonal confirmation such as reference-standard retention times. The cross-fragmentation matching evidence is useful, although generalization beyond steroids remains untested.",
+        "zh": "该流程在单次进样中获取多能量 EAD/CID 谱，并由 45 种甾体标准品构建含 459 张 CID 和 414 张 EAD 谱的资源，为谱库扩充及碎裂模型开发提供数据。研究发现 EAD 谱也可匹配现有 CID/HCD 谱库，但异构体误匹配仍突出，公共数据中的命中只能作为暂定注释，不能替代标准品保留时间等正交确认。其跨碎裂方式检索价值值得关注，但跨化学类别的可迁移性尚待验证。"
+      }
+    }
+  ]
+}
