@@ -1,0 +1,57 @@
+{
+  "slug": "literature-2026-10-30",
+  "date": "2026-10-30",
+  "category": "Latest",
+  "title": {
+    "en": "Literature Brief (October 30, 2026)",
+    "zh": "2026年10月30日文献简报"
+  },
+  "summary": {
+    "en": "Peptide identification and immunogenicity prediction require distinct layers of evidence. Today’s paper connects mass-spectrometry searching, transcriptomics and candidate prioritization, with an emphasis on reuse and validation limits.",
+    "zh": "免疫肽鉴定与免疫原性预测需要区分不同层次的证据。今天介绍一个连接质谱检索、转录组和候选肽优先级的流程，关注其可复用性与验证边界。"
+  },
+  "body": {
+    "en": [
+      "Peptide identification and immunogenicity prediction require distinct layers of evidence. Today’s paper connects mass-spectrometry searching, transcriptomics and candidate prioritization, with an emphasis on reuse and validation limits.",
+      "Accessible journal listings and indexes were checked across proteomics, metabolomics and small molecules, ion mobility, imaging and quality control. Access restrictions affected ACS, MCP, some Nature listings and preprints. Candidates lacking verified complete authorship, first-online dates or original scientific evidence were not included; coverage is not exhaustive."
+    ],
+    "zh": [
+      "免疫肽鉴定与免疫原性预测需要区分不同层次的证据。今天介绍一个连接质谱检索、转录组和候选肽优先级的流程，关注其可复用性与验证边界。",
+      "本次检查涵盖蛋白组、代谢组与小分子、离子淌度、成像和质量控制方向的可访问期刊目录及索引；ACS、MCP、部分 Nature 目录和预印本页面访问受限。部分候选的完整作者、首次在线日期或原始科学证据仍不足，未纳入；覆盖不代表穷尽。"
+    ]
+  },
+  "links": [],
+  "papers": [
+    {
+      "title": "MSIPep: A pipeline for immunogenic peptide identification and prioritization integrating immunopeptidomics and transcriptomics data",
+      "authors": [
+        "Peng Liu",
+        "Siwen Zhang",
+        "Manman Lu",
+        "Minrui Xu",
+        "Zhenhao Liu",
+        "Lanming Chen",
+        "Ping Xu",
+        "Xiaoxiu Tan",
+        "Lu Xie"
+      ],
+      "journal": "BMC Genomics",
+      "url": "https://link.springer.com/article/10.1186/s12864-026-13481-5",
+      "doi": "10.1186/s12864-026-13481-5",
+      "first_online": "2026-10-21",
+      "year": "2026",
+      "publication_status": {
+        "en": "Peer-reviewed accepted manuscript; not final Version of Record",
+        "zh": "同行评审接受稿，非最终正式版"
+      },
+      "read_scope": {
+        "en": "Publisher abstract and metadata plus official software documentation; PDF retrieval timed out, full article not read and software not reproduced.",
+        "zh": "出版社摘要、作者与日期元数据及官方软件说明；PDF获取超时，未读全文、未复现。"
+      },
+      "commentary": {
+        "en": "MSIPep combines immunopeptidomics and transcriptomics with database search, de novo sequencing, multilevel FDR control and ProTCR-based prioritization of tumor peptides. Leukemia, ovarian-cancer and triple-negative breast-cancer applications support reuse, but predicted immunogenicity is not a measured immune response. The official README also notes that some external DIA tools are not wired into the current script, so deployments need to reconcile the reported workflow with its implementation.",
+        "zh": "MSIPep 将免疫肽组与转录组整合，组合数据库检索、de novo 测序、多层 FDR 控制和 ProTCR，为候选肿瘤肽提供从鉴定到 T 细胞识别潜力排序的流程。作者报告白血病及卵巢癌、三阴性乳腺癌数据的应用，但预测免疫原性不能代替实测免疫应答；官方说明还提示 DIA 的部分外部工具尚未接入当前脚本，部署前须核对论文流程与代码实现。"
+      }
+    }
+  ]
+}

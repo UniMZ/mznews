@@ -1,0 +1,52 @@
+{
+  "slug": "literature-2026-11-03",
+  "date": "2026-11-03",
+  "category": "Latest",
+  "title": {
+    "zh": "2026年11月3日文献简报",
+    "en": "Literature Brief (November 3, 2026)"
+  },
+  "summary": {
+    "zh": "差异 HDX-MS 可连接蛋白构象群体与实验交换信号。本期方法把多个状态的结构集合和共同氘损失联合建模，为缺少损失校正对照的数据提供结构解释思路。",
+    "en": "Differential HDX-MS connects protein conformational populations with experimental exchange signals. This method jointly models structural ensembles across states and shared deuterium loss, offering an interpretation strategy when loss-correction controls are unavailable."
+  },
+  "body": {
+    "en": [
+      "Differential HDX-MS connects protein conformational populations with experimental exchange signals. This method jointly models structural ensembles across states and shared deuterium loss, offering an interpretation strategy when loss-correction controls are unavailable.",
+      "Accessible journal listings, publication metadata and indexes covered proteomics, small molecules and lipids, ion mobility, imaging and signal processing. Some publisher and preprint articles were inaccessible; the interpretations below retain explicit abstract-level and validation limits."
+    ],
+    "zh": [
+      "差异 HDX-MS 可连接蛋白构象群体与实验交换信号。本期方法把多个状态的结构集合和共同氘损失联合建模，为缺少损失校正对照的数据提供结构解释思路。",
+      "可访问期刊目录、出版元数据和索引涵盖蛋白组、小分子与脂质、离子淌度、成像及信号处理。部分出版社与预印本原文不可访问；以下解读明确保留摘要阅读与验证范围限制。"
+    ]
+  },
+  "links": [],
+  "papers": [
+    {
+      "title": "Multi-Ensemble Reweighting Enables Structural Interpretation of Differential HDX-MS",
+      "authors": [
+        "Sandra Byju",
+        "Vincent Lowe",
+        "Daniel Deredge",
+        "Fabrizio Marinelli"
+      ],
+      "journal": "bioRxiv",
+      "year": "2026",
+      "url": "https://doi.org/10.64898/2026.10.28.762400",
+      "doi": "10.64898/2026.10.28.762400",
+      "first_online": "2026-10-29",
+      "publication_status": {
+        "zh": "预印本，未经同行评审；首次发布日期由 bioRxiv 提交元数据核实",
+        "en": "Preprint, not peer-reviewed; first-posted date verified from bioRxiv-deposited metadata"
+      },
+      "read_scope": {
+        "zh": "bioRxiv 提交至 Crossref 的摘要、完整作者和首次发布日期元数据；原文页不可访问，未读全文或补充材料，未复现。",
+        "en": "bioRxiv-deposited Crossref abstract, complete authors and first-posted metadata; original page unavailable, full text and supplements not read, no reproduction."
+      },
+      "commentary": {
+        "zh": "该方法联合重加权多个结构集合，把各状态共享、随肽段变化的氘损失纳入模型，无需先实验测定损失；摘要报告在合成基准、LeuT 和 NCX_Mj 差异 HDX-MS 数据以及 AlphaFold3 结构集合上恢复有实验支持的构象变化。对研发的启发是联合估计结构群体与测量干扰，但共享损失假设、先验集合覆盖及可辨识性仍需全文检验，不能将摘要所述适用范围扩展等同于普遍准确率保证。",
+        "en": "The method jointly reweights structural ensembles while modeling shared, peptide-dependent deuterium loss without requiring separate experimental loss measurements. Its abstract reports supported conformational changes in synthetic benchmarks, LeuT and NCX_Mj differential HDX-MS, including AlphaFold3-derived ensembles; joint treatment of populations and measurement nuisance is promising, but shared-loss assumptions, ensemble coverage and identifiability require full-text assessment rather than a universal accuracy claim."
+      }
+    }
+  ]
+}

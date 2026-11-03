@@ -1,0 +1,77 @@
+{
+  "slug": "literature-2026-11-02",
+  "date": "2026-11-02",
+  "category": "Latest",
+  "title": {
+    "zh": "2026年11月2日文献简报",
+    "en": "Literature Brief (November 2, 2026)"
+  },
+  "summary": {
+    "zh": "本期关注两类候选判别：用常规肽段检验非参考序列的独特性，以及用多智能体框架重排小分子结构候选。二者都强调候选之间的比较，但统计验证仍需与模型输出分开。",
+    "en": "Two approaches examine competing interpretations: challenging non-reference peptide sequences with canonical alternatives, and reranking small-molecule structures through a multi-agent framework. Both compare candidates, while statistical validation must remain distinct from model output."
+  },
+  "body": {
+    "en": [
+      "Two approaches examine competing interpretations: challenging non-reference peptide sequences with canonical alternatives, and reranking small-molecule structures through a multi-agent framework. Both compare candidates, while statistical validation must remain distinct from model output.",
+      "Accessible journal listings, publication metadata and indexes covered proteomics, small molecules and lipids, ion mobility, imaging and signal processing. Some publisher and preprint articles were inaccessible; the interpretations below retain explicit abstract-level and validation limits."
+    ],
+    "zh": [
+      "本期关注两类候选判别：用常规肽段检验非参考序列的独特性，以及用多智能体框架重排小分子结构候选。二者都强调候选之间的比较，但统计验证仍需与模型输出分开。",
+      "可访问期刊目录、出版元数据和索引涵盖蛋白组、小分子与脂质、离子淌度、成像及信号处理。部分出版社与预印本原文不可访问；以下解读明确保留摘要阅读与验证范围限制。"
+    ]
+  },
+  "links": [],
+  "papers": [
+    {
+      "title": "TransPepMS: A Tool to Verify Peptides Absent from Reference Proteomes",
+      "authors": [
+        "S. Yasin Tabatabaei Dakhili",
+        "Olivier Hinse",
+        "Leonard J. Foster",
+        "Dieter Brömme"
+      ],
+      "journal": "bioRxiv",
+      "year": "2026",
+      "url": "https://doi.org/10.64898/2026.10.20.760571",
+      "doi": "10.64898/2026.10.20.760571",
+      "first_online": "2026-10-21",
+      "publication_status": {
+        "zh": "预印本，未经同行评审；依据当前存档摘要，修订日期未单独核实",
+        "en": "Preprint, not peer-reviewed; current deposited abstract, revision date not independently verified"
+      },
+      "read_scope": {
+        "zh": "bioRxiv 提交至 Crossref 的当前摘要、完整作者及首次发布日期元数据；未读全文或补充材料，未复现。",
+        "en": "Current bioRxiv-deposited Crossref abstract, complete authors and first-posted metadata; full text and supplements not read, no reproduction."
+      },
+      "commentary": {
+        "zh": "TransPepMS将非参考蛋白组肽段与同质量的常规肽段竞争，为候选给出保留、未决或拒绝判断；摘要报告1,154条已报道拼接肽中53条通过该竞争，同时保留91/99条胰岛素加标杂合肽并排除46条植入的常规肽。对研发的价值在于把“谱图匹配”与“序列独特性证据”分开，但保留53条不等于确认53条真实拼接事件，这些受控挑战也不构成全局FDR保证，算法细节和泛化仍需全文核验。",
+        "en": "TransPepMS challenges non-reference peptide assignments with same-mass canonical alternatives and labels them retained, unresolved or rejected; its abstract reports 53 of 1,154 reported spliced peptides retained, 91 of 99 insulin-spike hybrids retained and 46 planted canonical peptides rejected. The method highlights the distinction between a spectral match and unique sequence evidence, but retention does not prove 53 true splicing events and these challenge sets do not establish global FDR control; details and generalization require full-text assessment."
+      }
+    },
+    {
+      "title": "MS2Agent: Multi-Agent LLM-Driven Cross-Modal Alignment for Tandem Mass Spectrometry Structural Annotation",
+      "authors": [
+        "Xuemeng Geng",
+        "Liu Yang",
+        "Hai Jiang"
+      ],
+      "journal": "Analytical Chemistry",
+      "year": "2026",
+      "url": "https://doi.org/10.1021/acs.analchem.6c04516",
+      "doi": "10.1021/acs.analchem.6c04516",
+      "first_online": "2026-10-31",
+      "publication_status": {
+        "zh": "正式期刊论文，online first",
+        "en": "Peer-reviewed journal article, online first"
+      },
+      "read_scope": {
+        "zh": "出版商存入 Crossref 的摘要与元数据；未读全文或复现",
+        "en": "Publisher-deposited abstract and metadata in Crossref; full text and reproduction not assessed"
+      },
+      "commentary": {
+        "zh": "MS2Agent 将谱图与分子结构转为文本，通过四类智能体完成表征、候选初始化与协同重排序；在 CASMI 2022 中，同一基础大语言模型的 Recall@1 从 Codex 基线的 0.156 提高至 0.738，为小分子结构注释提供了可组合的推理框架。摘要还报告了 MassSpecGym、异构体及真实样本测试，但候选集合构建、数据切分独立性及潜在训练数据重叠仍需全文核验，现阶段不宜将基准提升直接等同于未知代谢物的可靠鉴定。",
+        "en": "MS2Agent converts spectra and molecular structures into text and uses four agent roles for representation, candidate initialization and collaborative reranking; with the same base language model, CASMI 2022 Recall@1 rises from the Codex baseline of 0.156 to 0.738, suggesting a modular reasoning approach to small-molecule annotation. The abstract also reports MassSpecGym, isomer and real-sample tests, but candidate construction, split independence and possible training-data overlap require full-text scrutiny before extrapolating the benchmark gain to reliable identification of unknown metabolites."
+      }
+    }
+  ]
+}
