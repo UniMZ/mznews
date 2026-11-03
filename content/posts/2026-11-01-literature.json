@@ -1,0 +1,60 @@
+{
+  "slug": "literature-2026-11-01",
+  "date": "2026-11-01",
+  "category": "Latest",
+  "title": {
+    "en": "Literature Brief (November 1, 2026)",
+    "zh": "2026年11月1日文献简报"
+  },
+  "summary": {
+    "zh": "今天关注质谱成像的代谢物候选排序：将空间图像相似性与化学关系作为先验，帮助决定后续验证对象，同时区分候选优先级与确定性结构鉴定。",
+    "en": "Today’s focus is metabolite-candidate prioritization in mass spectrometry imaging: combining spatial image similarity with chemical relationships to guide follow-up while distinguishing ranked candidates from definitive structural identification."
+  },
+  "body": {
+    "en": [
+      "Today’s focus is metabolite-candidate prioritization in mass spectrometry imaging: combining spatial image similarity with chemical relationships to guide follow-up while distinguishing ranked candidates from definitive structural identification.",
+      "Accessible journal listings, publication metadata and indexes were checked across proteomics, small molecules and lipids, ion mobility, imaging, signal processing and statistics. Access was incomplete for ACS, MCP, some Nature pages and preprints, and indexed coverage was not exhaustive. Candidates with unresolved complete authors, first-public dates or substantive version changes were not included."
+    ],
+    "zh": [
+      "今天关注质谱成像的代谢物候选排序：将空间图像相似性与化学关系作为先验，帮助决定后续验证对象，同时区分候选优先级与确定性结构鉴定。",
+      "本次检查覆盖蛋白组、小分子与脂质、离子淌度、成像质谱、信号处理及统计方法的可访问期刊目录、出版元数据和索引。ACS、MCP、部分 Nature 与预印本页面访问不完整；索引检索并非穷尽，未核实完整作者、首次公开日期或实质版本变化的候选未纳入。"
+    ]
+  },
+  "links": [],
+  "papers": [
+    {
+      "title": "Integrated Prior Knowledge by Bayesian Inference for Spatial Metabolomics Annotation in Mass Spectrometry Imaging",
+      "authors": [
+        "Baolin Xiong",
+        "Jishuai Wang",
+        "Yuanqing Zhang",
+        "Lei Wang",
+        "Peipei Zhou",
+        "Fangfang Wang",
+        "Xin Qi",
+        "Yu Guo",
+        "Wenchang Xu",
+        "Yibo Chen",
+        "Zhi Sun",
+        "Wenbo Cheng"
+      ],
+      "journal": "Analytical Chemistry",
+      "year": "2026",
+      "url": "https://doi.org/10.1021/acs.analchem.5c08132",
+      "doi": "10.1021/acs.analchem.5c08132",
+      "first_online": "2026-10-30",
+      "publication_status": {
+        "zh": "正式期刊论文，online first",
+        "en": "Peer-reviewed journal article, online first"
+      },
+      "read_scope": {
+        "zh": "出版社提交至 Crossref 的摘要、作者及首次在线元数据；出版社原文页不可访问，未读全文或补充材料，未复现。",
+        "en": "Publisher-deposited Crossref abstract, author list and first-online metadata only; the publisher article was inaccessible, and full text, supplements and reproducibility were not assessed."
+      },
+      "commentary": {
+        "zh": "BIMSM将精确质量匹配概率与加合物、反应关系及离子图像相似性结合，用贝叶斯推断为质谱成像中的代谢物候选排序。在可评估的小鼠脑参考候选中，Top-1／3／5覆盖率由6.5%／14.4%／20.0%提高到17.9%／27.4%／32.9%；可借鉴其空间与化学先验联合建模，但这些是候选覆盖率而非全体代谢物鉴定准确率，最终结构仍需正交验证。",
+        "en": "BIMSM combines exact-mass matching probabilities with adduct and reaction relationships calibrated by ion-image similarity to prioritize MSI metabolite candidates through Bayesian inference. Among evaluable mouse-brain reference candidates, Top-1/3/5 coverage rose from 6.5%/14.4%/20.0% to 17.9%/27.4%/32.9%; this supports spatial–chemical prior integration, not definitive identification or whole-metabolome accuracy, and orthogonal validation remains necessary."
+      }
+    }
+  ]
+}

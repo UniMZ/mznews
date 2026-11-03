@@ -1,0 +1,100 @@
+{
+  "slug": "literature-2026-10-31",
+  "date": "2026-10-31",
+  "category": "Latest",
+  "title": {
+    "en": "Literature Brief (October 31, 2026)",
+    "zh": "2026年10月31日文献简报"
+  },
+  "summary": {
+    "zh": "从 GC–MS 规则基线到自适应补充测量，再到蛋白相互作用变化预测，今天关注如何把质谱证据转化为可检验的决策，并保留模拟、分类和生物推断之间的边界。",
+    "en": "From rule-based GC–MS classification to adaptive follow-up measurements and differential-interaction prediction, these papers examine how mass-spectrometry evidence informs decisions while keeping simulation, classification and biological inference distinct."
+  },
+  "body": {
+    "en": [
+      "From rule-based GC–MS classification to adaptive follow-up measurements and differential-interaction prediction, these papers examine how mass-spectrometry evidence informs decisions while keeping simulation, classification and biological inference distinct.",
+      "Accessible journal listings and indexes were checked across proteomics, small molecules and lipids, ion mobility, imaging, signal processing and statistics. Access was incomplete for ACS, MCP, some Nature pages and preprint articles. Candidates without verified complete authors or first-public dates were excluded; coverage is not exhaustive."
+    ],
+    "zh": [
+      "从 GC–MS 规则基线到自适应补充测量，再到蛋白相互作用变化预测，今天关注如何把质谱证据转化为可检验的决策，并保留模拟、分类和生物推断之间的边界。",
+      "本次检索覆盖蛋白组、小分子与脂质、离子淌度、质谱成像、信号处理及统计方法的可访问期刊目录和索引。ACS、MCP、部分 Nature 页面与预印本原文访问不完整；完整作者或首次公开日期未核实的候选未纳入，覆盖不代表穷尽。"
+    ]
+  },
+  "links": [],
+  "papers": [
+    {
+      "title": "Automated classification of ignitable liquid profiles: Comparing machine learning and rule-based systems",
+      "authors": [
+        "Leng Leng Chng",
+        "Kang Hua Lee"
+      ],
+      "journal": "Journal of Forensic Sciences",
+      "year": "2026",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/1556-4029.70493",
+      "doi": "10.1111/1556-4029.70493",
+      "first_online": "2026-10-21",
+      "publication_status": {
+        "zh": "正式期刊论文，Early View",
+        "en": "Version of Record, Early View"
+      },
+      "read_scope": {
+        "zh": "出版社摘要、作者与日期元数据及补充材料目录；未读全文或补充文件，未复现。",
+        "en": "Publisher abstract, author/date metadata and supplement descriptions; article and supplement files not read, no reproduction."
+      },
+      "commentary": {
+        "zh": "该研究比较 GC–MS 图像模式分类与基于质谱、保留时间识别主要化合物的 Python 规则框架，后者准确率为 0.922，高于五种图像机器学习模型的 0.635–0.706。它提示领域规则值得作为自动判读的强基线，但结果限于作者的实验室生成数据与具体任务，不能概括为规则系统普遍优于机器学习；跨实验室泛化及独立测试细节仍需全文核验。",
+        "en": "A Python rule framework uses mass spectra and retention times to identify major compounds before classifying GC–MS profiles. Its reported accuracy of 0.922 exceeded 0.635–0.706 for five image-based ML models, supporting domain rules as a serious baseline; the laboratory-generated task does not establish universal superiority or cross-laboratory generalization."
+      }
+    },
+    {
+      "title": "From MS/MS evidence to adaptive spectroscopic characterization: Reinforcement learning guided by candidate molecular structures",
+      "authors": [
+        "Bowen Gao",
+        "Lei Zhu",
+        "Yiying Wang",
+        "Wenjie Yu"
+      ],
+      "journal": "arXiv",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2610.40264",
+      "doi": "10.48550/arXiv.2610.40264",
+      "first_online": "2026-10-29",
+      "publication_status": {
+        "zh": "arXiv v1 预印本，未经同行评审",
+        "en": "arXiv v1 preprint; not peer reviewed"
+      },
+      "read_scope": {
+        "zh": "摘要及 HTML 正文方法、结果、结论与代码可用性定向阅读；未读补充材料，未复现。",
+        "en": "Abstract and targeted HTML methods, results, conclusion and code-availability sections; supplements not read, no reproduction."
+      },
+      "commentary": {
+        "zh": "SI-DQN利用MS/MS候选结构差异决定是否追加IR、NMR或另一极性MS/MS，以及何时停止。在79,462个模拟测试样本中，正／负离子起始的Top-1准确率由80.10%／70.44%升至93.78%／93.31%，平均追加0.227／0.340次测量；但候选集预含正确结构且各测量成本相同，尚不能据此推断真实实验节省，参考实现也仅承诺接受后公开。",
+        "en": "SI-DQN uses structural disagreement among MS/MS candidates to select complementary spectroscopy and stopping decisions. On 79,462 simulated test samples, positive/negative-start Top-1 accuracy rose from 80.10%/70.44% to 93.78%/93.31% with 0.227/0.340 additional measurements on average; correct-containing candidate sets, equal acquisition costs and unreleased reference code limit immediate laboratory transfer."
+      }
+    },
+    {
+      "title": "Predicting Differential Protein-Protein Interactions",
+      "authors": [
+        "Aram Papazian",
+        "Volkhard Helms"
+      ],
+      "journal": "bioRxiv",
+      "year": "2026",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.29.762715v1",
+      "doi": "10.64898/2026.10.29.762715",
+      "first_online": "2026-10-30",
+      "publication_status": {
+        "zh": "bioRxiv v1 预印本，未经同行评审",
+        "en": "bioRxiv v1 preprint; not peer reviewed"
+      },
+      "read_scope": {
+        "zh": "官方 bioRxiv 索引摘要及完整作者、日期元数据；原文页不可访问，未读全文、未复现。",
+        "en": "Official bioRxiv indexed abstract and author/date metadata; direct article unavailable, no full-text reading or reproduction."
+      },
+      "commentary": {
+        "zh": "将PPI专用MINT嵌入与不同条件下的质谱蛋白丰度结合，用随机森林预测两种条件之间的相互作用变化，并在八种细胞系的已验证条件特异性PPI上进行训练与测试。对研发的启发是把蛋白丰度变化与相互作用变化分开建模，但目前仅阅读官方摘要，无法独立核查数据划分、类别不平衡或具体性能；预印本预测不能替代实验相互作用证据。",
+        "en": "A random forest combines MINT interaction embeddings with condition-specific MS protein abundances to predict interaction changes, using validated PPIs from eight cell lines for training and testing. Separating abundance changes from interaction changes is useful for downstream modeling, but the abstract alone does not establish split independence, class-imbalance handling or numerical performance; these unreviewed predictions are not experimental interaction evidence."
+      }
+    }
+  ]
+}

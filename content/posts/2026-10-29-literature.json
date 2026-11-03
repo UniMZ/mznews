@@ -1,0 +1,80 @@
+{
+  "slug": "literature-2026-10-29",
+  "date": "2026-10-29",
+  "category": "Latest",
+  "title": {
+    "en": "Literature Brief (October 29, 2026)",
+    "zh": "2026年10月29日文献简报"
+  },
+  "summary": {
+    "en": "Today’s papers address interoperability in mass spectrometry imaging and the limits of transferring computational methods between proteomics and metabolomics. Shared data representations can reduce integration work, while identification confidence and quantification still depend on each field’s evidence structure.",
+    "zh": "今天聚焦质谱成像的数据互操作，以及蛋白组与代谢组计算方法迁移的边界：统一数据表示可以减少软件适配成本，但鉴定置信度与定量策略仍需服从各自的证据结构。"
+  },
+  "body": {
+    "en": [
+      "Today’s papers address interoperability in mass spectrometry imaging and the limits of transferring computational methods between proteomics and metabolomics. Shared data representations can reduce integration work, while identification confidence and quantification still depend on each field’s evidence structure.",
+      "This check covered accessible recent listings or indexes across Nature journals, ACS, MCP, Bioinformatics, PROTEOMICS, Genome Biology, PLOS Computational Biology and Metabolomics, with candidate papers checked against original sources. Access restrictions affected ACS, MCP and some preprints; candidates with incomplete authorship or scientific evidence were not included. Coverage is not exhaustive."
+    ],
+    "zh": [
+      "今天聚焦质谱成像的数据互操作，以及蛋白组与代谢组计算方法迁移的边界：统一数据表示可以减少软件适配成本，但鉴定置信度与定量策略仍需服从各自的证据结构。",
+      "本次检查涉及 Nature、ACS、MCP、Bioinformatics、PROTEOMICS、Genome Biology、PLOS Computational Biology 和 Metabolomics 的可访问近期目录或索引，并对相关候选回查原始来源。ACS、MCP 及部分预印本页面访问受限，一些候选的作者或科学证据仍不足，未纳入；本简报不代表穷尽全部新文。"
+    ]
+  },
+  "links": [],
+  "papers": [
+    {
+      "title": "Thyra: bridging mass spectrometry imaging and SpatialData for unified multimodal analysis",
+      "authors": [
+        "Theodoros Visvikis",
+        "Tim F. E. Hendriks",
+        "Wouter-Michiel Vierdag",
+        "Luca Marconato",
+        "Ron M. A. Heeren",
+        "Eva Cuypers"
+      ],
+      "journal": "Nature Methods",
+      "url": "https://www.nature.com/articles/s41592-026-03305-5",
+      "doi": "10.1038/s41592-026-03305-5",
+      "first_online": "2026-10-28",
+      "year": "2026",
+      "publication_status": {
+        "en": "Version of record · Correspondence",
+        "zh": "正式版·Correspondence"
+      },
+      "read_scope": {
+        "en": "Publisher article preview, author/publication metadata and official software documentation; full article not read and software not reproduced.",
+        "zh": "出版社正文预览、作者与出版元数据，以及官方软件说明；未阅读全文、未复现。"
+      },
+      "commentary": {
+        "en": "Thyra converts continuous raw vendor data and imzML into SpatialData, connecting mass spectrometry imaging with histology, spatial transcriptomics and existing spatial-analysis tools; its documentation lists multiple instrument inputs and retention of available ion-mobility and MS/MS information. Example data and a tutorial support reuse, with the main value being a shared data representation rather than a new identification algorithm. The accessible preview does not establish cross-platform performance or registration accuracy, and an earlier JASMS methods paper already described the software.",
+        "zh": "Thyra 将连续原始厂商数据及 imzML 转换为 SpatialData，使质谱成像更容易与组织学、空间转录组及现有空间分析工具衔接；官方文档列出多种仪器输入，并保留可用的离子淌度和 MS/MS 信息。论文提供示例数据和教程，研发价值主要在统一数据表示、减少跨模态工具之间的重复适配，而非提出新的分子鉴定算法。当前可读内容不足以核验跨平台性能或配准精度，且该软件已有较早的 JASMS 方法论文，不应将本次通信视作软件首次发布。"
+      }
+    },
+    {
+      "title": "Data processing in proteomics and metabolomics: liquid chromatography–mass spectrometry-based omics with divergent computational paradigms",
+      "authors": [
+        "Amy Zheng",
+        "Bin Liao",
+        "Liang Zhang",
+        "Tao Huan"
+      ],
+      "journal": "Briefings in Bioinformatics",
+      "url": "https://academic.oup.com/bib/article/27/5/bbag591/9002268",
+      "doi": "10.1093/bib/bbag591",
+      "first_online": "2026-10-26",
+      "year": "2026",
+      "publication_status": {
+        "en": "Published review",
+        "zh": "正式发表·综述"
+      },
+      "read_scope": {
+        "en": "Abstract and publisher-indexed main-text excerpts; not complete PDF or reproduction",
+        "zh": "摘要及出版社索引正文片段；未读完整 PDF、未复现。"
+      },
+      "commentary": {
+        "en": "This review compares proteomics and metabolomics at the level of feature extraction, identification confidence and quantification, explaining how sequence constraints versus open chemical space shape computational workflows. It offers a useful framework for adapting methods across fields, but generates no new data and supplies neither a new algorithm nor independent benchmarking evidence.",
+        "zh": "这篇综述按特征提取、鉴定置信度和定量等任务，比较序列约束的蛋白组与开放化学空间的代谢组计算流程，提出跨领域方法迁移应以搜索空间和证据结构为前提。其研发价值在于厘清鉴定错误率、缺失值恢复及校正策略不能直接互换；文章未生成或分析新数据，不提供新算法性能或独立基准证据。"
+      }
+    }
+  ]
+}
