@@ -1,0 +1,107 @@
+{
+  "slug": "literature-2026-11-04",
+  "date": "2026-11-04",
+  "category": "Latest",
+  "title": {
+    "zh": "2026年11月4日文献简报",
+    "en": "Literature Brief (November 4, 2026)"
+  },
+  "summary": {
+    "zh": "谱图结构解析与质量控制都需要可核查的证据。本期关注LLM借助专业工具的能力边界、分子网络中的诊断碎片识别，以及可重复的DIA质量检查。",
+    "en": "Spectral structure elucidation and quality control both need inspectable evidence. This brief examines the limits of LLMs assisted by specialist tools, diagnostic reporters in molecular networks, and reproducible DIA quality checks."
+  },
+  "body": {
+    "en": [
+      "Spectral structure elucidation and quality control both need inspectable evidence. This brief examines the limits of LLMs assisted by specialist tools, diagnostic reporters in molecular networks, and reproducible DIA quality checks.",
+      "Accessible journal listings, publication metadata and indexes covered proteomics, small molecules and lipids, ion mobility, imaging and signal processing. Some publisher and preprint articles were inaccessible; the interpretations below retain explicit abstract-level and validation limits."
+    ],
+    "zh": [
+      "谱图结构解析与质量控制都需要可核查的证据。本期关注LLM借助专业工具的能力边界、分子网络中的诊断碎片识别，以及可重复的DIA质量检查。",
+      "可访问期刊目录、出版元数据和索引涵盖蛋白组、小分子与脂质、离子淌度、成像及信号处理。部分出版社与预印本原文不可访问；以下解读明确保留摘要阅读与验证范围限制。"
+    ]
+  },
+  "links": [],
+  "papers": [
+    {
+      "title": "LLMs Depend on Specialist Tools for Out-of-Distribution Generalization in MS/MS Structural Elucidation",
+      "authors": [
+        "Gabriel Asher",
+        "Cailum M. K. Stienstra",
+        "Tomo Oga",
+        "Devesh Shah",
+        "Antonio H. de O. Fonseca",
+        "Niall O’Connor",
+        "Michael Widrich"
+      ],
+      "journal": "arXiv",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2611.03308",
+      "doi": "10.48550/arXiv.2611.03308",
+      "first_online": "2026-11-02",
+      "publication_status": {
+        "zh": "预印本 v1",
+        "en": "Preprint v1"
+      },
+      "read_scope": {
+        "zh": "已阅读正文的方法、结果与局限，核对作者页；未复现，未完整审阅附录。",
+        "en": "Main-text methods, results and limitations read; author page checked. Not reproduced; appendices not reviewed in full."
+      },
+      "commentary": {
+        "zh": "研究用100个MassSpecGym化合物按文献足迹分组并匹配采集条件，固定单一LLM开展工具消融：文本分布外组Top-1由无工具的2%升至接入MS-GPT后的26%，接入专有LSM-Gen后为38%，提示候选生成比单靠LLM猜结构更关键。文献足迹只是训练暴露的代理、并非化学新颖性证明，实验预先给定分子式，最高结果依赖专有工具且智能体成本约为生成器单独运行的20倍；开发者应把候选覆盖、重排序收益和部署成本分开评估。",
+        "en": "A 100-compound MassSpecGym benchmark matches acquisition conditions while separating compounds by textual footprint. Tool ablations raise textually out-of-distribution Top-1 accuracy from 2% without tools to 26% with MS-GPT and 38% with proprietary LSM-Gen, pointing to candidate generation as a bottleneck. Textual footprint is only a proxy for training exposure, not chemical novelty; molecular formulas are supplied, one LLM is tested, and the agent costs roughly twenty times the generator alone, making candidate coverage and deployment cost essential evaluation targets."
+      }
+    },
+    {
+      "title": "Identification of diagnostic reporters in MS/MS Molecular Networks",
+      "authors": [
+        "Nicola Dalla Valle",
+        "Pietro Franceschi",
+        "Mar Garcia-Aloy",
+        "Peter Robatscher",
+        "Sabine Oettl",
+        "Michael Oberhuber"
+      ],
+      "journal": "Analytical Chemistry",
+      "year": "2026",
+      "url": "https://doi.org/10.1021/acs.analchem.6c03306",
+      "doi": "10.1021/acs.analchem.6c03306",
+      "first_online": "2026-11-02",
+      "publication_status": {
+        "zh": "正式版",
+        "en": "Journal article"
+      },
+      "read_scope": {
+        "zh": "仅阅读出版商向Crossref登记的摘要和元数据；未取得全文或补充材料，未复现。",
+        "en": "Publisher-deposited Crossref abstract and metadata only; full text and supplements unavailable, not reproduced."
+      },
+      "commentary": {
+        "zh": "方法将网络模块度与分位数广义加性模型结合，在控制碎片或中性丢失出现频率后寻找拓扑聚集性更强的诊断信号，为分子网络中的注释传播提供数据驱动依据。摘要报告其在Alternaria代谢组中区分类别特异信号与常见碎裂模式，并优先识别tricycloalternarene诊断信号；目前仅核实摘要，跨数据集稳健性和错误传播风险尚无法评估，适合用作可解释谱图关联分析的研发思路。",
+        "en": "Network modularity and quantile generalised additive models identify fragment ions and neutral losses whose network cohesion exceeds that expected from their prevalence. The abstract reports prioritisation of tricycloalternarene-specific reporters in an Alternaria metabolome, offering interpretable evidence for annotation propagation. Only the abstract was accessible, so cross-dataset robustness and propagation-error control remain unassessed."
+      }
+    },
+    {
+      "title": "QC-espresso: Brewing quality in proteomics",
+      "authors": [
+        "Guilherme Pauperio Lanfredi",
+        "Jackson Gabriel Miyamoto"
+      ],
+      "journal": "bioRxiv",
+      "year": "2026",
+      "url": "https://doi.org/10.64898/2026.10.29.762921",
+      "doi": "10.64898/2026.10.29.762921",
+      "first_online": "2026-11-02",
+      "publication_status": {
+        "zh": "预印本，未经同行评审；首次发布日期由 bioRxiv 提交元数据核实",
+        "en": "Preprint, not peer-reviewed; first-posted date verified from bioRxiv-deposited metadata"
+      },
+      "read_scope": {
+        "zh": "bioRxiv 提交至 Crossref 的摘要、完整作者和首次发布日期元数据；原文页不可访问，未读全文或补充材料，未复现。",
+        "en": "bioRxiv-deposited Crossref abstract, complete authors and first-posted metadata; original page unavailable, full text and supplements not read, no reproduction."
+      },
+      "commentary": {
+        "zh": "QC-espresso以DIA-NN的report.parquet和FASTA为输入，通过R与Quarto生成统一的HTML质控报告、运行统计和可导出表格；三个实验数据集展示了污染物、色谱变化及系统质量误差与定量质量异常的关联。其研发价值在于让质控检查可追踪、可重复，但这些案例不等于独立验证的故障检测准确率，也不能仅凭指标共现确定因果；此处仅据摘要解读。",
+        "en": "QC-espresso converts DIA-NN report.parquet output and FASTA data into standardized HTML quality-control reports, run statistics and exportable tables using R and Quarto. Three experimental datasets illustrate associations involving contamination, chromatographic changes and systematic mass-error bias; reproducible inspection is valuable, but these examples do not establish independently validated fault-detection accuracy or causality from co-occurring metrics."
+      }
+    }
+  ]
+}
