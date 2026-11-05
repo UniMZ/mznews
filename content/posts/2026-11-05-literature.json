@@ -1,0 +1,157 @@
+{
+  "slug": "literature-2026-11-05",
+  "date": "2026-11-05",
+  "category": "Latest",
+  "title": {
+    "zh": "2026年11月5日文献简报",
+    "en": "Literature Brief (November 5, 2026)"
+  },
+  "summary": {
+    "zh": "分子邻域、完整质量和保留时间为质谱候选判别提供互补证据。本期关注邻域约束的代谢物结构推断、大蛋白质型鉴定、保留时间模型的适用边界，以及可追溯的自上而下蛋白组智能体分析。",
+    "en": "Molecular neighborhoods, intact masses and retention times provide complementary evidence for distinguishing mass-spectrometry candidates. This brief covers neighborhood-guided metabolite structure inference, large-proteoform identification, the limits of retention-time models, and traceable agent-assisted top-down proteomics."
+  },
+  "body": {
+    "en": [
+      "Molecular neighborhoods, intact masses and retention times provide complementary evidence for distinguishing mass-spectrometry candidates. This brief covers neighborhood-guided metabolite structure inference, large-proteoform identification, the limits of retention-time models, and traceable agent-assisted top-down proteomics.",
+      "Accessible journal listings, publication metadata and literature indexes covered proteomics, small molecules and lipids, ion mobility, imaging and signal processing. Some publisher and preprint articles were inaccessible; the interpretations below retain explicit reading and validation limits."
+    ],
+    "zh": [
+      "分子邻域、完整质量和保留时间为质谱候选判别提供互补证据。本期关注邻域约束的代谢物结构推断、大蛋白质型鉴定、保留时间模型的适用边界，以及可追溯的自上而下蛋白组智能体分析。",
+      "可访问的期刊目录、出版元数据与文献索引涵盖蛋白组、小分子与脂质、离子淌度、成像及信号处理。部分出版社与预印本原文不可访问；以下解读保留实际阅读范围和验证局限。"
+    ]
+  },
+  "links": [],
+  "papers": [
+    {
+      "title": "DEEPNET-LLM: Highly accurate structure prediction of unknown metabolites from mass spectra via their molecular neighborhoods",
+      "authors": [
+        "Alexey V Melnik",
+        "Andrew Mitchell Pusey Roberts",
+        "Alexander Semenov",
+        "Dana Moradi",
+        "Elizabeth A Coler",
+        "Jennifer Goldstein",
+        "Bibhusha Ojha",
+        "Nathan J Swift",
+        "Suada Demirovic",
+        "Mark W Peczuh",
+        "Thomas D Horvath",
+        "Melinda A Engevik",
+        "Vladimir Boginski",
+        "Alexander A Aksenov"
+      ],
+      "journal": "bioRxiv",
+      "url": "https://doi.org/10.64898/2026.10.28.762558",
+      "doi": "10.64898/2026.10.28.762558",
+      "first_online": "2026-11-03",
+      "year": "2026",
+      "publication_status": {
+        "zh": "预印本，未经同行评审",
+        "en": "Preprint, not peer-reviewed"
+      },
+      "read_scope": {
+        "zh": "bioRxiv提交至Crossref的摘要及完整作者、首次发布日期元数据，并与Europe PMC核对；原文页不可访问，未读全文或补充材料，未复现。",
+        "en": "bioRxiv-deposited Crossref abstract, complete author list and first-posted metadata, cross-checked with Europe PMC; original article page unavailable, full text and supplements not read, no reproduction."
+      },
+      "commentary": {
+        "zh": "DEEPNET-LLM先用分子社区网络约束待鉴定谱图的局部化学邻域，再由大语言模型传播邻居结构信息；摘要报告在900种未公开标准品的2,249张谱图上取得84.7%的Top-1结构正确率，在MassSpecGym随机子集上为85.9%（不计立体化学）。其研发价值是把邻域先验与结构生成结合，但性能依赖邻域信息，未公开谱图也不自动排除结构或邻居层面的信息泄漏；目前仅据摘要，尚不能判断数据划分、邻居可获得性及独立泛化表现。",
+        "en": "DEEPNET-LLM narrows a query spectrum to a local chemical neighborhood using Molecular Community Networking, then uses LLM reasoning to transfer structural information from neighbors. The abstract reports 84.7% top-1 accuracy across 2,249 spectra of 900 previously unpublished standards and 85.9% on a random MassSpecGym subset excluding stereochemistry. Neighborhood-guided generation is promising, but private spectra alone do not exclude structure-level or neighbor-related leakage; the splits, availability of useful neighbors and independent generalization require full-text evaluation."
+      }
+    },
+    {
+      "title": "An Integrated Experimental and Informatics Strategy Enables Large Proteoform Identification in Top-Down Proteomics",
+      "authors": [
+        "Matthew S Fischer",
+        "Eli J Larson",
+        "Ryan K Schroeder",
+        "Hsin-Ju Chan",
+        "Heewon Choi",
+        "Thomas S Weir",
+        "Andrew J Perciaccante",
+        "Carmen C Sucharov",
+        "Yang Lu",
+        "Ying Ge"
+      ],
+      "journal": "bioRxiv",
+      "url": "https://doi.org/10.64898/2026.10.30.763218",
+      "doi": "10.64898/2026.10.30.763218",
+      "first_online": "2026-11-02",
+      "year": "2026",
+      "publication_status": {
+        "zh": "预印本，未经同行评审",
+        "en": "Preprint, not peer-reviewed"
+      },
+      "read_scope": {
+        "zh": "bioRxiv提交至Crossref的摘要及完整作者、首次发布日期元数据，并与Europe PMC核对；原文页不可访问，未读全文或补充材料，未复现。",
+        "en": "bioRxiv-deposited Crossref abstract, complete author list and first-posted metadata, cross-checked with Europe PMC; original article page unavailable, full text and supplements not read, no reproduction."
+      },
+      "commentary": {
+        "zh": "该研究把大蛋白分离与采集同前体质量校正、完整质量引导的候选发现及MS/MS验证整合，使同位素未分辨的DDA前体也能进入常规数据库检索，并以DIA增强大蛋白碎片信号。摘要报告在人心组织中鉴定703种非冗余proteoform、对应236种蛋白，其中65种蛋白超过30 kDa、22种超过50 kDa，鉴定上限达223 kDa；对研发的启示是联合处理质量赋值和候选验证，但这些是整合工作流结果，不能归因于单一算法，错误率控制和跨样本泛化仍需全文核查。",
+        "en": "This workflow combines large-protein separation and acquisition with precursor mass correction, intact-mass-guided candidate discovery and MS/MS validation, enabling conventional searches of DDA data with unresolved precursor isotope envelopes and enhancing fragment signals with DIA. The abstract reports 703 nonredundant proteoforms from 236 proteins in human heart tissue, including 65 proteins above 30 kDa and 22 above 50 kDa, with identifications extending to 223 kDa. The integration is useful for method development, but these are whole-workflow results rather than an isolated algorithmic gain; error control and generalization require full-text evaluation."
+      }
+    },
+    {
+      "title": "Structure-based retention time prediction for fentanyl analogs under cyano and phenyl-hexyl SCC-LC–MS/MS conditions: supporting discrimination among MS-ambiguous candidates",
+      "authors": [
+        "Hwa-Yong Jang",
+        "Eunwoo Choi",
+        "Sunghee Choi",
+        "Nakyung Kim",
+        "Jiyu Kim",
+        "Sumin Seo",
+        "Eunyoung Han",
+        "Sang Beom Han",
+        "Han Bin Oh"
+      ],
+      "journal": "Journal of Analytical Science and Technology",
+      "url": "https://doi.org/10.1186/s40543-026-00578-5",
+      "doi": "10.1186/s40543-026-00578-5",
+      "first_online": "2026-11-02",
+      "year": "2026",
+      "publication_status": {
+        "zh": "正式同行评审论文",
+        "en": "Peer-reviewed journal article"
+      },
+      "read_scope": {
+        "zh": "出版社检索索引中的摘要及方法、结果、局限和数据可用性段落，Crossref 元数据；未检查完整补充材料或复现",
+        "en": "Publisher-indexed abstract and excerpts covering methods, results, limitations and data availability, plus Crossref metadata; full supplementary materials not checked, no reproduction."
+      },
+      "commentary": {
+        "zh": "研究以 94 条结构–保留时间记录比较五种回归方法，通过嵌套交叉验证、结构相似性分组检验和适用域分析，评估 RT 对质谱难区分候选物的辅助判别价值。所选高斯过程模型的留一验证平均绝对误差为 1.15 分钟，间隔较大候选对的 RT 排序正确率为 86%，近邻对为 68%；稀有局部结构修饰仍可在适用域内造成大误差。结果仅为特定串联色谱柱条件下的内部验证，尚不能替代外部检验或确证鉴定，但其结构支持度与候选间隔分析值得借鉴。",
+        "en": "Using 94 structure–retention-time records, the study compares five regressors with nested cross-validation, structure-grouped checks and applicability-domain analysis for prioritizing MS-ambiguous candidates. The selected Gaussian-process model has a leave-one-out MAE of 1.15 minutes; RT ordering is correct for 86% of more widely separated candidate pairs versus 68% of close pairs, while rare local modifications can cause large errors even inside the applicability domain. These are internal results under one serial-column method, not external validation or confirmatory identification; the local-support and candidate-spacing analyses are the transferable contribution."
+      }
+    },
+    {
+      "title": "TDEaseNexus: A Traceable, Open-Source AI Agent Platform for Top-Down Proteomics Data Analysis",
+      "authors": [
+        "Rui Qian",
+        "Meng-Ting Zhang",
+        "Yucheng Liao",
+        "Tao Yi",
+        "Kai Lin",
+        "Xingpu Zhao",
+        "Jian-Zhang Pan",
+        "Weijie Zhang",
+        "Qun Fang",
+        "Mowei Zhou"
+      ],
+      "journal": "ChemRxiv",
+      "url": "https://chemrxiv.org/doi/full/10.26434/chemrxiv.15011633/v1",
+      "doi": "10.26434/chemrxiv.15011633/v1",
+      "first_online": "2026-11-03",
+      "year": "2026",
+      "publication_status": {
+        "zh": "预印本 v1，未经同行评审",
+        "en": "Preprint v1, not peer-reviewed"
+      },
+      "read_scope": {
+        "zh": "仅阅读 Crossref 提供的原始摘要与元数据，未读全文、未复现。",
+        "en": "Original abstract and metadata supplied through Crossref only; full text not read, no reproduction."
+      },
+      "commentary": {
+        "zh": "TDEaseNexus以自然语言智能体组织自上而下蛋白组分析，把工作流执行、蛋白质型解析和交互可视化整合到桌面平台，并用领域技能与Rust工具完成修饰搜索、质量校准和谱图证据计算，自动记录分析溯源。其价值在于减少工具衔接和保留可检查的计算步骤；摘要未提供独立性能评测或错误率验证，不能据此认定智能体提高了鉴定准确性。",
+        "en": "TDEaseNexus uses a natural-language agent to coordinate top-down proteomics analysis, combining workflow execution, proteoform interpretation and interactive visualization in a desktop platform. Domain-specific skills and Rust tools support modification searches, mass calibration and calculations of spectral evidence while recording analysis provenance. The platform may reduce friction between tools and make computational steps inspectable, but the abstract provides neither independent performance benchmarks nor error-rate validation, so it does not establish improved identification accuracy."
+      }
+    }
+  ]
+}
