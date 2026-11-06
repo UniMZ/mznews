@@ -1,0 +1,83 @@
+{
+  "slug": "literature-2026-11-06",
+  "date": "2026-11-06",
+  "category": "Latest",
+  "title": {
+    "en": "Literature Brief (November 6, 2026)",
+    "zh": "2026年11月6日文献简报"
+  },
+  "summary": {
+    "en": "Predicted fragment intensities can make real-time peptide searching more efficient, while integrated metabolomics resources can support traceable data reuse. This brief examines Comet's Carafe-assisted index and the Met-SC platform, with explicit limits on accuracy and validation claims.",
+    "zh": "预测碎片强度可提高实时肽段检索效率，整合代谢组资源则有助于可追溯的数据复用。本期关注Comet的Carafe辅助索引与Met-SC平台，并明确区分效率、资源规模与准确性验证。"
+  },
+  "body": {
+    "en": [
+      "This brief covers prediction-guided fragment indexing for real-time peptide searches and an integrated metabolomics data platform.",
+      "Accessible publication metadata, abstracts and publisher-indexed sections were reviewed across computational mass spectrometry. Coverage is partial: some journal and preprint pages were inaccessible, and the reading scope for each paper is stated below."
+    ],
+    "zh": [
+      "本期关注用于实时肽段检索的预测引导碎片索引，以及整合代谢组数据与分析的平台。",
+      "本次检索涵盖计算质谱相关的可访问出版元数据、摘要与出版社索引段落。覆盖并不完整：部分期刊和预印本原文不可访问，各论文的实际阅读范围见下文。"
+    ]
+  },
+  "links": [],
+  "papers": [
+    {
+      "title": "Improving real-time search through deep learning-enhanced fragment ion indexing",
+      "authors": [
+        "Jimmy Eng",
+        "Michael Hoopmann",
+        "Devin K. Schweppe",
+        "Michael J. MacCoss",
+        "William Stafford Noble",
+        "Bo Wen"
+      ],
+      "journal": "bioRxiv",
+      "year": "2026",
+      "url": "https://doi.org/10.64898/2026.10.27.762387",
+      "doi": "10.64898/2026.10.27.762387",
+      "first_online": "2026-11-03",
+      "publication_status": {
+        "en": "Preprint, not peer-reviewed",
+        "zh": "预印本，未经同行评审"
+      },
+      "read_scope": {
+        "en": "Crossref-deposited abstract and bibliographic metadata only; full text and supplementary materials not read, no reproduction.",
+        "zh": "仅阅读Crossref收录的原始摘要与书目元数据；未读全文及补充材料，未复现。"
+      },
+      "commentary": {
+        "en": "Comet uses Carafe-predicted fragment intensities to retain only likely observable ions in its search index. Across two search spaces and three index configurations, the abstract reports lower peak memory use, faster searching and comparable peptide-spectrum match counts; prediction is performed before searching and can be amortized across runs using the same database and modifications. Comparable match counts do not establish equal identification accuracy. The effects on weak fragments, error control and generalization remain unverified from the abstract.",
+        "zh": "Comet利用Carafe预测的碎片强度，在检索索引中仅保留更可能被观测到的离子。摘要在两种检索空间与三种索引配置下报告峰值内存降低、检索加速，同时保持相近的肽段–谱图匹配数量；预测在检索前完成，可在使用相同数据库和修饰设置的运行之间摊薄成本。匹配数量相近并不证明鉴定准确性相同，仅凭摘要尚不能核实对弱碎片、错误率控制和泛化能力的影响。"
+      }
+    },
+    {
+      "title": "Metabolomics Subcenter (Met-SC): an integrated metabolomics database and analysis platform",
+      "authors": [
+        "Liliang Wen",
+        "Mingchao Wang",
+        "Zhongda Zeng",
+        "Shuhui Song",
+        "Wenming Zhao",
+        "Guowang Xu",
+        "Xinyu Liu"
+      ],
+      "journal": "Nucleic Acids Research",
+      "year": "2026",
+      "url": "https://doi.org/10.1093/nar/gkag1127",
+      "doi": "10.1093/nar/gkag1127",
+      "first_online": "2026-11-05",
+      "publication_status": {
+        "en": "Peer-reviewed journal article",
+        "zh": "正式同行评审论文"
+      },
+      "read_scope": {
+        "en": "Publisher-indexed abstract, publication history, author contributions, resource statistics and selected methods/results sections. Direct article opening was unavailable; supplements and platform functionality were not inspected or reproduced.",
+        "zh": "出版社索引中的摘要、出版日期、作者贡献、资源统计及部分方法与结果段落；原文页无法直接打开，未读补充材料、未实测平台或复现。"
+      },
+      "commentary": {
+        "en": "Met-SC links metabolomics deposition, spectral resources, online analysis and disease-focused knowledge exploration. It reports approximately 7.76 million reference spectra, 73.01 million unknown-feature spectra and 27 analysis and visualization functions. Its main value is traceable data reuse. Evaluation of 30 colorectal-cancer paths is exploratory, not evidence of improved metabolite-identification accuracy; corpus size also does not establish independent chemical coverage or leakage-free training.",
+        "zh": "Met-SC将代谢组数据提交、谱库、在线分析和疾病知识探索整合到同一平台。论文报告约776万条参考谱和7301万条未知特征谱，并提供27项分析与可视化功能。研发价值主要是可追溯的数据复用；对30条结直肠癌相关路径的评估仍属探索性，不能据此推断代谢物鉴定准确率提升。谱图规模也不等于独立化合物覆盖或无泄漏训练集。"
+      }
+    }
+  ]
+}
