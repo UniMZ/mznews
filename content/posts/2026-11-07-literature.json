@@ -1,0 +1,116 @@
+{
+  "slug": "literature-2026-11-07",
+  "date": "2026-11-07",
+  "category": "Latest",
+  "title": {
+    "en": "Literature Brief (November 7, 2026)",
+    "zh": "2026年11月7日文献简报"
+  },
+  "summary": {
+    "en": "Network-guided metabolomics, peptide-language-model priors and standardized glycoproteomics deposition connect computational interpretation with reusable evidence. This brief distinguishes candidate prioritization from confirmed identification and repository infrastructure from analysis quality.",
+    "zh": "网络引导代谢组解读、肽语言模型先验与标准化糖蛋白组数据提交，将计算解释与可复用证据连接起来。本期区分候选排序与确定性鉴定，以及数据基础设施与分析质量。"
+  },
+  "body": {
+    "en": [
+      "This brief covers FeatureMAP, PepPr and the GlycoPOST update, in that order.",
+      "Accessible primary-source abstracts, publication metadata and selected publisher-indexed sections were reviewed. Coverage is partial because some journal and preprint pages were inaccessible. Each entry states its actual reading scope; no software or results were reproduced."
+    ],
+    "zh": [
+      "本期依次关注FeatureMAP、PepPr与GlycoPOST更新。",
+      "本次阅读了可访问的原始摘要、出版元数据及部分出版社索引段落。由于部分期刊和预印本页面不可访问，覆盖并不完整。各条目注明实际阅读范围，未运行软件或复现结果。"
+    ]
+  },
+  "links": [],
+  "papers": [
+    {
+      "title": "FeatureMAP enables network-guided interpretation of untargeted metabolomics",
+      "authors": [
+        "Yuting Wang",
+        "Feifan Zhang",
+        "Guoping Peng",
+        "Lifeng Qiu",
+        "Li Zeng",
+        "Yijiang Liu",
+        "Jiramet Kinchagawat",
+        "Xicheng Yang",
+        "Chang Liu",
+        "Caroline Johnson",
+        "Qi Su",
+        "Chuchu Wang",
+        "Xiaotao Shen"
+      ],
+      "journal": "bioRxiv",
+      "year": "2026",
+      "url": "https://doi.org/10.64898/2026.11.04.764165",
+      "doi": "10.64898/2026.11.04.764165",
+      "first_online": "2026-11-05",
+      "publication_status": {
+        "en": "Preprint, not peer-reviewed",
+        "zh": "预印本，未经同行评审"
+      },
+      "read_scope": {
+        "en": "Publisher-deposited abstract, complete author metadata and posting date via Crossref, cross-checked against the official bioRxiv directory. Full text, supplements, software and reproduction were not assessed.",
+        "zh": "阅读了经Crossref提供的出版社提交摘要、完整作者元数据和发表日期，并核对bioRxiv官方目录；未读全文或补充材料，未运行软件或复现。"
+      },
+      "commentary": {
+        "en": "FeatureMAP combines multi-evidence annotation, network-guided candidate refinement, metabolic-module discovery and structured LLM interpretation around LC–MS features. The abstract reports improved MS1 candidate prioritization and reduced redundancy across ten public datasets, with 92% recovery of one simulated perturbation in semi-synthetic benchmarking. Its companion PhenoMAP covers 12,929 dysregulated modules from 501 human studies spanning 326 phenotypes. It is relevant to interpreting incompletely annotated features. The 92% figure is not compound-identification accuracy; network-prior bias, dataset independence and LLM interpretation reliability require full-text assessment.",
+        "zh": "FeatureMAP以LC–MS特征为中心，整合多证据代谢物注释、网络引导的候选精炼、代谢模块发现和结构化大语言模型功能解读。摘要报告其在10个公开数据集上改善MS1候选排序并减少注释冗余；半合成基准中，一项模拟扰动的恢复率为92%。配套PhenoMAP汇集501项人类研究、326种表型中的12,929个失调代谢模块。研发价值在于对未完全注释的特征进行模块级解释。92%不是化合物鉴定准确率；网络先验偏差、数据集独立性和LLM解释可靠性仍需全文核查。"
+      }
+    },
+    {
+      "title": "PepPr: De Novo peptide sequencing with peptide priors",
+      "authors": [
+        "Samuel Khan",
+        "Daniela Klaproth-Andrade",
+        "Yanik Bruns",
+        "Mathias Wilhelm",
+        "Julien Gagneur"
+      ],
+      "journal": "bioRxiv",
+      "year": "2026",
+      "url": "https://doi.org/10.64898/2026.10.27.762126",
+      "doi": "10.64898/2026.10.27.762126",
+      "first_online": "2026-10-28",
+      "publication_status": {
+        "en": "Preprint, not peer-reviewed",
+        "zh": "预印本，未经同行评审"
+      },
+      "read_scope": {
+        "en": "Indexed primary-source abstract and complete author list only. Full-text access was unavailable; supplementary materials and software were not assessed, and no reproduction was performed.",
+        "zh": "仅阅读索引中的原始摘要与完整作者名单。全文不可访问，未读补充材料、未核验软件或复现。"
+      },
+      "commentary": {
+        "en": "PepPr combines de novo sequencing with a reference-proteome peptide-language-model prior. The abstract reports improved reference and variant identification and recovery of some antibody regions. Its attraction is combining reference knowledge with discovery; prior bias, error control, leakage and cross-species generalization still require scrutiny. Abstract-level evidence does not support a quantitative performance claim.",
+        "zh": "PepPr把参考蛋白组训练的肽语言模型先验引入从头测序。摘要报告参考肽和变异肽鉴定均改善，并提升抗体部分区域的序列恢复。其价值在于结合参考知识与开放发现；仍需核查先验偏倚、错误率控制、数据泄漏及跨物种泛化。当前仅摘要级阅读，不能给出可靠的量化增益。"
+      }
+    },
+    {
+      "title": "GlycoPOST: expanding glycomics data sharing to glycoproteomics through the updated MIRAGE guidelines",
+      "authors": [
+        "Yushi Takahashi",
+        "Zekun Wang",
+        "Ryoichi Noguchi",
+        "Akira Seno",
+        "Kiyoko F. Aoki-Kinoshita",
+        "Shujiro Okuda"
+      ],
+      "journal": "Nucleic Acids Research",
+      "year": "2026",
+      "url": "https://doi.org/10.1093/nar/gkag1126",
+      "doi": "10.1093/nar/gkag1126",
+      "first_online": "2026-11-05",
+      "publication_status": {
+        "en": "Peer-reviewed journal article",
+        "zh": "正式同行评审论文"
+      },
+      "read_scope": {
+        "en": "Publisher-indexed abstract, project statistics, update features, limitations and author contributions, plus the publisher's advance-article listing. The complete article and supplementary materials were not reviewed; the platform was not tested and results were not reproduced.",
+        "zh": "出版社检索索引中的摘要、项目统计、更新功能、局限和作者贡献段落，以及出版社在线优先目录；未读完整全文或补充材料，未实测平台或复现。"
+      },
+      "commentary": {
+        "en": "GlycoPOST extends raw MS data sharing from glycomics to glycoproteomics through revised MIRAGE reporting requirements, project types and metadata-preset filtering, including projects linking both experimental approaches. As of 1 September 2026, it held 602 projects and 7.6 TiB of data, with 445 projects and 5.2 TiB public. Its development value lies in structured experimental metadata and data reuse. The repository does not interpret or curate glycan or glycopeptide identifications; machine-readable standards for identification results and confidence remain unfinished. Each new project type had only one public example at that cutoff, so these counts do not establish broad adoption or improved identification accuracy.",
+        "zh": "GlycoPOST通过修订后的MIRAGE报告规范、项目类型和元数据预设筛选，将原始质谱数据共享从糖组学扩展到糖蛋白组学，并支持同一项目关联两类实验。截至2026年9月1日，平台收录602个项目、7.6 TiB数据，其中445个项目、5.2 TiB数据公开。其研发价值在于规范实验元数据和支持数据复用；平台并不负责解释或审校糖链及糖肽鉴定结果，鉴定结果与置信度的机器可读交换标准仍待完善。新项目类型在该统计时点各只有一个公开实例，尚不能据此推断广泛采用或鉴定准确性提升。"
+      }
+    }
+  ]
+}
