@@ -1,0 +1,49 @@
+{
+  "slug": "literature-2026-11-10",
+  "date": "2026-11-10",
+  "category": "Latest",
+  "title": {
+    "en": "Literature Brief (November 10, 2026)",
+    "zh": "2026年11月10日文献简报"
+  },
+  "summary": {
+    "en": "Joint cell and protein representations connect single-cell proteomic heterogeneity with protein-module recovery, while interpretation remains dependent on preprocessing and biological priors.",
+    "zh": "细胞与蛋白的联合表征将单细胞蛋白组异质性分析与蛋白模块恢复联系起来，其解释仍依赖预处理和生物学先验。"
+  },
+  "body": {
+    "en": [
+      "This brief examines a computational framework for analyzing processed single-cell proteomics data. Cell clustering and protein-module recovery provide complementary views, but neither alone establishes a biological mechanism or a physical protein complex."
+    ],
+    "zh": [
+      "本期关注一个面向已处理单细胞蛋白组数据的计算框架。细胞聚类与蛋白模块恢复提供互补视角，但二者本身均不能确立生物学机制或证明物理蛋白复合物。"
+    ]
+  },
+  "links": [],
+  "papers": [
+    {
+      "title": "scYOU: a multi-scale yoked optimization and unsupervised framework for analysis of cellular heterogeneity and complex-associated protein module recovery",
+      "authors": [
+        "Yuan Gan",
+        "Yixiang Huang",
+        "Xinqi Gong"
+      ],
+      "journal": "Briefings in Bioinformatics",
+      "year": "2026",
+      "url": "https://academic.oup.com/bib/article/27/6/bbag626/9022372",
+      "doi": "10.1093/bib/bbag626",
+      "first_online": "2026-11-09",
+      "publication_status": {
+        "en": "Peer-reviewed journal article",
+        "zh": "同行评议期刊论文"
+      },
+      "read_scope": {
+        "en": "Publisher-indexed article text and bibliographic metadata; direct publisher-page retrieval was unavailable.",
+        "zh": "已阅读出版方索引的文章正文与书目信息；未能直接获取出版方文章页面。"
+      },
+      "commentary": {
+        "en": "scYOU couples cell-level and protein-level autoencoder representations, using supercell alignment and Gene Ontology cellular-component priors to connect cellular heterogeneity with protein modules. The study evaluates six mass-spectrometry-based single-cell protein-abundance datasets, making it relevant to downstream proteomics analysis rather than raw-spectrum processing. Joint representations may help organize candidate cell states and complex-associated modules, but the results depend on data preprocessing and the supplied biological priors. Coherent protein modules should therefore be treated as hypotheses for follow-up, not direct evidence of physical complexes or causal mechanisms.",
+        "zh": "scYOU 将细胞层面与蛋白层面的自编码器表征耦合，通过超级细胞对齐和 Gene Ontology 细胞组分先验，把细胞异质性分析与蛋白模块联系起来。研究评估了六个基于质谱的单细胞蛋白丰度数据集，因此主要面向蛋白组下游分析，而非原始谱图处理。联合表征有助于组织候选细胞状态及复合物相关模块，但结果依赖数据预处理与所引入的生物学先验。因此，具有一致性的蛋白模块应被视为有待后续检验的假设，而不是物理复合物或因果机制的直接证据。"
+      }
+    }
+  ]
+}
