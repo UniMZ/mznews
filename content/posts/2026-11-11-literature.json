@@ -1,0 +1,58 @@
+{
+  "slug": "literature-2026-11-11",
+  "date": "2026-11-11",
+  "category": "Latest",
+  "title": {
+    "en": "Literature Brief (November 11, 2026)",
+    "zh": "2026年11月11日文献简报"
+  },
+  "summary": {
+    "en": "GNPS2-Quant connects non-targeted discovery with scheduled targeted quantification, while the reported comparison cautions against assuming that targeted acquisition always improves sensitivity.",
+    "zh": "GNPS2-Quant将非靶向发现衔接到定时靶向定量，研究中的比较也提醒我们，不应假定靶向采集总能提高灵敏度。"
+  },
+  "body": {
+    "en": [
+      "This brief examines the transition from non-targeted LC–MS/MS discovery to targeted quantification of xenobiotics. The practical contribution is a reusable connection between detected features and subsequent acquisition, with performance remaining dependent on the analytical platform and compounds.",
+      "Interpretation is based on the publisher-indexed abstract and bibliographic metadata. Full text and supplementary materials were not read, and the workflow was not tested or reproduced."
+    ],
+    "zh": [
+      "本期关注从非靶向LC–MS/MS发现到外源化合物靶向定量的衔接。其实际价值在于把已检测特征转化为后续采集任务，但性能仍取决于分析平台和化合物。",
+      "本期解读依据出版社索引中的摘要与书目元数据；未阅读全文或补充材料，未实测工作流或复现结果。"
+    ]
+  },
+  "links": [],
+  "papers": [
+    {
+      "title": "Large-Scale Quantification of Xenobiotics Following Non-Targeted Liquid Chromatography Tandem Mass Spectrometry",
+      "authors": [
+        "Maxence Derbez-Morin",
+        "Rithi Krishnaraj",
+        "Haiyan Ke",
+        "Thomas Cummins",
+        "Amancio De Souza",
+        "Tilman Schramm",
+        "Yourae Shin",
+        "Ansel Hsiao",
+        "Mingxun Wang",
+        "Daniel Petras"
+      ],
+      "journal": "Journal of the American Society for Mass Spectrometry",
+      "year": "2026",
+      "url": "https://pubs.acs.org/jamsef/article/doi/10.1021/jasms.6c00334/5466015/Large-Scale-Quantification-of-Xenobiotics",
+      "doi": "10.1021/jasms.6c00334",
+      "first_online": "2026-11-06",
+      "publication_status": {
+        "en": "Peer-reviewed journal article",
+        "zh": "同行评议期刊论文"
+      },
+      "read_scope": {
+        "en": "Publisher-indexed abstract and bibliographic metadata only; full text and supplementary materials not read, workflow not tested or reproduced.",
+        "zh": "仅阅读出版社索引中的摘要与书目元数据；未读全文或补充材料，未实测工作流或复现。"
+      },
+      "commentary": {
+        "en": "GNPS2-Quant converts precursor masses and retention times from data-dependent acquisition into scheduled parallel reaction monitoring inclusion lists, linking non-targeted discovery to targeted follow-up. The study compares DDA-MS1 and PRM quantification and applies the workflow to environmental xenobiotics. DDA-MS1 gives lower detection and quantification limits for some compounds, so targeted acquisition should not automatically be treated as the more sensitive option. The useful development direction is automated handoff from feature detection to acquisition planning; platform transfer, matrix effects and calibration behavior require further assessment. Abstract-level evidence from one platform does not establish universal sensitivity or transferability.",
+        "zh": "GNPS2-Quant将数据依赖采集中的前体质量与保留时间转化为定时平行反应监测的包含列表，把非靶向发现衔接到靶向后续分析。研究比较DDA-MS1与PRM定量，并将工作流用于环境外源化合物。部分化合物在DDA-MS1下具有更低的检出限与定量限，因此不能自动把靶向采集视为更灵敏的选择。值得借鉴的研发方向是从特征检测到采集计划的自动衔接；跨平台迁移、基质效应与校准表现仍需进一步评估。单一平台的摘要级证据不足以确立普遍的灵敏度优势或可迁移性。"
+      }
+    }
+  ]
+}
