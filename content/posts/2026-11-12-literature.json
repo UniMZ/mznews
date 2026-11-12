@@ -1,0 +1,54 @@
+{
+  "slug": "literature-2026-11-12",
+  "date": "2026-11-12",
+  "category": "Latest",
+  "title": {
+    "en": "Literature Brief (November 12, 2026)",
+    "zh": "2026年11月12日文献简报"
+  },
+  "summary": {
+    "en": "SpecRoFormer explores relative spectral representations and fragmentation-aware augmentation for small-molecule MS/MS retrieval across instruments.",
+    "zh": "SpecRoFormer探索相对谱图表征与碎裂感知数据增强，用于跨仪器的小分子MS/MS检索。"
+  },
+  "body": {
+    "en": [
+      "This brief examines representation learning for small-molecule tandem mass spectra, focusing on retrieval across instruments and datasets.",
+      "Interpretation is based on the ACS-indexed abstract and bibliographic metadata only. Full text was unavailable; supplementary materials were not read, and the method was not tested or reproduced."
+    ],
+    "zh": [
+      "本期关注小分子串联质谱的表征学习，重点是跨仪器、跨数据集的谱图检索。",
+      "本期解读仅依据ACS索引中的摘要与书目元数据。全文无法获取，未阅读补充材料，也未实测方法或复现结果。"
+    ]
+  },
+  "links": [],
+  "papers": [
+    {
+      "title": "SpecRoFormer: Relative Position-Aware Representation Learning for Small-Molecule MS/MS Spectra",
+      "authors": [
+        "Guoqing Zhu",
+        "Shiting Lai",
+        "Xinyi Cao",
+        "Keyu Hu",
+        "Luojun Lin",
+        "Yuanlong Yu"
+      ],
+      "journal": "Analytical Chemistry",
+      "year": "2026",
+      "url": "https://doi.org/10.1021/acs.analchem.6c03195",
+      "doi": "10.1021/acs.analchem.6c03195",
+      "first_online": "2026-10-30",
+      "publication_status": {
+        "en": "Peer-reviewed journal article",
+        "zh": "同行评议期刊论文"
+      },
+      "read_scope": {
+        "en": "ACS-indexed abstract and bibliographic metadata only. Full text unavailable; supplementary materials not read; method not tested or reproduced.",
+        "zh": "仅阅读ACS索引中的摘要与书目元数据。全文无法获取；未读补充材料，未实测方法或复现。"
+      },
+      "commentary": {
+        "en": "SpecRoFormer combines relative spectral modeling in a Transformer with fragmentation-aware augmentation to learn representations for cross-instrument small-molecule MS/MS retrieval. It is trained on GNPS and evaluated on MoNA, MassBank, MassSpecGym and simulated SimMS-9M spectra. The abstract reports stronger overall retrieval than MSBERT, DreaMS and SpecEmbedding, without numerical gains available in the evidence read. The approach suggests a useful direction for encoding relationships among spectral peaks rather than relying only on isolated peak information. Whether the evaluation splits adequately prevent leakage, how large the improvements are, and how well the method generalizes to real-world samples require full-text assessment. Abstract-level results do not establish universal superiority across instruments or chemical spaces.",
+        "zh": "SpecRoFormer在Transformer中结合相对谱图建模与碎裂感知数据增强，学习用于跨仪器小分子MS/MS检索的表征。模型在GNPS上训练，并在MoNA、MassBank、MassSpecGym及模拟的SimMS-9M谱图上评估。摘要报告其整体检索表现优于MSBERT、DreaMS和SpecEmbedding，但本次所读证据没有提供提升幅度的具体数值。这项工作提示了一个值得探索的方向：编码谱峰之间的关系，而不只依赖孤立的峰信息。评估划分是否充分避免数据泄漏、改进幅度有多大，以及能否推广到真实样本，仍需结合全文判断。摘要级结果不足以证明该方法在所有仪器或化学空间中都具有优势。"
+      }
+    }
+  ]
+}
