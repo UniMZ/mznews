@@ -1,0 +1,50 @@
+{
+  "slug": "literature-2026-11-13",
+  "date": "2026-11-13",
+  "category": "Latest",
+  "title": {
+    "en": "Literature Brief (November 13, 2026)",
+    "zh": "2026年11月13日文献简报"
+  },
+  "summary": {
+    "en": "A globally normalized model offers an alternative approach to de novo peptide sequencing.",
+    "zh": "全局归一化模型为肽从头测序提供新路线。"
+  },
+  "body": {
+    "en": [
+      "Today's brief examines NovoCRF, a preprint combining a prefix-mass lattice with global sequence scoring for de novo peptide sequencing. Its amino-acid recall gains are promising, while peptide-level gains and broader generalization still require independent validation.",
+      "Coverage is limited to accessible evidence; this selection does not establish the absence of advances in other computational mass spectrometry areas."
+    ],
+    "zh": [
+      "今日关注NovoCRF预印本：以前缀质量格点与全局序列评分结合，探索肽从头测序的新路线。氨基酸召回的提升值得关注，肽层面的收益与更广泛泛化仍需独立验证。",
+      "覆盖限于可获取的证据，本次精选不代表质谱计算方法其他方向没有进展。"
+    ]
+  },
+  "links": [],
+  "papers": [
+    {
+      "title": "NovoCRF: Globally Normalized De Novo Peptide Sequencing on a Prefix-Mass Lattice",
+      "authors": [
+        "Rui Qiao",
+        "Lei Xin",
+        "Baozhen Shan"
+      ],
+      "journal": "arXiv",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2611.05260",
+      "first_online": "2026-11-03",
+      "publication_status": {
+        "en": "Preprint, v1",
+        "zh": "预印本，v1"
+      },
+      "read_scope": {
+        "en": "Abstract and full-text methods, results and discussion; not reproduced.",
+        "zh": "摘要及全文方法、结果与讨论；未复现。"
+      },
+      "commentary": {
+        "zh": "以物理离子特征和前缀质量格点构建全局归一化CRF，结合精确候选解码与双阶段重排，为肽从头测序提供新路线。七个留出DDA数据集平均氨基酸召回64.0%，Casanovo v5为53.1%；肽召回42.4%对39.1%差异未达统计显著。每集仅一个原始文件、依赖准确前体质量，速度比较配置不同，需独立验证。",
+        "en": "NovoCRF combines ion features and a prefix-mass lattice in a globally normalized CRF, followed by exact candidate decoding and reranking. Across seven held-out DDA datasets, mean amino-acid recall was 64.0% versus 53.1% for Casanovo v5, while peptide recall of 42.4% versus 39.1% was not statistically significant. Each dataset contained one raw file, accuracy depends on precursor mass, and timing used different hardware; independent validation is needed."
+      }
+    }
+  ]
+}
