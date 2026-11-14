@@ -1,0 +1,77 @@
+{
+  "slug": "literature-2026-11-14",
+  "date": "2026-11-14",
+  "category": "Latest",
+  "title": {
+    "en": "Literature Brief (November 14, 2026)",
+    "zh": "2026年11月14日文献简报"
+  },
+  "summary": {
+    "en": "Multi-enzyme DIA and collision-energy-resolved spectral libraries expand complementary peptide and metabolite evidence.",
+    "zh": "多酶切DIA与碰撞能量分辨谱库扩展肽及代谢物鉴定的互补证据。"
+  },
+  "body": {
+    "en": [
+      "Today's papers explore complementary evidence in proteomics and small-molecule identification, from multiplexed enzyme digests to precursor-specific collision-energy profiles.",
+      "Coverage is limited by access to some publisher pages; these selections do not represent an exhaustive survey."
+    ],
+    "zh": [
+      "今天关注蛋白组与小分子鉴定中的互补证据：从多酶切整合到不同前体的碰撞能量曲线。",
+      "部分出版商页面访问受限，本次精选不代表穷尽检索。"
+    ]
+  },
+  "links": [],
+  "papers": [
+    {
+      "title": "Multi-Enzyme Data-Independent Acquisition Mass Spectrometry for Proteoform-Aware Single-shot Proteomics",
+      "authors": [
+        "Moritz Heusel",
+        "Lotta Happonen",
+        "Christofer Karlsson",
+        "Emma Åhrman",
+        "Johan Malmström"
+      ],
+      "journal": "bioRxiv",
+      "year": "2026",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.06.764873v1",
+      "doi": "10.64898/2026.11.06.764873",
+      "first_online": "2026-11-09",
+      "publication_status": {
+        "en": "Preprint, v1",
+        "zh": "预印本，v1"
+      },
+      "read_scope": {
+        "en": "Primary indexed abstract and metadata; not full text or independently reproduced.",
+        "zh": "原始索引摘要与元数据；未读全文，未复现。"
+      },
+      "commentary": {
+        "zh": "mE-DIA合并互补酶切为单次DIA，结合无谱库分析、proteoform推断与交互肽图；同原始数据及搜索空间比较DDA谱库型流程，蛋白组增加30%，CV≤20%定量组增加47%。增益依赖比较条件，骨架变体推断不等于完整proteoform实证。",
+        "en": "mE-DIA multiplexes complementary enzyme digests into one DIA injection, integrating library-free analysis with proteoform inference and an interactive peptide mapper. On the same raw data and within a shared search space, the authors report 30% more identified protein groups and 47% more groups quantified at CV ≤20% than their DDA-library-based multi-enzyme DIA comparator. Gains are comparison-specific; inferred backbone variants are not experimentally established complete proteoforms."
+      }
+    },
+    {
+      "title": "Three-dimensional mass spectral libraries for improved metabolites identification using collision energy profiles of protonated and radical cation precursors",
+      "authors": [
+        "Patrick Mueller",
+        "Gérard Hopfgartner"
+      ],
+      "journal": "Analytical and Bioanalytical Chemistry",
+      "year": "2026",
+      "url": "https://link.springer.com/article/10.1007/s00216-026-06913-4",
+      "doi": "10.1007/s00216-026-06913-4",
+      "first_online": "2026-11-11",
+      "publication_status": {
+        "en": "Journal article",
+        "zh": "正式期刊论文"
+      },
+      "read_scope": {
+        "en": "Indexed publisher abstract and selected text; not full methods or independently reproduced.",
+        "zh": "官方索引摘要及部分正文；未读完整方法，未复现。"
+      },
+      "commentary": {
+        "zh": "碰撞能量曲线增补谱库维度，利用两类前体互补碎裂；40种化合物最强10种元素式损失中79%不同，9种血浆加标物演示SWATH匹配。样本规模小，软件需适配。",
+        "en": "Collision-energy profiles add a third dimension to spectral libraries, exploiting complementary fragmentation of radical cations and protonated precursors. Across 40 compounds, 79% of the ten most abundant formula losses differed between precursor types; SWATH profile matching was demonstrated with nine substances spiked into plasma. Validation remains small-scale and search software needs adaptation."
+      }
+    }
+  ]
+}
