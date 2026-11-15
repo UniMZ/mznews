@@ -1,0 +1,92 @@
+{
+  "slug": "literature-2026-11-15",
+  "date": "2026-11-15",
+  "category": "Latest",
+  "title": {
+    "en": "Literature Brief (November 15, 2026)",
+    "zh": "2026年11月15日文献简报"
+  },
+  "summary": {
+    "en": "Ion-mobility benchmarking clarifies what additional metabolomic peaks represent, while a normalization fix highlights the importance of validating drift correction.",
+    "zh": "离子淌度评测厘清新增代谢组峰的来源，归一化软件修订则提醒关注漂移校正实现的正确性。"
+  },
+  "body": {
+    "en": [
+      "Ion mobility can improve mass-spectrometry selectivity, but additional peaks do not necessarily represent additional structural isomers. Today's selections examine that distinction and a software correction that can change previously processed profiling data.",
+      "The evidence spans a metabolomics preprint and a software release, rather than independent replication. Full-text evaluation and computational reproduction were not performed."
+    ],
+    "zh": [
+      "离子淌度能够改善质谱选择性，但新增峰并不必然代表新增结构异构体。今天的内容关注这一差别，以及一项可能改变既往分析结果的软件校正。",
+      "本篇证据来自代谢组学预印本和软件版本更新，并非独立复现；未开展全文评估或计算复现。"
+    ]
+  },
+  "links": [
+    {
+      "label": "XCiMS preprint",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.21.760801v1"
+    },
+    {
+      "label": "winn on CRAN",
+      "url": "https://cran.r-project.org/web/packages/winn/index.html"
+    }
+  ],
+  "papers": [
+    {
+      "title": "Using XCiMS to Quantify the Benefits of Ion Mobility Spectrometry for Untargeted Metabolomics",
+      "authors": [
+        "Lingjue Wang",
+        "Kevin Cho",
+        "Junjie Yang",
+        "Ethan Stancliffe",
+        "Michaela Schwaiger-Haber",
+        "Clark S Hofstrand",
+        "Triston Groff",
+        "James N Dodds",
+        "Leah P Shriver",
+        "Dhanalakshmi S Anbukumar",
+        "Erin S Baker",
+        "Gary J Patti"
+      ],
+      "journal": "bioRxiv",
+      "year": "2026",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.21.760801v1",
+      "doi": "10.64898/2026.10.21.760801",
+      "first_online": "2026-10-26",
+      "publication_status": {
+        "en": "Preprint",
+        "zh": "预印本"
+      },
+      "read_scope": {
+        "en": "Author abstract indexed in PubMed and verified bioRxiv metadata; full text not read and results not reproduced.",
+        "zh": "阅读PubMed收录的作者摘要，核验bioRxiv元数据；未读全文，未复现。"
+      },
+      "commentary": {
+        "zh": "XCiMS将LC–IMS–MS四维数据折叠为伪三维检峰，再沿感兴趣区域提取四维信号。人血浆高分辨淌度下最多约一半三维峰拆为多个四维峰，主要来自电荷异构体和离子簇，而非新分离出的结构异构体；16分钟色谱下嵌合MS/MS频率约减半。结论受样本与采集条件限制。",
+        "en": "XCiMS detects peaks after collapsing LC–IMS–MS data into pseudo-3D space, then extracts 4D signals from 3D-guided regions of interest. In human plasma, up to half of 3D peaks yielded multiple 4D peaks with high-resolution IMS, largely charge isomers and ion clusters rather than newly resolved structural isomers; with a 16-minute separation, chimeric MS/MS frequency fell by about half. Findings depend on samples and acquisition settings."
+      }
+    },
+    {
+      "title": "White Noise Normalization for Mass Spectrometry Profiling Data",
+      "authors": [
+        "Tanmay Tanna"
+      ],
+      "journal": "CRAN",
+      "year": "2026",
+      "url": "https://cran.r-project.org/web/packages/winn/index.html",
+      "doi": "10.32614/CRAN.package.winn",
+      "first_online": "2026-11-10",
+      "publication_status": {
+        "en": "Software revision: winn 0.1.6",
+        "zh": "软件修订：winn 0.1.6"
+      },
+      "read_scope": {
+        "en": "Official metadata, release notes and README; software not run and results not reproduced.",
+        "zh": "阅读官方元数据、NEWS和README；未运行软件，未复现。"
+      },
+      "commentary": {
+        "zh": "winn 0.1.6修复漂移校正平滑项错误，旧版样条静默失败而回退替代模型；本次更新恢复预期校正并新增回归测试。官方称所有漂移校正特征的结果都会改变，旧分析值得复核；尚无独立量化准确率证据。",
+        "en": "winn 0.1.6 fixes a formula error that silently prevented the intended spline-based drift correction, causing fallback models instead. The release restores documented smoothers and adds regression tests; authors say results change for every drift-corrected feature, making earlier analyses worth checking. This correctness update has no independent quantitative validation of downstream accuracy."
+      }
+    }
+  ]
+}
