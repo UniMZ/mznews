@@ -1,0 +1,82 @@
+{
+  "slug": "literature-2026-11-16",
+  "date": "2026-11-16",
+  "category": "Latest",
+  "title": {
+    "en": "Literature Brief (November 16, 2026)",
+    "zh": "2026年11月16日文献简报"
+  },
+  "summary": {
+    "en": "Average-composition isotope modelling and scalable protein quantification address two computational bottlenecks in mass spectrometry.",
+    "zh": "平均组成同位素建模与可扩展蛋白定量，分别面向质谱数据处理中的两类计算需求。"
+  },
+  "body": {
+    "en": [
+      "Today's selections cover isotope-distribution modelling with modification handling and changes to a protein-quantification package. Evidence comes from publisher metadata, author software documentation and official release notes; quantitative benchmarks and independent replication were not assessed."
+    ],
+    "zh": [
+      "今天关注支持修饰处理的同位素分布建模，以及蛋白定量软件的功能更新。证据来自出版方书目信息、作者软件说明与官方版本记录；未核验定量基准，未开展独立复现。"
+    ]
+  },
+  "links": [
+    {
+      "label": "Pointless 2.0",
+      "url": "https://pubs.acs.org/doi/10.1021/acs.analchem.6c03282"
+    },
+    {
+      "label": "iq on CRAN",
+      "url": "https://cran.r-project.org/web/packages/iq/index.html"
+    }
+  ],
+  "papers": [
+    {
+      "title": "Pointless 2.0: A Fast Compositional Modelling Framework to Predict the Isotope Distribution for Average Biomolecules with a Convolution Operator for Modification Handling",
+      "authors": [
+        "Frédérique Vilenne",
+        "Piotr Prostko",
+        "Dirk Valkenborg"
+      ],
+      "journal": "Analytical Chemistry",
+      "year": "2026",
+      "url": "https://pubs.acs.org/doi/10.1021/acs.analchem.6c03282",
+      "doi": "10.1021/acs.analchem.6c03282",
+      "first_online": "2026-11-14",
+      "publication_status": {
+        "en": "Journal article",
+        "zh": "正式期刊论文"
+      },
+      "read_scope": {
+        "en": "Publisher metadata and author software documentation; full paper not read and results not reproduced.",
+        "zh": "阅读官方书目信息与作者软件说明；未读论文全文，未复现。"
+      },
+      "commentary": {
+        "zh": "OCR变换与低阶回归预测DNA、RNA及肽平均组成的同位素分布，IsoSwap卷积处理硫及化学或翻译后修饰，可由平均质量估计单同位素质量。尚未核验论文定量基准，平均组成不替代已知分子式的精确计算。",
+        "en": "Pointless 2.0 uses OCR transformation and low-order regression to predict isotope distributions for average DNA, RNA and peptides, with IsoSwap convolution for sulfur and chemical or post-translational modifications. It can estimate monoisotopic mass from average mass. Quantitative benchmarks were not verified, and average-composition predictions do not replace exact calculations from known formulas."
+      }
+    },
+    {
+      "title": "Protein Quantification in Mass Spectrometry-Based Proteomics",
+      "authors": [
+        "Thang V. Pham",
+        "Alex A. Henneman"
+      ],
+      "journal": "CRAN",
+      "year": "2026",
+      "url": "https://cran.r-project.org/web/packages/iq/index.html",
+      "doi": "10.32614/CRAN.package.iq",
+      "first_online": "2026-11-06",
+      "publication_status": {
+        "en": "Software revision: iq 2.2.0 (November 6); CRAN currently lists 2.3.0 (November 14), whose changes were not verified.",
+        "zh": "软件修订：iq 2.2.0（11月6日）；CRAN现为2.3.0（11月14日），其具体变化未核实。"
+      },
+      "read_scope": {
+        "en": "Official package metadata and NEWS; software not run and results not reproduced. Alex A. Henneman is credited as a contributor.",
+        "zh": "阅读官方包页和NEWS；未运行软件，未复现。Alex A. Henneman署名角色为contributor。"
+      },
+      "commentary": {
+        "zh": "iq 2.2.0统一文本、Parquet及data frame入口，支持流式读取和并行分批量化，并将MaxLFQ例程切换到maxlfq_bit，移除Rcpp/RcppEigen依赖。没有新版独立性能评测，不应推断精度或加速幅度。",
+        "en": "iq 2.2.0 unifies text, Parquet and data-frame inputs, introduces streaming and parallel batch quantification, switches MaxLFQ routines to the maxlfq_bit solver and removes Rcpp/RcppEigen dependencies. The release notes do not establish independent accuracy or speed improvements."
+      }
+    }
+  ]
+}
