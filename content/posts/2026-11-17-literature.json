@@ -1,0 +1,141 @@
+{
+  "slug": "literature-2026-11-17",
+  "date": "2026-11-17",
+  "category": "Latest",
+  "title": {
+    "en": "Literature Brief (November 17, 2026)",
+    "zh": "2026年11月17日文献简报"
+  },
+  "summary": {
+    "en": "Sequence ambiguity, statistical evidence and numerical robustness shape reliable proteomics analysis.",
+    "zh": "序列歧义、统计证据与数值稳健性，共同影响蛋白组分析的可靠性。"
+  },
+  "body": {
+    "en": [
+      "Today's selections connect de novo sequencing benchmarks with quantitative-proteomics interpretation, FDR method selection and a software revision. Reading depth differs by item; no results were independently reproduced."
+    ],
+    "zh": [
+      "今天关注de novo测序评测、定量蛋白组解释、FDR方法选择与软件修订。各项阅读范围不同，均未开展独立复现。"
+    ]
+  },
+  "links": [],
+  "papers": [
+    {
+      "title": "Limitations of de novo peptide sequencing in resolving sequence ambiguity",
+      "authors": [
+        "Sam van Puyenbroeck",
+        "Denis Beslic",
+        "Tomi Suomi",
+        "Tanja Holstein",
+        "Thilo Muth",
+        "Laura L. Elo",
+        "Lennart Martens",
+        "Robbin Bouwmeester",
+        "Tim Van Den Bossche",
+        "Tine Claeys"
+      ],
+      "journal": "Nature Methods",
+      "year": "2026",
+      "url": "https://doi.org/10.1038/s41592-026-03301-9",
+      "doi": "10.1038/s41592-026-03301-9",
+      "first_online": "2026-11-03",
+      "publication_status": {
+        "en": "Journal article",
+        "zh": "正式期刊论文"
+      },
+      "read_scope": {
+        "en": "Publisher-indexed abstract and selected results and methods; no reproduction.",
+        "zh": "阅读出版方索引摘要及结果、方法重点；未复现。"
+      },
+      "commentary": {
+        "en": "A comparison of eight de novo sequencing models and three post-processing approaches finds that many shared errors arise from insufficient fragment-ion coverage, with limited gains from post-processing. This motivates explicit uncertainty handling rather than treating every full-sequence prediction as resolved. Conclusions depend on the selected datasets and database-search reference identifications.",
+        "zh": "对八种de novo测序模型与三类后处理方案的评测发现，共享错误多源于碎片离子覆盖不足，后处理改善有限。这提示研发应明确处理序列歧义，而非把完整序列预测都视作已解决的鉴定；结论受所选数据集和数据库搜索参考标签限制。"
+      }
+    },
+    {
+      "title": "ProteoAnalyst: Connecting biological context and peptide-level evidence in quantitative proteomics and phosphoproteomics",
+      "authors": [
+        "Guangyan Zhou",
+        "Gordon Li",
+        "Danielle M. Simons",
+        "Alyssa Weinrauch",
+        "Nolan Sammut",
+        "Jelena Kolic",
+        "Haoning Howard Cen",
+        "Daina Avizonis",
+        "Peter Siegel",
+        "Francis C. Lynn",
+        "Patrick E. MacDonald",
+        "James D. Johnson",
+        "Jean-François Trempe",
+        "Jianguo Xia"
+      ],
+      "journal": "Protein Science",
+      "year": "2026",
+      "url": "https://doi.org/10.1002/pro.70851",
+      "doi": "10.1002/pro.70851",
+      "first_online": "2026-11-12",
+      "publication_status": {
+        "en": "Journal article",
+        "zh": "正式期刊论文"
+      },
+      "read_scope": {
+        "en": "Selected abstract, methods, results and discussion; supplements not read and no reproduction.",
+        "zh": "阅读摘要、方法、结果及讨论部分；未读补充材料，未复现。"
+      },
+      "commentary": {
+        "en": "ProteoAnalyst connects statistical analysis, pathway and network interpretation with traceable peptide-level evidence. Across five benchmarks no workflow won uniformly; in HYE124, MSstats had an empirical FDR of 0.063 versus 0.100 for the default DIA workflow. Relative modification abundance must not be interpreted as modification occupancy.",
+        "zh": "ProteoAnalyst连接统计分析、通路与网络解释及可追溯的肽段证据。五个基准中没有统一最优流程；HYE124中MSstats经验FDR为0.063，而DIA默认流程为0.100。相对修饰丰度不能直接解释为修饰占有率。"
+      }
+    },
+    {
+      "title": "A unified and practical taxonomy for false discovery rate control in omics research",
+      "authors": [
+        "Thomas Burger",
+        "Xinzhou Ge",
+        "Jingyi Jessica Li"
+      ],
+      "journal": "Nature Biotechnology",
+      "year": "2026",
+      "url": "https://doi.org/10.1038/s41587-026-03379-8",
+      "doi": "10.1038/s41587-026-03379-8",
+      "first_online": "2026-11-13",
+      "publication_status": {
+        "en": "Comment",
+        "zh": "评论文章"
+      },
+      "read_scope": {
+        "en": "Publisher preview and figure captions.",
+        "zh": "阅读出版方预览及图注。"
+      },
+      "commentary": {
+        "en": "This Comment organizes FDR procedures along two axes: theoretical versus numerical null distributions, and pooled versus feature-specific null construction. Its value is a framework for checking assumptions and choosing methods, not a new predictive model or a universal performance claim. The assessment here is limited to the preview and figure captions.",
+        "zh": "这篇Comment沿理论或数值零分布、汇总或特征特异零分布两轴梳理FDR程序。价值在于帮助检查假设并选择方法，不是新预测模型或普遍性能优势的证明；此处评估限于预览及图注。"
+      }
+    },
+    {
+      "title": "Protein Quantification in Mass Spectrometry-Based Proteomics",
+      "authors": [
+        "Thang V. Pham",
+        "Alex A. Henneman"
+      ],
+      "journal": "CRAN",
+      "year": "2026",
+      "url": "https://cran.r-project.org/web/packages/iq/index.html",
+      "doi": "10.32614/CRAN.package.iq",
+      "first_online": "2026-11-14",
+      "publication_status": {
+        "en": "Software update: iq 2.3.0",
+        "zh": "软件更新：iq 2.3.0"
+      },
+      "read_scope": {
+        "en": "Source comparison between iq 2.2.0 and 2.3.0; not run or reproduced. Alex A. Henneman is credited as a contributor.",
+        "zh": "比较iq 2.2.0与2.3.0源码；未运行或复现。Alex A. Henneman署名角色为contributor。"
+      },
+      "commentary": {
+        "en": "iq 2.3.0 revises stopping and iteration rules in its existing numerical solver and changes missing-value handling and intensity parsing. These source-level changes warrant attention to numerical convergence and input validation, but they do not establish accuracy or speed gains. maxlfq-bit predates this release.",
+        "zh": "iq 2.3.0修改既有数值求解器的停止和迭代规则，并调整缺失值处理与强度解析。源码变化提示应关注数值收敛与输入验证，但不能据此推断精度或性能提升；maxlfq-bit并非本版新增。"
+      }
+    }
+  ]
+}
