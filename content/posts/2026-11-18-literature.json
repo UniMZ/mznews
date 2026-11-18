@@ -1,0 +1,88 @@
+{
+  "slug": "literature-2026-11-18",
+  "date": "2026-11-18",
+  "category": "Latest",
+  "title": {
+    "en": "Literature Brief (November 18, 2026)",
+    "zh": "2026年11月18日文献简报"
+  },
+  "summary": {
+    "en": "Microscopy-constrained imaging mass spectrometry unmixing and AI-assisted curation of quantitative protein modifications.",
+    "zh": "显微图像约束的成像质谱解混，以及AI辅助整理的蛋白质修饰定量知识库。"
+  },
+  "body": {
+    "en": [
+      "Today's papers address spatial mixture separation and the reuse of quantitative post-translational modification evidence. Reconstruction improvements and curation accuracy measure different tasks; neither establishes molecular-identification accuracy. Reading scopes are stated for each paper, and no results were independently reproduced."
+    ],
+    "zh": [
+      "今天的论文分别关注空间混合信号分离与翻译后修饰定量证据复用。重构误差改善与文献整理准确率对应不同任务，均不能等同于分子鉴定准确率；各篇标明实际阅读范围，未开展独立复现。"
+    ]
+  },
+  "links": [],
+  "papers": [
+    {
+      "title": "Unmixing of imaging mass spectrometry measurements using microscopy-informed constraints",
+      "authors": [
+        "R. A. R. Moens",
+        "N. H. Patterson",
+        "L. G. Migas",
+        "A. B. Esselman-Lawrence",
+        "F. A. Moser",
+        "J. M. Spraggins",
+        "R. Van de Plas"
+      ],
+      "journal": "Advances in Data Analysis and Classification",
+      "year": "2026",
+      "url": "https://doi.org/10.1007/s11634-026-00710-8",
+      "doi": "10.1007/s11634-026-00710-8",
+      "first_online": "2026-11-09",
+      "publication_status": {
+        "en": "Journal article; a preprint appeared in 2025 (10.1101/2025.10.29.685281).",
+        "zh": "正式期刊论文；2025年已有预印本（10.1101/2025.10.29.685281）。"
+      },
+      "read_scope": {
+        "en": "Publisher HTML methods and results, with comparison to the preprint; no reproduction.",
+        "zh": "阅读出版方HTML方法与结果，并与预印本对照；未复现。"
+      },
+      "commentary": {
+        "en": "Microscopy-defined regions constrain low-rank nonnegative and sparse decomposition of mixed imaging mass spectrometry pixels, evaluated on synthetic data and kidney tissue. In the kidney example, reconstruction error fell from 80.09% to 22.71% over all pixels and from 33.18% to 29.84% over mixed pixels; these are reconstruction metrics, not molecular-identification accuracies. Spatial quantification may benefit, but the approach relies on within-region uniformity and registration assumptions, required about 60 hours on 56 cores in the reported computation, and its core algorithm already appeared in the 2025 preprint.",
+        "zh": "以显微图像定义的区域约束低秩非负与稀疏分解，分离成像质谱混合像素，并用合成数据和肾组织验证。肾样本全像素重构误差由80.09%降至22.71%，混合像素由33.18%降至29.84%，这些是重构指标而非分子鉴定准确率。方法有助于空间定量，但依赖区域内均匀性和图像配准假设，报告计算约需56核运行60小时，且核心算法已见于2025年预印本。"
+      }
+    },
+    {
+      "title": "qPTM 3.0: the AI-enhanced knowledgebase for protein post-translational modification dynamics",
+      "authors": [
+        "Jiamin Hu",
+        "Jun Wu",
+        "Dong Zhang",
+        "Yijin Wu",
+        "Yongqiang Zheng",
+        "Junteng Li",
+        "Minjin Zhan",
+        "Zeyao Wang",
+        "Nan Wu",
+        "Huanhuan He",
+        "Tianshun Gao",
+        "Qi Zhou",
+        "Ze-Xian Liu"
+      ],
+      "journal": "Nucleic Acids Research",
+      "year": "2026",
+      "url": "https://doi.org/10.1093/nar/gkag1195",
+      "doi": "10.1093/nar/gkag1195",
+      "first_online": "2026-11-17",
+      "publication_status": {
+        "en": "Journal article",
+        "zh": "正式期刊论文"
+      },
+      "read_scope": {
+        "en": "Publisher-indexed abstract and selected methods and evaluation details; no reproduction.",
+        "zh": "阅读出版方索引摘要及方法、评估重点；未复现。"
+      },
+      "commentary": {
+        "en": "qPTM 3.0 combines AI-assisted curation with manual review to organize about 15.65 million quantitative events and 995,000 modification sites across four species and 12 modification types. On an internal holdout of 37 papers, screening recall was 97.2%, while mean metadata and table-parsing accuracies were 94.1% and 94.2%; these are component-level, not end-to-end or external validation results. The resource supports reuse of modification dynamics, but cross-study comparisons still require normalization, and raw-spectrum reanalysis is not new to this version.",
+        "zh": "qPTM 3.0结合AI辅助整理与人工复核，汇集四物种、12类修饰的约1565万定量事件和99.5万修饰位点。37篇论文的内部留出集上，筛查召回率为97.2%，元数据与表格解析平均准确率为94.1%和94.2%，均属组件级评估，不是端到端或外部验证结果。该资源便于复用修饰动态证据，但跨研究比较仍需归一化，原始质谱重分析也非本版首创。"
+      }
+    }
+  ]
+}
