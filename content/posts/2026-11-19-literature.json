@@ -1,0 +1,68 @@
+{
+  "slug": "literature-2026-11-19",
+  "date": "2026-11-19",
+  "category": "Latest",
+  "title": {
+    "en": "Literature Brief (November 19, 2026)",
+    "zh": "2026年11月19日文献简报"
+  },
+  "summary": {
+    "en": "Spillover correction in multiplexed images, de novo peptide sequencing with unlabeled spectra, and feature-selection stability in imbalanced metabolomics.",
+    "zh": "多重图像串扰校正、无标签谱图从头肽测序，以及不平衡代谢组的特征选择稳定性。"
+  },
+  "body": {
+    "en": [
+      "Today's papers examine channel spillover correction, learning from unlabeled tandem mass spectra and stable feature selection. Each entry states its reading scope; no results were independently reproduced."
+    ],
+    "zh": [
+      "今天的论文关注通道串扰校正、利用无标签串联质谱图学习，以及稳定的特征选择。各篇注明实际阅读范围，均未开展独立复现。"
+    ]
+  },
+  "links": [],
+  "papers": [
+    {
+      "title": "A zero-shot spillover denoiser for highly multiplexed images",
+      "authors": ["Jason Lequyer", "Ferris Nowlan", "Wen-Hsin Hsu", "Reuben Philip", "Anna Christina Erpf", "Angela M. Y. Chan", "Christine Tran", "Ben X. Wang", "Zoltan Maliga", "Hartland Warren Jackson", "Laurence Pelletier"],
+      "journal": "Nature Methods",
+      "year": "2026",
+      "url": "https://www.nature.com/articles/s41592-026-03263-y",
+      "doi": "10.1038/s41592-026-03263-y",
+      "first_online": "2026-11-18",
+      "publication_status": {"en": "Version of record", "zh": "正式版"},
+      "read_scope": {"en": "Abstract and selected methods and results read; not reproduced", "zh": "阅读摘要及部分方法与结果，未复现"},
+      "commentary": {
+        "zh": "SpillOT 在同一张多重组织图像上训练去噪器，再用最优传输比较局部图块以削弱通道串扰，不需要外部训练集或预先测定补偿矩阵。作者在成像质谱流式（IMC）和多重免疫荧光数据上评估校正；IMC 示例中，生物学上应互斥的标记在校正后相关性下降。方法假定噪声均匀，标记相关性下降也不能单独证明所有真实共表达都得到保留。",
+        "en": "SpillOT trains a denoiser on the multiplexed tissue image itself, then uses optimal transport to compare local patches and suppress channel spillover, without an external training set or a premeasured compensation matrix. In the authors’ imaging mass cytometry (IMC) example, correlations between biologically mutually exclusive markers fell after correction; the method was also evaluated on multiplex immunofluorescence data. It assumes uniform noise, and reduced marker correlation alone does not establish that genuine co-expression was preserved."
+      }
+    },
+    {
+      "title": "SemiNovo: Learning Beyond Search-Identified Spectra for De Novo Peptide Sequencing",
+      "authors": ["Pan Liu", "Dongxin Lyu", "Yusen Tan", "Yifan Li", "Hai-tao Yu", "Yunhua Zhong", "Zikun Wang", "Tianze Ling", "Jun Xia"],
+      "journal": "arXiv",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2611.21079",
+      "first_online": "2026-11-16",
+      "publication_status": {"en": "Preprint v1", "zh": "预印本 v1"},
+      "read_scope": {"en": "Methods, results and appendix read; not reproduced", "zh": "阅读方法、结果及附录，未复现"},
+      "commentary": {
+        "zh": "SemiNovo 把经质量控制的 450 万张无标签串联质谱图纳入半监督从头肽测序，用质量约束和序列路径置信度为可靠的序列前缀生成伪标签。在作者的 NovoBench Nine-species 同更新次数对照中，半监督使完整肽匹配指标由 0.587 提至 0.635（分母为全部测试谱图）；但在 Seven-species 上，相比监督检查点，PTM 精度由 0.495 降至 0.382，精度–覆盖率曲线下面积也略降。该结果值得用于评估无标签谱图能否改善整肽恢复，但不能把谱图级去重当成肽序列级独立性的证据。",
+        "en": "SemiNovo brings 4.5 million quality-filtered, unlabeled tandem mass spectra into semi-supervised de novo peptide sequencing, using mass constraints and path confidence to select reliable sequence prefixes as pseudo-labels. In the authors’ update-matched Nine-species NovoBench comparison, semi-supervision raised exact peptide matching from 0.587 to 0.635 across all test spectra; on Seven-species, however, PTM precision fell from 0.495 to 0.382 versus the supervised checkpoint, and precision–coverage AUC also declined slightly. The results support testing unlabeled spectra for full-peptide recovery, but spectrum-level deduplication does not establish peptide-level independence."
+      }
+    },
+    {
+      "title": "A Stable Feature Screening Framework Integrating Autoencoder and SMOTE for Imbalanced Metabolomics",
+      "authors": ["Qing Ye", "Zeng Deng", "Xin Xie", "Qiang Huang", "Jigen Luo"],
+      "journal": "Biology",
+      "year": "2026",
+      "url": "https://www.mdpi.com/2079-7737/15/22/2089",
+      "doi": "10.3390/biology15222089",
+      "first_online": "2026-11-14",
+      "publication_status": {"en": "Version of record", "zh": "正式版"},
+      "read_scope": {"en": "Abstract and selected methods and results read; not reproduced", "zh": "阅读摘要及部分方法与结果，未复现"},
+      "commentary": {
+        "zh": "AE-SMOTE 将降维、去噪和少数类过采样用于高维不平衡代谢组数据，重点考察不同训练划分能否选出相近的特征。作者比较了八组模拟和三组真实代谢组数据；在 ST000385 中，筛选 40 个特征时 Kuncheva 稳定性指数为 0.771。结果可作为特征筛选流程的比较基线，但交叉验证中的选择稳定性不等于独立队列中的标志物复现。",
+        "en": "AE-SMOTE combines dimensionality reduction, denoising and minority-class oversampling for high-dimensional imbalanced metabolomics, asking whether different training splits select similar features. The authors compared eight simulated and three real metabolomics datasets; on ST000385, the Kuncheva stability index was 0.771 with 40 selected features. This provides a comparison point for feature-selection workflows, but stability within cross-validation is not biomarker replication in an independent cohort."
+      }
+    }
+  ]
+}
