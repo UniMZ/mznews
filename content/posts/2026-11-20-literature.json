@@ -1,0 +1,123 @@
+{
+  "slug": "literature-2026-11-20",
+  "date": "2026-11-20",
+  "category": "Latest",
+  "title": {
+    "en": "Literature Brief (November 20, 2026)",
+    "zh": "2026年11月20日文献简报"
+  },
+  "summary": {
+    "en": "Matching evaluation to the task in molecular retrieval, isotope-labeled glycomics, and public metabolomics data reuse.",
+    "zh": "分子检索、同位素标记糖组学与公共代谢组数据复用：如何为实际任务选择合适的指标与证据。"
+  },
+  "body": {
+    "en": [
+      "A more accurate fingerprint need not retrieve the correct structure more often, and a valid isotope pair is not proof of glycan composition. This brief connects both distinctions with practical guidance on choosing public metabolomics data for benchmarks.",
+      "Coverage also included proteomics, ion mobility and imaging; some publisher material and conference abstracts were not available to verify."
+    ],
+    "zh": [
+      "更准确的分子指纹不一定带来更好的结构检索；有效的同位素配对也不能单独确认糖链组成。本期还介绍如何筛选公共代谢组数据，为计算方法建立更可靠的基准。",
+      "本期也关注了蛋白组、离子淌度和成像质谱；部分期刊原文及会议摘要未能核实。"
+    ]
+  },
+  "links": [],
+  "papers": [
+    {
+      "title": "On objective mismatch in molecular retrieval from tandem mass spectrometry",
+      "authors": [
+        "Gaetan De Waele",
+        "Marek Wydmuch",
+        "Krzysztof Dembczyński",
+        "Wojciech Kotłowski",
+        "Willem Waegeman"
+      ],
+      "journal": "arXiv",
+      "year": "2026",
+      "url": "https://arxiv.org/html/2602.16507v2",
+      "first_online": "2026-02-18",
+      "publication_status": {
+        "en": "arXiv v2 (November 9, 2026; listed in the official NeurIPS 2026 poster program)",
+        "zh": "v2 于 2026-11-09 修订，列入 NeurIPS 2026 官方海报议程"
+      },
+      "read_scope": {
+        "en": "Methods and results, with v1/v2 comparison; not reproduced",
+        "zh": "原文方法与结果、v1/v2 比对；未复现"
+      },
+      "doi": "10.48550/arXiv.2602.16507",
+      "commentary": {
+        "en": "The study separates fingerprint prediction accuracy from molecular retrieval and adds Enveda-180 and Transformer experiments in the November revision. On mass-matched Enveda-180 candidates, Transformer top-1 hit rate was 43.14% with IoU loss versus 63.11% with a contrastive fingerprint-cosine loss; fingerprint Tanimoto was lower for the latter, and its retrieval and fingerprint metrics used separately tuned models. Select models against the downstream retrieval metric, but note that this benchmark assumes the correct structure is present among the candidates.",
+        "zh": "该研究区分了谱图预测分子指纹的准确性与候选结构的检索表现；11 月修订新增 Enveda-180 基准及 Transformer 实验。在 Enveda-180 的同质量候选中，Transformer 的首位命中率在 IoU 损失下为 43.14%，在指纹余弦对比损失下为 63.11%；后者的指纹 Tanimoto 更低，且检索与指纹指标取自分别调温的模型。实践上应按下游检索指标选模型；这里的评测以正确结构在候选库内为前提。"
+      }
+    },
+    {
+      "title": "MS-GDF: A Framework for Automated Identification of Stable Isotope-Derivatized Glycans through Deep Denoising and Two-Level Evidence Integration",
+      "authors": [
+        "Caixia Yuan",
+        "Xiaoyu Qian",
+        "Ying Jin",
+        "Jiajin Yi",
+        "Tian Lin",
+        "Liuxin Dong",
+        "Dandan Zhang",
+        "Xi Luo",
+        "Cai Tie",
+        "Xue Bai",
+        "Haiyan Lyu",
+        "Yingjie Chen",
+        "Junyang Liu",
+        "Feng Ye",
+        "Jiyang Dong",
+        "Caisheng Wu"
+      ],
+      "journal": "Analytical Chemistry",
+      "year": "2026",
+      "url": "https://doi.org/10.1021/acs.analchem.6c05311",
+      "first_online": "2026-11-10",
+      "publication_status": {
+        "en": "Published online",
+        "zh": "期刊在线版"
+      },
+      "read_scope": {
+        "en": "Publisher abstract only; not reproduced",
+        "zh": "出版方摘要；未读全文或复现"
+      },
+      "doi": "10.1021/acs.analchem.6c05311",
+      "commentary": {
+        "en": "MS-GDF filters MS1 signals by charge and isotope cluster, then combines light/heavy pairing with MS/MS glycone mass matching to assign glycan compositions. In a human plasma N-glycan benchmark, MS1 feature counts fell by 77.5% and 73.7% in the light- and heavy-labeled data, and manual review confirmed 95.1% of Level 1 candidates as valid pairs. This informs how to remove redundant features from isotope-labeled data, but the pair-confirmation rate does not measure glycan composition accuracy.",
+        "zh": "MS-GDF 先按电荷和同位素簇过滤 MS1 信号，再联合轻重标记配对与 MS/MS 糖基质量匹配分配糖链组成。在人血浆 N-糖链基准中，轻标和重标的 MS1 特征数分别减少 77.5% 和 73.7%，人工核查确认 95.1% 的一级候选为有效轻重配对。该结果可用于设计同位素标记数据的去冗余流程，但配对确认率不是糖链组成鉴定准确率。"
+      }
+    },
+    {
+      "title": "MetaboLights in 2027: public metabolomics data at scale",
+      "authors": [
+        "Thomas Payne",
+        "Felix X Amaladoss",
+        "Jonathan E Hunter",
+        "Ibrahim Karaman",
+        "Callum Martin",
+        "Naveen R K Polliapram",
+        "Noemi Tejera",
+        "Mark Williams",
+        "Ozgur Yurekten",
+        "Juan Antonio Vizcaíno"
+      ],
+      "journal": "Nucleic Acids Research",
+      "year": "2026",
+      "url": "https://doi.org/10.1093/nar/gkag1199",
+      "first_online": "2026-11-19",
+      "publication_status": {
+        "en": "Published online",
+        "zh": "期刊在线版"
+      },
+      "read_scope": {
+        "en": "Submission, search and reuse sections; not reproduced",
+        "zh": "原文提交、检索及数据复用章节；未复现"
+      },
+      "doi": "10.1093/nar/gkag1199",
+      "commentary": {
+        "en": "The MetaboLights update adds locally runnable metadata validation, mzTab-M to ISA-Tab conversion, and a way to use study-search results as input for compound queries, helping researchers find and prepare public benchmark data. The authors found 177 method or tool development papers among 274 manually confirmed reuse publications through December 2025. That count describes reuse, not algorithm performance, and passing metadata checks does not replace checking acquisition conditions and annotations before benchmarking.",
+        "zh": "MetaboLights 更新提供可本地执行的元数据验证、mzTab-M 到 ISA-Tab 转换，以及可将研究检索结果直接用于化合物查询的接口，便于筛选和准备公共基准数据。作者人工确认截至 2025 年 12 月的 274 篇数据复用论文中有 177 篇用于方法或工具开发；这是复用规模，不是算法性能评测。通过元数据规则也不等同于人工审校，选数据做基准时仍需核查采集条件和标注。"
+      }
+    }
+  ]
+}
