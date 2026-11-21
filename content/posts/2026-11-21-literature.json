@@ -1,0 +1,108 @@
+{
+  "slug": "literature-2026-11-21",
+  "date": "2026-11-21",
+  "category": "Latest",
+  "title": {
+    "en": "Literature Brief (November 21, 2026)",
+    "zh": "2026年11月21日文献简报"
+  },
+  "summary": {
+    "en": "Dilution-based feature filtering, alignment across imaging datasets, and retention-time drift in LC–MS classification.",
+    "zh": "稀释序列特征筛选、成像质谱数据对齐与 LC–MS 分类的保留时间漂移。"
+  },
+  "body": {
+    "en": [
+      "Three methods address different sources of variation in mass spectrometry: response to concentration, shifts along the mass axis, and shifts along the retention-time axis."
+    ],
+    "zh": [
+      "本期三篇方法论文分别处理质谱分析中的浓度响应、质量轴偏移和保留时间漂移。"
+    ]
+  },
+  "links": [],
+  "papers": [
+    {
+      "title": "Aletheia: an open-source pipeline for QC dilution-based feature filtering in untargeted LC–MS metabolomics and lipidomics",
+      "authors": [
+        "Ángela Peralbo-Molina",
+        "Cristina María López",
+        "Ana Salinas-Gavilán",
+        "Eduardo Chicano-Gálvez"
+      ],
+      "journal": "Metabolomics",
+      "year": "2026",
+      "url": "https://doi.org/10.1007/s11306-026-02560-z",
+      "commentary": {
+        "en": "Aletheia uses pooled-QC dilution series to filter LC–MS features and records the reason for each retention, rejection, or flag. In synthetic plasma, it rejected features that had already passed a repeatability filter, showing that the two checks address different properties. A positive slope from two points does not establish linearity, and some negative responses were retained with a flag.",
+        "zh": "Aletheia 用混合 QC 稀释系列筛查 LC–MS 特征，并记录各特征的处理原因。合成血浆应用显示，部分重复性达标的特征仍未通过稀释筛查。两个点呈正斜率不证明线性；部分负响应仅标记、未剔除。"
+      },
+      "first_online": "2026-11-20",
+      "publication_status": {
+        "en": "Journal article",
+        "zh": "正式期刊论文"
+      },
+      "read_scope": {
+        "en": "Journal text: methods and results",
+        "zh": "期刊正文（方法与结果）"
+      },
+      "doi": "10.1007/s11306-026-02560-z"
+    },
+    {
+      "title": "PGAlign: Peak Group Alignment of Mass Spectrometry Data",
+      "authors": [
+        "Anji Deng",
+        "Yuyang Zhang",
+        "Qihuang Zhang"
+      ],
+      "journal": "Journal of Proteome Research",
+      "year": "2026",
+      "url": "https://doi.org/10.1021/acs.jproteome.6c00499",
+      "commentary": {
+        "en": "PGAlign matches local peak groups rather than isolated peaks to map MALDI imaging datasets onto a shared m/z grid for joint analysis across tissue sections. Companion scripts demonstrate imposed m/z shifts in pancreas data and pixel classification within tissue pairs. The latter does not hold out specimens and therefore does not establish cross-specimen generalization.",
+        "zh": "PGAlign 以局部峰群而非孤立峰为单位匹配，将不同 MALDI 成像数据映射到同一 m/z 网格，便于跨切片联合分析。配套脚本展示了胰腺数据中人为施加的 m/z 偏移和配对组织内的像素分类；后者没有按标本留出，不能据此判断跨样本泛化。"
+      },
+      "first_online": "2026-11-09",
+      "publication_status": {
+        "en": "Journal article",
+        "zh": "正式期刊论文"
+      },
+      "read_scope": {
+        "en": "Journal listing and companion code and documentation",
+        "zh": "期刊目录及论文配套代码、文档"
+      },
+      "doi": "10.1021/acs.jproteome.6c00499"
+    },
+    {
+      "title": "DEPI-MS: Density-Equalized Pseudo-Image Learning for Drift-Tolerant LC–MS Metabolomics Classification",
+      "authors": [
+        "Xiaohui Lin",
+        "Shuang Gao",
+        "Jie Yang",
+        "Xunhua Huang",
+        "Xiumei Gu",
+        "Xiangnan Xu",
+        "Kian-Kai Cheng",
+        "Aihua Ye",
+        "Zhaodong Fei",
+        "Daniel Raftery",
+        "Jiyang Dong"
+      ],
+      "journal": "Analytical Chemistry",
+      "year": "2026",
+      "url": "https://doi.org/10.1021/acs.analchem.6c03243",
+      "commentary": {
+        "en": "DEPI-MS represents LC–MS signals as pseudo-images with uniform retention-time bins and m/z resolution allocated by signal density in QC samples. Training applies differentiable retention-time warping. The indexed abstract describes an external nasopharyngeal carcinoma serum validation set and a drift stress test, but does not establish transfer to other instruments or acquisition conditions.",
+        "zh": "DEPI-MS 把 LC–MS 信号表示成伪图像，在保留时间轴上等距分箱，在 m/z 轴按 QC 样本的信号密度分配分辨率，并在训练时施加可微的保留时间形变。公开摘要报告了一个外部鼻咽癌血清验证集和漂移压力测试，但无法从摘要判断能否推广到其他仪器或采集条件。"
+      },
+      "first_online": "2026-11-12",
+      "publication_status": {
+        "en": "Journal article",
+        "zh": "正式期刊论文"
+      },
+      "read_scope": {
+        "en": "Journal listing and publicly indexed abstract",
+        "zh": "期刊目录与公开索引摘要"
+      },
+      "doi": "10.1021/acs.analchem.6c03243"
+    }
+  ]
+}
