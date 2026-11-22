@@ -1,0 +1,139 @@
+{
+  "slug": "literature-2026-11-22",
+  "date": "2026-11-22",
+  "category": "Latest",
+  "title": {
+    "en": "Literature Brief (November 22, 2026)",
+    "zh": "2026年11月22日文献简报"
+  },
+  "summary": {
+    "en": "Four studies on glycan interpretation, DIA imputation, de novo peptide sequencing and spatial mass spectrometry.",
+    "zh": "从糖链结构解读、DIA 缺失值填补和从头肽测序，到成像质谱的组织分类。"
+  },
+  "body": {
+    "en": [
+      "Four studies illustrate how computational methods use structure, reference data and spatial context in mass spectrometry. Each raises a practical question: what does the comparison actually validate?",
+      "Across the studies, composition agreement does not establish topology, a cross-platform reference is not ground truth, and performance on held-out regions is not evidence of generalization to new patients."
+    ],
+    "zh": [
+      "四项研究展示了质谱计算如何利用糖链结构、跨平台参照、碎片谱和空间信息。贯穿其中的一个问题是：现有对照实际验证了什么？",
+      "糖链组成一致不能证明拓扑一致，跨平台参照不等于真实值，同患者的留出区域也不能验证对新患者的泛化。"
+    ]
+  },
+  "links": [],
+  "papers": [
+    {
+      "title": "Glycoverse: a multi-functional R framework for glycomics and glycoproteomics data analysis",
+      "authors": [
+        "Bin Fu",
+        "Xisong Feng",
+        "Chenxin Li",
+        "Chenyang Zhao",
+        "Jiawei Fan",
+        "Ying Zhang",
+        "Haojie Lu"
+      ],
+      "journal": "Nature Communications",
+      "year": "2026",
+      "first_online": "2026-11-20",
+      "doi": "10.1038/s41467-026-79409-5",
+      "url": "https://www.nature.com/articles/s41467-026-79409-5",
+      "publication_status": {
+        "en": "Peer-reviewed accepted article",
+        "zh": "同行评审接受稿"
+      },
+      "read_scope": {
+        "en": "Accepted manuscript: selected results and methods; companion analysis script",
+        "zh": "接受稿部分结果与方法、配套分析脚本"
+      },
+      "commentary": {
+        "en": "Glycoverse provides interoperable R tools for analyzing glycan structures and motifs across glycans, sites and proteins. In a mouse tissue reanalysis, the authors found tissue-specific branching and terminal motifs; the four search outputs were matched at the composition level, while the topology came from StrucGP. This is a downstream interpretation framework, not an independent validation of glycan structures or a new search engine.",
+        "zh": "Glycoverse 用可互操作的 R 工具把糖链结构与基序分析连接到糖基化位点和蛋白层级。小鼠组织重分析显示分支和末端基序具有组织特异性；四套检索结果只在组成层面比对，拓扑来自 StrucGP。这是下游解读框架，不是新检索引擎，也不构成对糖链结构的独立验证。"
+      }
+    },
+    {
+      "title": "DreamAI2: an imputation tool for data-independent acquisition proteomics data",
+      "authors": [
+        "Jessica Ren",
+        "Vladislav Petyuk",
+        "Tao Liu",
+        "Pei Wang",
+        "Weiping Ma"
+      ],
+      "journal": "Bioinformatics Advances",
+      "year": "2026",
+      "first_online": "2026-11-06",
+      "doi": "10.1093/bioadv/vbag312",
+      "url": "https://academic.oup.com/bioinformaticsadvances/article/6/1/vbag312/9070302",
+      "publication_status": {
+        "en": "Journal article",
+        "zh": "期刊论文"
+      },
+      "read_scope": {
+        "en": "Selected methods, results and conclusion",
+        "zh": "原文部分方法、结果与结论"
+      },
+      "commentary": {
+        "en": "DreamAI2 benchmarks missing-value imputation for label-free DIA against paired TMT-DDA measurements from the same tumors, rather than relying only on masking observed values. Its fast ensemble omits MissForest while retaining similar performance in this benchmark. The reference is a cross-platform proxy restricted to selected concordant proteins from one cohort, not ground truth or evidence of peptide-level transfer.",
+        "zh": "DreamAI2 用相同肿瘤的配对 TMT-DDA 数据评估无标记 DIA 缺失值填补，而不只靠人工遮蔽已观测值。作者报告，快速集成版本去掉 MissForest 后，在该基准中仍表现相近；参照仅来自单一队列选定的跨平台一致蛋白，并非真实值，也未验证肽段层面的适用性。"
+      }
+    },
+    {
+      "title": "EncNovo: De Novo Peptide Sequencing With an Encoder‐Only Architectures",
+      "authors": [
+        "Xinglong Zhu",
+        "Zejiang Chen",
+        "Zihao Huang",
+        "Haipeng Wang"
+      ],
+      "journal": "Rapid Communications in Mass Spectrometry",
+      "year": "2026",
+      "first_online": "2026-11-16",
+      "doi": "10.1002/rcm.70211",
+      "url": "https://doi.org/10.1002/rcm.70211",
+      "publication_status": {
+        "en": "Journal article",
+        "zh": "期刊论文"
+      },
+      "read_scope": {
+        "en": "Publisher abstract and data availability statement",
+        "zh": "出版方摘要与数据可用性声明"
+      },
+      "commentary": {
+        "en": "EncNovo uses a non-autoregressive encoder to process precursor, spectrum and sequence-prediction tokens together, with attention informed by peak mass differences. The authors report higher peptide recall than Casanovo and RefineNovo at full prediction coverage on a nine-species benchmark. The abstract does not establish that the gain persists at a fixed error rate or transfers to unfamiliar instruments or modified peptides.",
+        "zh": "EncNovo 用非自回归编码器联合处理前体、谱峰与序列预测标记，并在注意力中引入峰间质量差。在九物种基准的全预测覆盖率下，作者报告其肽段召回高于 Casanovo 和 RefineNovo；摘要未说明优势能否在固定错误率下保持，或能否推广到未见仪器及修饰肽。"
+      }
+    },
+    {
+      "title": "Classification of Tissues on MALDI-MSI Image Modality for Pancreatic Cancer Studies",
+      "authors": [
+        "Abubakar Qahir",
+        "Jenny Benois-Pineau",
+        "Victoria Bourgeais",
+        "Fabien Baldacci",
+        "Sandrine Dabernat",
+        "Nicolas Desbenoit",
+        "Mélanie Moreau",
+        "Mehdi Boubaddi",
+        "Marion Marty"
+      ],
+      "journal": "arXiv",
+      "year": "2026",
+      "first_online": "2026-11-17",
+      "doi": "10.48550/arXiv.2611.22680",
+      "url": "https://arxiv.org/abs/2611.22680",
+      "publication_status": {
+        "en": "Preprint, v2 (November 19)",
+        "zh": "预印本，v2（11 月 19 日）"
+      },
+      "read_scope": {
+        "en": "Preprint v2 full text",
+        "zh": "预印本 v2 全文"
+      },
+      "commentary": {
+        "en": "This prototype converts MALDI-MSI data into ion images and uses entropy to select images and patches for a compact Swin classifier. High accuracy on held-out regions of pancreatic sections shows the workflow can discriminate tissue regions within its case study, but models were fitted separately by patient and polarity. The study does not establish cross-patient generalization, and the separate Barrett’s esophagus comparison showed no significant advantage over the alternatives tested.",
+        "zh": "该原型先将 MALDI-MSI 数据转成离子图，再用熵筛选离子图与图块，供小型 Swin 模型分类。胰腺切片的留出区域取得较高准确率，但模型按患者与极性分别拟合，不支持跨患者泛化结论；单独的 Barrett 食管对照中，也未显示比所测其他模型有显著优势。"
+      }
+    }
+  ]
+}
