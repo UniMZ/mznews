@@ -1,0 +1,139 @@
+{
+  "slug": "literature-2026-11-23",
+  "date": "2026-11-23",
+  "category": "Latest",
+  "title": {
+    "en": "Literature Brief (November 23, 2026)",
+    "zh": "2026年11月23日文献简报"
+  },
+  "summary": {
+    "en": "Four studies on DDA workflow evaluation, proteomics rescoring, transformation-product libraries and metabolomics quality control.",
+    "zh": "四项研究聚焦 DDA 工作流评测、蛋白质组重打分、转化产物谱库及代谢组质控。"
+  },
+  "body": {
+    "en": [
+      "Four studies examine how mass spectrometry workflows use spectral references, database-search evidence and quality controls to turn signals into interpretable results.",
+      "Reference coverage, identification counts and QC metrics answer different questions. Authentic standards, comparable error-rate estimates and external datasets remain important checks. Some journal and preprint pages were unavailable; those entries are based on the reading scope shown."
+    ],
+    "zh": [
+      "四项研究分别从公共谱库、肽谱匹配重打分、转化产物参考谱和质控预处理入手，展示质谱工作流如何把信号变成可解释的结果。",
+      "谱库覆盖、鉴定数量和 QC 指标回答的是不同问题，仍需标准品、可比的错误率及外部数据分别验证。部分期刊或预印本页面未能打开，各篇注明了实际阅读范围。"
+    ]
+  },
+  "links": [],
+  "papers": [
+    {
+      "title": "Objective Evaluation of Untargeted Metabolomic Methods Based on Data-Dependent Acquisition and Public Spectral Databases",
+      "authors": [
+        "Romina Pacheco-Tapia",
+        "Inés Castro-Dionicio",
+        "Mickaël Chevalier",
+        "Coralie Berthier",
+        "Jean-Michel Lecerf",
+        "Amélie Bonnefond",
+        "Philippe Froguel",
+        "Francesc Puig-Castellví",
+        "Marc-Emmanuel Dumas"
+      ],
+      "journal": "Analytical Chemistry",
+      "year": "2026",
+      "first_online": "2026-11-19",
+      "doi": "10.1021/acs.analchem.6c03292",
+      "url": "https://doi.org/10.1021/acs.analchem.6c03292",
+      "publication_status": {
+        "en": "Version of record",
+        "zh": "正式发表"
+      },
+      "read_scope": {
+        "en": "Publisher-deposited abstract",
+        "zh": "出版方提交的摘要"
+      },
+      "commentary": {
+        "en": "The authors compare 23 DDA LC–MS workflows across six platforms, using public GNPS library annotations and ranking workflows by reproducibility, dilution linearity and chemical-class diversity. Across all workflows they report 2,448 putative MSI level 2 annotations and confirm all 129 compounds for which their lab had authentic standards; the latter is a selected subset, not an error-rate estimate for all annotations, and apparent coverage still depends on the library.",
+        "zh": "作者用 GNPS 公共谱库注释比较六个平台的 23 套 DDA LC–MS 流程，按重现性、稀释线性和化学类别多样性综合评价。各流程合计得到 2,448 个 MSI 2 级推定注释；有标准品可供验证的 129 个化合物均获确认，但这不是全部注释的错误率估计，测得的覆盖度也仍取决于谱库。"
+      }
+    },
+    {
+      "title": "MSGFLEX: An optimized end-to-end pipeline for proteomics and metaproteomics analysis built on MS-GF+ with a dedicated rescoring model XPECTRA",
+      "authors": [
+        "Tulasi Rao Relangi",
+        "Harrison A Hall",
+        "Aaron T Wright"
+      ],
+      "journal": "bioRxiv",
+      "year": "2026",
+      "first_online": "2026-11-20",
+      "doi": "10.64898/2026.11.19.767922",
+      "url": "https://doi.org/10.64898/2026.11.19.767922",
+      "publication_status": {
+        "en": "Preprint, v1",
+        "zh": "预印本 v1"
+      },
+      "read_scope": {
+        "en": "Official abstract",
+        "zh": "官方摘要"
+      },
+      "commentary": {
+        "en": "MSGFLEX couples MS-GF+ searches with XPECTRA, a cross-validated XGBoost ensemble that combines its predictions with search evidence to rerank peptide–spectrum matches, and adds peptide-to-protein quantification. The authors report more peptide and protein identifications than three rescoring alternatives across four benchmark datasets, but the abstract does not establish comparable realized error rates or generalization to independent cohorts.",
+        "zh": "MSGFLEX 在 MS-GF+ 搜索后用交叉验证的 XGBoost 集成模型 XPECTRA 融合模型预测与搜索证据，对肽段–谱图匹配重打分，并提供从肽段到蛋白的定量汇总。作者报告四套基准数据上的肽段和蛋白鉴定数均超过三种重打分对照，但仅凭摘要无法判断实际错误率是否可比，也无法判断能否推广到独立队列。"
+      }
+    },
+    {
+      "title": "High-throughput electrochemical transformation expands mass spectrometric reference space for transformation products",
+      "authors": [
+        "Erik Niehaves",
+        "Manuel Gross",
+        "Giovanni Andrea Vitale",
+        "Steffen Heuckeroth",
+        "Thilo Hofmann",
+        "Uwe Karst",
+        "Daniel Petras",
+        "Valentin Goeldner"
+      ],
+      "journal": "bioRxiv",
+      "year": "2026",
+      "first_online": "2026-11-19",
+      "doi": "10.64898/2026.11.14.765618",
+      "url": "https://doi.org/10.64898/2026.11.14.765618",
+      "publication_status": {
+        "en": "Preprint, v1",
+        "zh": "预印本 v1"
+      },
+      "read_scope": {
+        "en": "Official abstract",
+        "zh": "官方摘要"
+      },
+      "commentary": {
+        "en": "Online electrochemistry and tandem MS generated a library of 1,341 suspect transformation-product entries from 112 starting chemicals. Searches of public untargeted data matched 214 electrochemical transformation products; the authors report that 70% of those matches lacked an annotation from conventional open spectral libraries. These matches are leads for follow-up, not confirmation of structure, sample provenance or a biological transformation pathway.",
+        "zh": "作者用在线电化学和串联质谱，从 112 种起始化合物构建了包含 1,341 条候选转化产物的谱库。在公开非靶向数据中匹配到 214 个电化学转化产物，其中 70% 未获常规开放谱库注释。谱图匹配可帮助确定后续验证的优先级，但不能确认化学结构、样本中的来源或生物转化途径。"
+      }
+    },
+    {
+      "title": "MetaboRx: R Shiny application for quality assessment and preprocessing of mass spectrometry-based metabolomics data",
+      "authors": [
+        "Breanna K. Guppy",
+        "Ronald A. Merrill",
+        "Reid F. Brown",
+        "T. Idil Apak Evans",
+        "Eric B. Taylor"
+      ],
+      "journal": "bioRxiv",
+      "year": "2026",
+      "first_online": "2026-11-18",
+      "doi": "10.64898/2026.11.16.767162",
+      "url": "https://doi.org/10.64898/2026.11.16.767162",
+      "publication_status": {
+        "en": "Preprint, v1",
+        "zh": "预印本 v1"
+      },
+      "read_scope": {
+        "en": "Deposited abstract and selected source code",
+        "zh": "存档摘要及部分源码"
+      },
+      "commentary": {
+        "en": "MetaboRx combines feature-table checks, QC metrics, visualization and preprocessing in an R Shiny workflow. The demonstration uses one semi-targeted mouse-plasma dataset with simulated quality defects rather than an external comparison; inspection of selected source code also shows that features with undefined QC relative standard deviation are removed at that filtering step even when the RSD cutoff is disabled. That behavior was not tested by running the software.",
+        "zh": "MetaboRx 用 R Shiny 把特征表检查、QC 指标、可视化和预处理放在同一工作流中。演示基于一套加入模拟质量问题的小鼠血浆半靶向数据，并非外部工具比较；局部源码显示，即使关闭 QC 相对标准差阈值，进入该筛选步骤且 QC RSD 未定义的特征仍会被剔除。此行为未运行验证。"
+      }
+    }
+  ]
+}
