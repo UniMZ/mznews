@@ -1,0 +1,205 @@
+{
+  "slug": "literature-2026-11-24",
+  "date": "2026-11-24",
+  "category": "Latest",
+  "title": {
+    "en": "Literature Brief (November 24, 2026)",
+    "zh": "2026年11月24日文献简报"
+  },
+  "summary": {
+    "en": "Six studies on retention time, tagged peptide sequencing, DIA libraries, imaging QC, spectral interpretation and batch correction.",
+    "zh": "从靶向保留时间、标记肽测序和 DIA 谱库，到成像质控、碎片谱解读与批次校正。"
+  },
+  "body": {
+    "en": [
+      "Six studies examine how mass spectrometry workflows use retention time, fragmentation, reference libraries and spatial context to improve quantification and interpretation.",
+      "More identifications, closer reference matches and lower mass error validate different parts of a workflow. Independent samples and appropriate error checks are still needed to establish transfer to new settings."
+    ],
+    "zh": [
+      "六项研究从保留时间、碎片谱、参考谱库和空间信息入手，讨论如何改进质谱定量与结果解释。",
+      "鉴定增加、与参考更一致和质量误差下降，分别验证流程的不同环节。能否迁移到新数据，仍需独立样本和针对性的错误率检查。"
+    ]
+  },
+  "links": [],
+  "papers": [
+    {
+      "title": "MS1-Based Chromatographic Alignment Improves Retention Time Prediction for Multiplexed Targeted Proteomics",
+      "authors": [
+        "Caleb M. Lindgren",
+        "David R. Vanderwall",
+        "Steven P. Gygi",
+        "Steven R. Shuken"
+      ],
+      "journal": "Analytical Chemistry",
+      "year": "2026",
+      "first_online": "2026-11-23",
+      "doi": "10.1021/acs.analchem.6c04781",
+      "url": "https://doi.org/10.1021/acs.analchem.6c04781",
+      "publication_status": {
+        "en": "Version of record",
+        "zh": "正式发表"
+      },
+      "read_scope": {
+        "en": "Publisher-deposited abstract",
+        "zh": "出版方提交的摘要"
+      },
+      "commentary": {
+        "en": "GoDig uses MS1 chromatogram alignment to update target retention times for each run in place of elution-order calibration. The authors report more targets identified and quantified, greater robustness to chromatographic variation, and no need for MS2 scans or real-time searches for that calibration; the abstract gives neither effect sizes nor cross-platform validation.",
+        "zh": "GoDig 用 MS1 色谱对齐为当前运行更新目标保留时间，替代原来的洗脱顺序校准。作者报告该方法在测试中鉴定和定量的目标更多，对色谱变化更稳健，并省去校准用的 MS2 扫描及实时搜索；摘要未给出增益幅度或跨平台验证。"
+      }
+    },
+    {
+      "title": "Casanovo-TMT: deep learning-based de novo sequencing of TMTpro-labeled peptides and phosphopeptides",
+      "authors": [
+        "Han Byeol Kim",
+        "Kwang-eun Kim"
+      ],
+      "journal": "bioRxiv",
+      "year": "2026",
+      "first_online": "2026-11-17",
+      "doi": "10.64898/2026.11.15.766634",
+      "url": "https://doi.org/10.64898/2026.11.15.766634",
+      "publication_status": {
+        "en": "Preprint, v1",
+        "zh": "预印本 v1"
+      },
+      "read_scope": {
+        "en": "Official abstract",
+        "zh": "官方摘要"
+      },
+      "commentary": {
+        "en": "Casanovo-TMT extends the residue vocabulary to TMTpro labels and phosphorylation, fine-tunes on about 21 million spectra and reranks candidates by precursor-mass agreement. Reported exact peptidoform agreement was 87.4% and 79.6% on two public global-proteome datasets and 69.2% on a public phosphopeptide-enriched dataset. Reference agreement does not independently establish novel identifications or modification sites, and calibration across datasets cannot be judged from the abstract.",
+        "zh": "Casanovo-TMT 扩展了 TMTpro 与磷酸化的残基词表，用约 2,100 万张谱微调，并按前体质量一致性重排候选。在两个外部公共全蛋白组数据集上，与参考肽形式完全一致的比例分别为 87.4% 和 79.6%；在一个公共磷酸肽富集数据集上为 69.2%。与参考一致不等于独立验证了新鉴定或修饰位点，摘要也不足以评估不同数据集上的错误率校准。"
+      }
+    },
+    {
+      "title": "Optimizing Spectral Reference Library Generation Strategies for Data-Independent Acquisition Proteomics in Clinical Cancer Cohorts",
+      "authors": [
+        "Daniel Bucio-Noble",
+        "Jennifer M. S. Koh",
+        "Erin M. Humphries",
+        "Daniela-Lee Smith",
+        "Steven G. Williams",
+        "Erin K. Sykes",
+        "Clare J. Loudon",
+        "Dylan Xavier",
+        "Natasha Lucas",
+        "Phillip J. Robinson",
+        "Peter G. Hains"
+      ],
+      "journal": "Journal of Proteome Research",
+      "year": "2026",
+      "first_online": "2026-11-18",
+      "doi": "10.1021/acs.jproteome.5c01025",
+      "url": "https://doi.org/10.1021/acs.jproteome.5c01025",
+      "publication_status": {
+        "en": "Version of record",
+        "zh": "正式发表"
+      },
+      "read_scope": {
+        "en": "Publisher-deposited abstract",
+        "zh": "出版方提交的摘要"
+      },
+      "commentary": {
+        "en": "The study compares fractionated DDA, fractionated DIA, a predicted library refined with the same unfractionated sample DIA runs, and gas-phase-fractionated DIA across nine cancer cohorts and 246 specimens. Fractionated DDA gave the most identifications in the prostate dataset, whereas the same-sample refinement strategy had the lowest missingness, still about 40%; more identifications or differential proteins do not establish better quantitative accuracy or the best choice for other cohorts.",
+        "zh": "作者在九个癌症队列的 246 份样本中对比分级 DDA、分级 DIA、由同批未分级 DIA 数据细化的预测谱库，以及气相分级 DIA。前列腺癌数据中，分级 DDA 鉴定数最多，但由同批数据细化的方案缺失率最低，仍约为 40%；更多鉴定或差异蛋白不等于更准确的定量，也不能据此推断其他队列的最优选择。"
+      }
+    },
+    {
+      "title": "msiFlow 2.0: Extending Mass Spectrometry Imaging Workflows with Mass Recalibration, Annotation, Batch Correction, and Visual Quality Control",
+      "authors": [
+        "Philippa Spangenberg",
+        "Sebastian Bessler",
+        "Eva-Maria Hanschmann",
+        "Lars Widera",
+        "Jenny Bottek",
+        "Stephanie Thiebes",
+        "Alexander Potthoff",
+        "Olga Shevchuk",
+        "Sven Brandau",
+        "Jens Soltwisch",
+        "Daniel R. Engel"
+      ],
+      "journal": "bioRxiv",
+      "year": "2026",
+      "first_online": "2026-11-13",
+      "doi": "10.64898/2026.11.11.765722",
+      "url": "https://doi.org/10.64898/2026.11.11.765722",
+      "publication_status": {
+        "en": "Preprint, v1",
+        "zh": "预印本 v1"
+      },
+      "read_scope": {
+        "en": "Official abstract",
+        "zh": "官方摘要"
+      },
+      "commentary": {
+        "en": "msiFlow 2.0 adds pixel-wise mass recalibration, lipid annotation, batch correction and visual quality control to an imaging-MS workflow. Across four MALDI-2 or transmission-mode MALDI-2 datasets, the authors report mean absolute mass error below 1.5 ppm for MS/MS-supported lipid features after recalibration and alignment, and an approximately 80% reduction in alignment runtime. The results apply to the tested platforms and feature subset; they are not an overall annotation accuracy estimate, and the abstract does not isolate individual changes.",
+        "zh": "msiFlow 2.0 将逐像素质量重校准、脂质注释、批次校正和可视化质控整合进成像质谱工作流。在四套 MALDI-2 或透射式 MALDI-2 数据上，作者报告重校准加对齐后，有 MS/MS 支持的脂质特征平均绝对质量误差低于 1.5 ppm，对齐耗时约减少 80%。该结果针对所测平台和特征子集，不能用来估计全部脂质注释的正确率，也未从摘要中分离各项改动的贡献。"
+      }
+    },
+    {
+      "title": "Deciphering the Biological Function of Tandem Mass Spectra Using a Dual-Modal Metabolite Language Model",
+      "authors": [
+        "Feifan Zhang",
+        "Yuting Wang",
+        "Yijiang Liu",
+        "Jiramet Kinchagawat",
+        "Chuchu Wang",
+        "Wenya Wang",
+        "Yifan Fu",
+        "Qingpeng Kong",
+        "Xiaotao Shen"
+      ],
+      "journal": "bioRxiv",
+      "year": "2026",
+      "first_online": "2026-11-17",
+      "doi": "10.64898/2026.11.16.766993",
+      "url": "https://doi.org/10.64898/2026.11.16.766993",
+      "publication_status": {
+        "en": "Preprint, v1",
+        "zh": "预印本 v1"
+      },
+      "read_scope": {
+        "en": "Official abstract",
+        "zh": "官方摘要"
+      },
+      "commentary": {
+        "en": "Spec2Function embeds tandem spectra and functional text in a shared space, then retrieves database and literature evidence to generate descriptions without requiring the query spectrum to have a structural assignment. The authors report higher agreement with reference descriptions in metabolite and pathway benchmarks; textual agreement is not direct validation of chemical identity or function, and the abstract does not establish generalization to structures unseen during training.",
+        "zh": "Spec2Function 用双编码器把碎片谱与功能文本映射到共同空间，再检索数据库和文献生成解释；推断时无需预先确定查询谱的结构。作者报告其在代谢物和通路基准中生成的描述更接近参考文本，但文本相似度不等于化学身份或功能的直接验证，摘要也不足以判断对训练中未见结构的泛化。"
+      }
+    },
+    {
+      "title": "BioBatchNet: A Dual-Encoder Framework for Robust Batch Effect Correction in Imaging Mass Cytometry",
+      "authors": [
+        "Haiping Liu",
+        "Qian Zhao",
+        "Shaojie Zhang",
+        "Shengzhong Mao",
+        "Yuxi Zhou",
+        "Yabing Yao",
+        "Jingyuan Sun",
+        "Andrew Gilmore",
+        "Mauricio A Alvarez",
+        "Hongpeng Zhou"
+      ],
+      "journal": "Bioinformatics",
+      "year": "2026",
+      "first_online": "2026-11-23",
+      "doi": "10.1093/bioinformatics/btag853",
+      "url": "https://doi.org/10.1093/bioinformatics/btag853",
+      "publication_status": {
+        "en": "Peer-reviewed accepted manuscript",
+        "zh": "同行评审接受稿"
+      },
+      "read_scope": {
+        "en": "Official abstract",
+        "zh": "官方摘要"
+      },
+      "commentary": {
+        "en": "BioBatchNet uses dual encoders and adversarial training to separate batch variation from biological signal, with constrained pairwise clustering to help distinguish overlapping cell populations. The authors compare seven alternatives on three imaging mass cytometry datasets and report a favorable balance between batch mixing and biological preservation. The evidence comes from metal-tagged antibody panels, not label-free MSI; the core method and principal benchmark were already presented in the 2025 preprint.",
+        "zh": "BioBatchNet 用双编码器和对抗训练拆分批次影响与生物信号，并用成对约束聚类辅助区分重叠的细胞群。作者在三套成像质谱流式数据上与七种方法比较，报告了批次混合与生物差异保留的折中表现；这类金属标签抗体面板的证据不能直接推广到无标记成像质谱。核心方法与主要评测已见于 2025 年预印本，本次介绍期刊接受稿。"
+      }
+    }
+  ]
+}
