@@ -1,0 +1,188 @@
+{
+  "category": "Latest",
+  "date": "2026-11-25",
+  "slug": "literature-2026-11-25",
+  "title": {
+    "en": "Literature Brief (November 25, 2026)",
+    "zh": "2026年11月25日文献简报"
+  },
+  "summary": {
+    "en": "This brief examines how to make evidence from complex mass spectrometry data more reliable, from resolving mixed spectra and recognizing misleading fragments to using retention, spatial patterns, network benchmarks and acquisition metadata.",
+    "zh": "本期关注如何从复杂质谱数据获得更可靠的证据：区分混合谱的贡献成分，识别会夸大相似性的碎片，并用保留指数、空间汇总、网络评估和采集元数据交叉核验。"
+  },
+  "body": {
+    "en": [
+      "For method development, evaluate library candidate recall separately from deconvolution performance, and report how retention filters and network comparisons change with the threshold. The selected ACS papers were assessed from publisher-deposited abstracts, not full texts or reproduced analyses."
+    ],
+    "zh": [
+      "研发上，值得把谱图候选召回率与去卷积结果分开评估，并为保留指数筛选和网络推断报告不同阈值下的表现。所选 ACS 论文依据出版方提交的摘要评读，未核验全文或复现。"
+    ]
+  },
+  "links": [],
+  "papers": [
+    {
+      "title": "MS2-KNN: A Computational Framework Resolving Chimeric Small-Molecule MS/MS Spectra by Latent-Space Neighborhood Decomposition and Scaffold Confidence Scoring",
+      "authors": [
+        "Yichen Wang",
+        "Luan Yin",
+        "Mengyue Hu",
+        "Minsong Guo",
+        "Junjie Qiu",
+        "Zichuan Wang",
+        "Huanjie Li",
+        "Yue Luo",
+        "Wenpei Chen",
+        "Xiao Zheng",
+        "Jie Liu",
+        "Yong Chen",
+        "Xuesong Liu",
+        "Su Zeng",
+        "Tengfei Xu"
+      ],
+      "journal": "Analytical Chemistry",
+      "year": "2026",
+      "first_online": "2026-11-24",
+      "doi": "10.1021/acs.analchem.6c04590",
+      "url": "https://doi.org/10.1021/acs.analchem.6c04590",
+      "publication_status": {
+        "en": "Version of record",
+        "zh": "正式发表"
+      },
+      "read_scope": {
+        "en": "Publisher-deposited abstract",
+        "zh": "出版方提交的摘要"
+      },
+      "commentary": {
+        "en": "MS2-KNN groups library neighbors in an embedded spectral space using precursor m/z and structural scaffolds to resolve multiple contributors to a chimeric spectrum. Among the tested approaches it fully resolved the largest share of 88 measured mixtures from 43 standards; in synthetic tests the improvement depended on the true components being retrievable, making library coverage and weak signals important limitations.",
+        "zh": "MS2-KNN 先在谱图嵌入空间检索邻居，再按前体 m/z 和分子骨架区分嵌合谱中的多个贡献成分。在由 43 种标准品组成的 88 个实测混合样中，该法完全解析的比例在所比较的方法中最高；模拟测试中的收益依赖真实成分能进入候选集，因此谱库覆盖与低丰度成分仍是瓶颈。"
+      }
+    },
+    {
+      "title": "Convergent Fragmentation: A Shared Ion Vocabulary Limits Structure−Spectrum Fidelity",
+      "authors": [
+        "Winnie Uritboonthai",
+        "Linh Hoang",
+        "Gary Siuzdak"
+      ],
+      "journal": "Analytical Chemistry",
+      "year": "2026",
+      "first_online": "2026-11-12",
+      "doi": "10.1021/acs.analchem.6c05402",
+      "url": "https://doi.org/10.1021/acs.analchem.6c05402",
+      "publication_status": {
+        "en": "Version of record; earlier ChemRxiv preprint",
+        "zh": "正式发表；早有 ChemRxiv 预印本"
+      },
+      "read_scope": {
+        "en": "Publisher-deposited abstract",
+        "zh": "出版方提交的摘要"
+      },
+      "commentary": {
+        "en": "Across 4,000 METLIN compound pairs, structural and spectral similarity had an R² of 0.28; all 56 recurrent fragment formulas were also observed in MoNA. Removing recurrent cations raised Spearman ρ from 0.410 to 0.468 in these data, but only aromatic and allylic cations carried less structural information than equally prevalent ordinary fragments, arguing against indiscriminate peak removal.",
+        "zh": "在 METLIN 的 4,000 对化合物中，结构与谱图相似度的 R² 为 0.28；筛出的 56 种高频碎片离子式也都在 MoNA 中检出。在这些数据中，移除高频阳离子后 Spearman ρ 由 0.410 升至 0.468，但只有芳香及烯丙基阳离子比同等频率的普通碎片更缺乏结构信息，不宜据此一概删峰。"
+      }
+    },
+    {
+      "title": "System-Independent Retention Index Prediction via Multimodal Molecular Representation Learning",
+      "authors": [
+        "Xujie Wang",
+        "Na An",
+        "Quanfei Zhu",
+        "Hongchao Ji",
+        "Yuqi Feng"
+      ],
+      "journal": "Analytical Chemistry",
+      "year": "2026",
+      "first_online": "2026-11-24",
+      "doi": "10.1021/acs.analchem.6c05729",
+      "url": "https://doi.org/10.1021/acs.analchem.6c05729",
+      "publication_status": {
+        "en": "Version of record",
+        "zh": "正式发表"
+      },
+      "read_scope": {
+        "en": "Publisher-deposited abstract",
+        "zh": "出版方提交的摘要"
+      },
+      "commentary": {
+        "en": "MultiModal-RI combines a molecular graph model with a molecular language encoder to predict liquid chromatography retention indices from structure. Trained on 3,951 unique compounds, it reached MAE 60.81 and R² 0.94 on a separate reversed-phase test set; the prediction can narrow candidate lists, but this experiment does not establish transfer to other chromatographic modes or replace confirmatory evidence.",
+        "zh": "MultiModal-RI 将分子图模型与分子语言编码器结合，从结构预测液相色谱保留指数。模型以 3,951 种独立化合物训练，在单独的反相色谱测试集上达到 MAE 60.81、R² 0.94；适合辅助缩小候选范围，但这项评测不能证明可迁移到其他色谱模式，也不能替代确证证据。"
+      }
+    },
+    {
+      "title": "Exploring Functional Patterns in Mass Spectrometry Imaging Data with Spatial Pathway and Chemical Class Analysis (SPCCA)",
+      "authors": [
+        "Kuutti J. Vaananen",
+        "Timothy M. D. Ebbels"
+      ],
+      "journal": "Journal of the American Society for Mass Spectrometry",
+      "year": "2026",
+      "first_online": "2026-11-24",
+      "doi": "10.1021/jasms.6c00401",
+      "url": "https://doi.org/10.1021/jasms.6c00401",
+      "publication_status": {
+        "en": "Version of record",
+        "zh": "正式发表"
+      },
+      "read_scope": {
+        "en": "Publisher-deposited abstract",
+        "zh": "出版方提交的摘要"
+      },
+      "commentary": {
+        "en": "SPCCA turns individual ion images into spatial summaries of Reactome pathways or ChEBI chemical classes. In two tumor imaging datasets, pathway maps used sparse annotations at about 10% coverage, while class analysis used over 90% of filtered features and agreed more closely with histology; that agreement does not confirm individual metabolite identities or pathway activity.",
+        "zh": "SPCCA 将单离子图像汇总为 Reactome 通路或 ChEBI 化学类别的空间图。两组肿瘤成像数据中，通路分析的注释覆盖约 10%，类别分析则利用了逾 90% 的过滤后特征，与组织学图像的一致性更高；空间一致性不能确证单个代谢物身份或通路活性。"
+      }
+    },
+    {
+      "title": "Evaluation depth reshapes method rankings in proteomic co-abundance network inference",
+      "authors": [
+        "Shahram Aliyari",
+        "Nazanin Bagherlou",
+        "Zahra Salehi"
+      ],
+      "journal": "bioRxiv",
+      "year": "2026",
+      "first_online": "2026-11-18",
+      "doi": "10.64898/2026.11.11.765733",
+      "url": "https://doi.org/10.64898/2026.11.11.765733",
+      "publication_status": {
+        "en": "Preprint v1",
+        "zh": "预印本 v1"
+      },
+      "read_scope": {
+        "en": "Preprint abstract",
+        "zh": "预印本摘要"
+      },
+      "commentary": {
+        "en": "This benchmark compares five ways of inferring protein co-abundance networks and finds that in all six datasets supporting equal-depth comparisons, the leading method changed between the top 50 and the top 2,000 edges. That favors reporting performance across depths, but curated links are incomplete references for biological interactions; independent tests were mixed and each network was inferred just once.",
+        "zh": "这项评测比较五种蛋白共丰度网络推断方法；在六组可等深度比较的数据中，评估前 50 条边与前 2,000 条边时，领先方法全部不同。更有用的是报告多个深度的表现曲线，但整理过的关联库并非真实相互作用的完备参照，且外部验证结果不一致、每张网络仅推断一次。"
+      }
+    },
+    {
+      "title": "MetaXtract: Extracting Metadata from RAW Files for FAIR Data Practices and Workflow Optimization",
+      "authors": [
+        "Ahmad Lutfi",
+        "Zhuo A. Chen",
+        "Lutz Fischer",
+        "Juri Rappsilber"
+      ],
+      "journal": "Journal of Proteome Research",
+      "year": "2026",
+      "first_online": "2026-11-18",
+      "doi": "10.1021/acs.jproteome.6c00507",
+      "url": "https://doi.org/10.1021/acs.jproteome.6c00507",
+      "publication_status": {
+        "en": "Version of record; earlier bioRxiv preprint",
+        "zh": "正式发表；早有 bioRxiv 预印本"
+      },
+      "read_scope": {
+        "en": "Publisher-deposited abstract",
+        "zh": "出版方提交的摘要"
+      },
+      "commentary": {
+        "en": "MetaXtract exports acquisition settings and scan metadata from Thermo RAW files, as well as spectral peak arrays linked to scans, for quality control without a database search. Across supported acquisition modes and files up to about 14 GB, the authors report 3.7–546.7 seconds and 0.51–5.90 GB peak memory for complete extraction; the benchmark does not establish compatibility with other vendors.",
+        "zh": "MetaXtract 从 Thermo RAW 提取采集设置、扫描级元数据及与扫描关联的谱峰数组，可在数据库检索之前做采集侧质控。作者测试了多种采集模式、最大约 14 GB 的文件，完整提取耗时 3.7–546.7 秒、峰值内存 0.51–5.90 GB；这些结果不是跨厂商兼容性证据。"
+      }
+    }
+  ]
+}
