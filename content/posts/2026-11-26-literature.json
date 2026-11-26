@@ -1,0 +1,249 @@
+{
+  "category": "Latest",
+  "date": "2026-11-26",
+  "slug": "literature-2026-11-26",
+  "title": {
+    "en": "Literature Brief (November 26, 2026)",
+    "zh": "2026年11月26日文献简报"
+  },
+  "summary": {
+    "en": "This brief looks at two sides of mass spectrometry evidence: how spectral models and diagnostic fragments suggest candidate structures, and how chromatography, quantitative outputs and instrument checks can constrain those interpretations.",
+    "zh": "本期从两头看质谱证据：谱图模型和少数诊断碎片如何提出结构候选，以及如何用色谱、定量结果和仪器质控去约束这些判断。"
+  },
+  "body": {
+    "en": [
+      "For method development, assess candidate coverage, independent structural confirmation and quantitative agreement separately. The assessments here are based on the abstracts indicated for each paper, not full-text review or reproduction."
+    ],
+    "zh": [
+      "研发上，建议把候选覆盖、独立结构确证和定量一致性分别评估。本期按各条所列的摘要范围评读，不视为全文审查或复现。"
+    ]
+  },
+  "links": [],
+  "papers": [
+    {
+      "title": "Deciphering Molecular Language for Spectral Interpretation with a Foundation Model Pretrained on Repository-Wide Metabolomics Data",
+      "authors": [
+        "Yifan Li",
+        "Yunhua Zhong",
+        "Pan Liu",
+        "Zikun Wang",
+        "Jiaqing Xie",
+        "Hongxin Xiang",
+        "Zihan Chen",
+        "Zhiyuan Yuan",
+        "Yuqiang Li",
+        "Jun Xia"
+      ],
+      "journal": "bioRxiv",
+      "year": "2026",
+      "first_online": "2026-11-24",
+      "doi": "10.64898/2026.11.14.766667",
+      "url": "https://doi.org/10.64898/2026.11.14.766667",
+      "publication_status": {
+        "en": "Preprint v1",
+        "zh": "预印本 v1"
+      },
+      "read_scope": {
+        "en": "Preprint-server abstract",
+        "zh": "预印本平台摘要"
+      },
+      "commentary": {
+        "en": "UltraMS learns representations from more than 160 million tandem spectra in positive and negative ion modes, then transfers annotations to suggest substructures for individual peaks and organize spectra in UltraAtlas. The authors report gains across several downstream tasks, but transferred peak assignments are structural hypotheses, not direct confirmation; the abstract does not establish how repository overlap was controlled.",
+        "zh": "UltraMS 在正、负离子模式共逾 1.6 亿张二级谱上预训练，再用注释迁移为单个峰提出子结构解释，并建立 UltraAtlas。作者报告多项下游任务有所改善，但迁移得到的峰注释是结构假设而非直接确证；摘要也不足以判断训练谱库与评测数据的重叠如何控制。"
+      }
+    },
+    {
+      "title": "Fragment anchoring for metabolite annotation beyond whole-spectrum similarity",
+      "authors": [
+        "Young Jae Park",
+        "Ji Hyun Moon",
+        "Ki Tae Suk",
+        "Do Yup Lee"
+      ],
+      "journal": "bioRxiv",
+      "year": "2026",
+      "first_online": "2026-11-19",
+      "doi": "10.64898/2026.11.11.766011",
+      "url": "https://doi.org/10.64898/2026.11.11.766011",
+      "publication_status": {
+        "en": "Preprint v1",
+        "zh": "预印本 v1"
+      },
+      "read_scope": {
+        "en": "Preprint-server abstract",
+        "zh": "预印本平台摘要"
+      },
+      "commentary": {
+        "en": "ANCHor searches for fragments enriched among related reference spectra and combines them with mass differences and transformation rules. It recovered 147 of 166 methionine-related spectra in one test, including 93 with modified cosine similarity below 0.70, and at least one anchor was available for 76.9% of 1,021 standards; these are coverage and recall results, not an identification error rate.",
+        "zh": "ANCHor 找出在相近参考谱中富集、在背景谱中少见的碎片，再结合质量差和转化规则筛候选。以甲硫氨酸为例保留了 166 张相关谱中的 147 张，其中 93 张的改进余弦相似度低于 0.70；在 1,021 种标准品中，76.9% 可找到至少一个锚点。这些数字反映覆盖与召回，不是鉴定错误率。"
+      }
+    },
+    {
+      "title": "GlycanPRMQuant: Automated Identification and Quantification of Permethylated N-Glycans from LC-PRM-MS/MS Data",
+      "authors": [
+        "Vishal Sandilya",
+        "Sherifdeen Onigbinde",
+        "Sarah Sahioun",
+        "Abiodun Adewolu",
+        "Ronny Barrera",
+        "Yehia Mechref"
+      ],
+      "journal": "Analytical Chemistry",
+      "year": "2026",
+      "first_online": "2026-11-16",
+      "doi": "10.1021/acs.analchem.6c04973",
+      "url": "https://doi.org/10.1021/acs.analchem.6c04973",
+      "publication_status": {
+        "en": "Version of record",
+        "zh": "正式发表"
+      },
+      "read_scope": {
+        "en": "Publisher-deposited abstract",
+        "zh": "出版方提交的摘要"
+      },
+      "commentary": {
+        "en": "GlycanPRMQuant uses diagnostic fragments, coelution evidence and charge-aware target–decoy competition to resolve competing assignments for permethylated N-glycans, leaving unresolved features ambiguous. Quantification agreed closely with manually curated Skyline integration (Pearson R 0.992–1.000), but the reported replicate results are for bovine fetuin and ribonuclease B glycans, not a broad test of structural assignment.",
+        "zh": "GlycanPRMQuant 用诊断碎片、共洗脱证据和考虑电荷的目标–诱饵竞争区分全甲基化 N-聚糖的等质量候选，并保留无法区分的歧义标记。与人工整理的 Skyline 积分相比，定量 Pearson R 为 0.992–1.000；报告的重复进样评估限于牛胎球蛋白和核糖核酸酶 B 的聚糖，不能据此推断复杂样本中的结构鉴定准确率。"
+      }
+    },
+    {
+      "title": "ProteoBridge Connects Proteomics Quantification Outputs to Reusable Analysis Workflows",
+      "authors": [
+        "Witold E. Wolski",
+        "Robbe Devreese",
+        "Robbin Bouwmeester",
+        "Henry Webel",
+        "Leonardo Schwarz",
+        "Caroline Jachmann",
+        "Sam van Puyenbroeck",
+        "Christian Panse",
+        "Hubert Rehrauer",
+        "Lennart Martens",
+        "Marie Locard-Paulet"
+      ],
+      "journal": "bioRxiv",
+      "year": "2026",
+      "first_online": "2026-11-24",
+      "doi": "10.64898/2026.11.23.768141",
+      "url": "https://doi.org/10.64898/2026.11.23.768141",
+      "publication_status": {
+        "en": "Preprint v1",
+        "zh": "预印本 v1"
+      },
+      "read_scope": {
+        "en": "Preprint abstract deposited with Crossref",
+        "zh": "预印本平台提交至 Crossref 的摘要"
+      },
+      "commentary": {
+        "en": "ProteoBridge maps the different output fields and parameter files of 14 bottom-up quantification tools into common feature levels, with machine-readable provenance and warnings. This can simplify downstream analysis across software and versions, but harmonizing tables does not make upstream abundances or statistics interchangeable.",
+        "zh": "ProteoBridge 将 14 种自下而上蛋白组定量工具的表格和参数映射到统一的特征层级，并输出机器可读的来源记录和转换警告。它可减少跨工具、跨版本的下游解析工作，但字段对齐不意味着上游丰度或统计结果可以互换。"
+      }
+    },
+    {
+      "title": "Workflow for Assessing Mass Spectrometer Performance in Shotgun Lipidomics",
+      "authors": [
+        "Silvia Radrezza",
+        "HongKee Moon",
+        "Robert Ahrends",
+        "Britta Brügger",
+        "Cristina Coman",
+        "Christer S. Ejsing",
+        "Xianlin Han",
+        "Marcus Hoering",
+        "Saida Ibntaleb",
+        "Christian Klose",
+        "Jochen Koddebusch",
+        "Gerhard Liebisch",
+        "Marcellina Przybylska",
+        "Richard Sprenger",
+        "Julio L. Sampaio",
+        "Kai Schuhmann",
+        "Dominik Schwudke",
+        "Christoph Thiele",
+        "Hu Wang",
+        "Mohamed H. Yaghmour",
+        "Lena Hersemann",
+        "Andrej Shevchenko"
+      ],
+      "journal": "bioRxiv",
+      "year": "2026",
+      "first_online": "2026-11-18",
+      "doi": "10.64898/2026.11.16.766365",
+      "url": "https://doi.org/10.64898/2026.11.16.766365",
+      "publication_status": {
+        "en": "Preprint v1",
+        "zh": "预印本 v1"
+      },
+      "read_scope": {
+        "en": "Preprint-server abstract",
+        "zh": "预印本平台摘要"
+      },
+      "commentary": {
+        "en": "QC Shotgun reports eight relative metrics in a test lasting under five minutes, intended to track high-resolution shotgun lipidomics instruments over time and make local setups easier to compare. The metrics flag performance changes but do not establish quantitative agreement for every lipid class or substitute for sample-specific quality controls.",
+        "zh": "QC Shotgun 在不到 5 分钟的测试中报告八项相对指标，用于追踪高分辨率鸟枪脂质组仪器的状态，并便于比较各实验室的本地配置。指标可用于发现性能变化，但不等同于所有脂质类别定量结果一致，也不能替代样本层面的质控。"
+      }
+    },
+    {
+      "title": "Unipept in 2026: A Unified Web Platform for Comparative Metaproteomics Analysis",
+      "authors": [
+        "Tibo Vande Moortele",
+        "Simon Van de Vyver",
+        "Ben-Bjoern Binke",
+        "Tim Van Den Bossche",
+        "Lennart Martens",
+        "Pieter Verschaffelt",
+        "Peter Dawyndt",
+        "Bart Mesuere"
+      ],
+      "journal": "bioRxiv",
+      "year": "2026",
+      "first_online": "2026-11-24",
+      "doi": "10.64898/2026.11.23.768510",
+      "url": "https://doi.org/10.64898/2026.11.23.768510",
+      "publication_status": {
+        "en": "Preprint v1",
+        "zh": "预印本 v1"
+      },
+      "read_scope": {
+        "en": "Preprint-server abstract",
+        "zh": "预印本平台摘要"
+      },
+      "commentary": {
+        "en": "Unipept moves comparative metaproteomics projects into the browser, adds pathway views and uses the NORI inference engine to support confidence estimates. The authors illustrate the workflow with six datasets from a defined microbial community; those examples do not establish that the confidence estimates are calibrated in more complex communities.",
+        "zh": "Unipept 将多样本宏蛋白组比较迁到浏览器，整合通路展示，并用 NORI 推断引擎提供置信度信息。作者在组成已知的微生物群落的六组数据中演示流程；这些案例不能证明置信度在更复杂群落中同样校准。"
+      }
+    },
+    {
+      "title": "LipidRT: leveraging retention time coherence for robust lipid annotation in reversed-phase LC-MS-based lipidomics",
+      "authors": [
+        "Celia Regal-Marqués",
+        "María Isabel Alcoriza-Balaguer",
+        "Hana Cermakova",
+        "Marta Roca",
+        "Óscar Juan-Vidal",
+        "Julián Carretero",
+        "Ana Gradillas",
+        "Coral Barbas",
+        "Juan Carlos García-Cañaveras",
+        "Agustín Lahoz"
+      ],
+      "journal": "bioRxiv",
+      "year": "2026",
+      "first_online": "2026-11-18",
+      "doi": "10.64898/2026.11.11.765883",
+      "url": "https://doi.org/10.64898/2026.11.11.765883",
+      "publication_status": {
+        "en": "Preprint v1",
+        "zh": "预印本 v1"
+      },
+      "read_scope": {
+        "en": "Preprint-server abstract",
+        "zh": "预印本平台摘要"
+      },
+      "commentary": {
+        "en": "LipidRT uses expected relative elution patterns to screen lipid annotations and excludes retention-inconsistent assignments from its dataset-specific model fit. It adds useful evidence for reversed-phase lipidomics, but the abstract gives no quantitative error rate or evidence of transfer beyond that chromatographic setting.",
+        "zh": "LipidRT 根据预期的相对洗脱关系筛查脂质注释，并把保留时间不一致的注释剔除出当前数据集的拟合。它为反相脂质组注释增加了一条独立于谱图相似度的线索，但摘要未给出定量错误率或跨色谱模式的验证结果。"
+      }
+    }
+  ]
+}
