@@ -1,0 +1,262 @@
+{
+  "category": "Latest",
+  "date": "2026-11-27",
+  "slug": "literature-2026-11-27",
+  "title": {
+    "en": "Literature Brief (November 27, 2026)",
+    "zh": "2026年11月27日文献简报"
+  },
+  "summary": {
+    "en": "Today’s studies cover instrument-specific de novo peptide sequencing, cross-laboratory protein quantification, metabolite associations, mass spectrometry imaging segmentation, and fragment deconvolution. Several compare alternative methods directly and show where their conclusions may not transfer.",
+    "zh": "今天的研究覆盖仪器适配的从头肽测序、跨实验室蛋白定量、代谢物网络、成像质谱分区及碎片解卷积。几项工作直接比较了不同的算法或处理设置，也指出了结果失效或难以外推的条件。"
+  },
+  "body": {
+    "en": [
+      "Cross-platform alignment is distinct from correction of protein-specific bias. Imaging models benefit from simple baselines on patient-held-out data, and de novo candidates still need independent confirmation. Coverage draws on accessible journal listings, indexes, and preprints; the reading scope is noted for each paper where publisher access was limited."
+    ],
+    "zh": [
+      "跨平台对齐要与逐蛋白偏差分开，成像模型要与简单基线在患者级留出集上比较，从头测序也要把候选序列与独立确认区分开。覆盖了可访问的期刊在线版、索引和预印本；部分出版方页面不可访问，相应条目注明了阅读范围。"
+    ]
+  },
+  "links": [],
+  "papers": [
+    {
+      "title": "Instrument-specific learning improves de novo peptide sequencing from timsTOF spectra",
+      "authors": [
+        "Michael Dammann",
+        "Bhavya Krishnan",
+        "Sander Willems",
+        "Justin Sanders",
+        "Fabian J. Theis",
+        "Wout Bittremieux",
+        "George Rosenberger",
+        "William Stafford Noble"
+      ],
+      "journal": "bioRxiv",
+      "year": "2026",
+      "first_online": "2026-11-25",
+      "doi": "10.64898/2026.11.19.767847",
+      "url": "https://doi.org/10.64898/2026.11.19.767847",
+      "publication_status": {
+        "en": "Preprint",
+        "zh": "预印本"
+      },
+      "read_scope": {
+        "en": "Abstract deposited by bioRxiv",
+        "zh": "bioRxiv 提交的摘要"
+      },
+      "commentary": {
+        "zh": "作者用近 700 万条 timsTOF 肽段–谱图匹配训练 Casanovo 的仪器专用模型；在留出的 timsTOF 基准上，相对最强的 Orbitrap 训练基线，90% 精确率时的预测覆盖超过 4 倍，95% 时超过 8 倍。HLA-I 应用比单独数据库检索多找回 15% 的独特肽段，但其中 280 条非经典候选并未因此获得独立验证；这个结果支持按仪器验证模型，而非直接搬用倍数。",
+        "en": "The authors trained a timsTOF-specific Casanovo model on nearly seven million peptide–spectrum matches. On held-out timsTOF data, prediction coverage was more than four times that of the strongest Orbitrap-trained baseline at 90% precision and more than eight times at 95%. The HLA-I application recovered 15% more unique peptides than database search alone, but the 280 noncanonical candidates were not independently confirmed by that comparison."
+      }
+    },
+    {
+      "title": "Reference-Anchored Scale Alignment Enables Cross-platform Harmonization of Protein Concentrations in Label-Free Plasma Proteomics",
+      "authors": [
+        "André Q. Figueiredo",
+        "Inês F. Domingos",
+        "Luís B. Carvalho",
+        "Jacek R. Wiśniewski",
+        "Rajiv Dhir",
+        "Carlos Lodeiro",
+        "José L. Capelo",
+        "Dimitrios Korentzelos",
+        "Hugo M. Santos"
+      ],
+      "journal": "Analytical Chemistry",
+      "year": "2026",
+      "first_online": "2026-11-26",
+      "doi": "10.1021/acs.analchem.6c01595",
+      "url": "https://doi.org/10.1021/acs.analchem.6c01595",
+      "publication_status": {
+        "en": "Journal article",
+        "zh": "期刊论文"
+      },
+      "read_scope": {
+        "en": "Publisher-deposited abstract",
+        "zh": "出版方提交的摘要"
+      },
+      "commentary": {
+        "zh": "RAAP 用内源参考蛋白对总蛋白法估计的浓度做统一比例校准；在 8 家实验室、22 种配置的 330 次 LC–MS/MS 运行中，以 SERPINA1 锚定将 95% 一致性上限从 3.7 倍降至 2.8 倍，而用白蛋白反而变差。低覆盖运行中，以转铁蛋白为锚点的参考区间符合率改善未达统计显著；整体校准也不等于校正各蛋白的独立偏差。",
+        "en": "RAAP rescales concentrations from the total protein approach using an endogenous reference protein. Across 330 LC–MS/MS runs from 22 configurations in eight labs, anchoring to SERPINA1 lowered the upper 95% limit of agreement from 3.7-fold to 2.8-fold, whereas albumin made agreement worse. The transferrin-based gain in reference-interval concordance for lower-coverage runs was not statistically significant, and global rescaling does not correct protein-specific biases."
+      }
+    },
+    {
+      "title": "iMATE: Individualized Metabolite Association Topology Events for Detecting Metabolic Remodeling in Colorectal Cancer",
+      "authors": [
+        "Shuang Gao",
+        "Lingli Deng",
+        "Jingjing Xu",
+        "Zhaodong Fei",
+        "Daniel Raftery",
+        "Jiyang Dong"
+      ],
+      "journal": "Journal of Proteome Research",
+      "year": "2026",
+      "first_online": "2026-11-26",
+      "doi": "10.1021/acs.jproteome.6c00841",
+      "url": "https://doi.org/10.1021/acs.jproteome.6c00841",
+      "publication_status": {
+        "en": "Journal article",
+        "zh": "期刊论文"
+      },
+      "read_scope": {
+        "en": "Publisher-deposited abstract",
+        "zh": "出版方提交的摘要"
+      },
+      "commentary": {
+        "zh": "iMATE 以健康样本为共同参考构建个体代谢物关联网络，用零维持续同调刻画代谢物进入网络和连通分量合并的过程。在 66 例患者和 92 名对照的血清数据中找到 26 种拓扑关联代谢物，其中 12 种未由差异丰度分析检出；另在模拟及三个粪便数据集上展示用途，但网络边不是因果证据，结果也不是外部诊断验证。",
+        "en": "iMATE constructs individual metabolite association networks against a common healthy reference and uses zero-dimensional persistent homology to track when metabolites join the network and when connected components merge. In serum from 66 cases and 92 controls, it identified 26 topology-associated metabolites, 12 not detected by differential abundance analysis. Simulations and three stool datasets illustrate applicability, but network edges are not causal evidence and the study does not establish external diagnostic performance."
+      }
+    },
+    {
+      "title": "Spatial-spectral hypergraph attention for unsupervised segmentation of lung cancer MALDI-FTICR imaging: a leave-one-patient-out benchmark against classical clustering",
+      "authors": [
+        "Amine Bougarne"
+      ],
+      "journal": "Research Square",
+      "year": "2026",
+      "first_online": "2026-11-25",
+      "doi": "10.21203/rs.3.rs-11327285/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11327285/v1",
+      "publication_status": {
+        "en": "Preprint (v1)",
+        "zh": "预印本（v1）"
+      },
+      "read_scope": {
+        "en": "Abstract deposited by Research Square",
+        "zh": "Research Square 提交的摘要"
+      },
+      "commentary": {
+        "zh": "这项 MALDI-FTICR 成像分区评测用留一患者交叉验证比较空间–谱图超图注意力与经典聚类。七名留出患者中，标准化谱图上的 k-means 的轮廓系数均高于超图模型（均值 0.445 对 0.297），但 Holm 校正后差异不显著；小队列不能证明经典方法普遍更好，却说明患者级验证和简单基线不可少。",
+        "en": "This MALDI-FTICR imaging study compares spatial–spectral hypergraph attention with classical clustering under leave-one-patient-out validation. K-means on standardized spectra gave a higher silhouette in all seven held-out patients (mean 0.445 versus 0.297), but the differences were not significant after Holm correction. The small cohort does not establish general superiority; it does make a case for patient-level validation and a simple baseline."
+      }
+    },
+    {
+      "title": "MaldiSuite: a Python ecosystem for MALDI-TOF spectral processing and analysis in antimicrobial resistance research",
+      "authors": [
+        "Ettore Rocchi",
+        "Claudia Sala",
+        "Gastone Castellani"
+      ],
+      "journal": "Bioinformatics",
+      "year": "2026",
+      "first_online": "2026-11-21",
+      "doi": "10.1093/bioinformatics/btag848",
+      "url": "https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btag848/9111032",
+      "publication_status": {
+        "en": "Accepted manuscript",
+        "zh": "接受稿"
+      },
+      "read_scope": {
+        "en": "Abstract",
+        "zh": "摘要"
+      },
+      "commentary": {
+        "zh": "MaldiSuite 用统一的 scikit-learn 接口串联 MALDI-TOF 谱图预处理、漂移监测、跨站点批次校正和分类，并将拟合与转换分离以避免交叉验证泄漏。作者在 DRIAMS-A 的金黄色葡萄球菌/苯唑西林任务中报告 AUROC 最高 0.92，也演示了泄漏带来的乐观偏差；单一任务的最高值不能代表跨站点或其他耐药表型的表现。",
+        "en": "MaldiSuite unifies MALDI-TOF spectral preprocessing, drift monitoring, multisite batch correction, and classification behind a scikit-learn interface, separating fitting from transformation to prevent cross-validation leakage. The authors report AUROC up to 0.92 for the DRIAMS-A S. aureus/oxacillin task and illustrate the optimistic bias caused by leakage. That single-task maximum does not establish transfer across sites or resistance phenotypes."
+      }
+    },
+    {
+      "title": "Search-software choice shapes the discoverable androgen receptor proximal interactome in DIA proteomics",
+      "authors": [
+        "Lilliana Radoshevich",
+        "Michael E. E. Wright"
+      ],
+      "journal": "bioRxiv",
+      "year": "2026",
+      "first_online": "2026-11-25",
+      "doi": "10.64898/2026.11.15.766752",
+      "url": "https://doi.org/10.64898/2026.11.15.766752",
+      "publication_status": {
+        "en": "Preprint",
+        "zh": "预印本"
+      },
+      "read_scope": {
+        "en": "Abstract deposited by bioRxiv",
+        "zh": "bioRxiv 提交的摘要"
+      },
+      "commentary": {
+        "zh": "在同一套 timsTOF Pro2 dia-PASEF 数据中，关闭两套流程的跨运行转移后，Spectronaut 21 比 FragPipe 24.0 多鉴定 24–38% 的蛋白，而 FragPipe 的生物学重复 CV 低 4.1–6.4 个百分点。各流程仍用自己的谱库，这是一套邻近标记数据上的流程级比较，不能把差异单独归因于搜索引擎，也不能用鉴定数替代真值。",
+        "en": "On the same timsTOF Pro2 dia-PASEF data with cross-run transfer disabled in both workflows, Spectronaut 21 identified 24–38% more proteins, whereas FragPipe 24.0 had biological-replicate CVs 4.1–6.4 percentage points lower. Each workflow still used its own library, so this single proximity-labeling dataset compares complete workflows rather than isolating search-engine effects or establishing ground truth."
+      }
+    },
+    {
+      "title": "Two-Dimensional Correlation Mass Spectrometry for Precursor/Fragment Ion Identification of Composite and Unresolved Spectral Peaks",
+      "authors": [
+        "Elly A. Breves",
+        "Garon H. Lowke",
+        "Jacob T. Shelley"
+      ],
+      "journal": "Journal of the American Society for Mass Spectrometry",
+      "year": "2026",
+      "first_online": "2026-11-13",
+      "doi": "10.1021/jasms.6c00308",
+      "url": "https://doi.org/10.1021/jasms.6c00308",
+      "publication_status": {
+        "en": "Journal article",
+        "zh": "期刊论文"
+      },
+      "read_scope": {
+        "en": "Publisher-deposited abstract",
+        "zh": "出版方提交的摘要"
+      },
+      "commentary": {
+        "zh": "二维相关质谱利用信号间的互相关，把阿替洛尔和美托洛尔的共享碎片按来源作半定量分解，并在仪器未能直接分辨的同位素与质子化离子重叠峰中定位各自信号。混合比例系列中的校准与传统峰拟合相近，并补充了峰归属信息；尚未验证未知物或复杂混合物中的泛化。",
+        "en": "Two-dimensional correlation mass spectrometry uses cross-correlation to estimate the contributions of atenolol and metoprolol to shared fragments and to assign regions of an unresolved isotope/protonated-ion overlap. Across mixture ratios, calibration was comparable to peak fitting while adding evidence for peak origin. The study did not establish performance for unknowns or complex mixtures."
+      }
+    },
+    {
+      "title": "NovoTax: sample-specific database construction for prokaryotic mass spectrometry-based proteomics",
+      "authors": [
+        "Dennis Svedberg",
+        "André Mateus"
+      ],
+      "journal": "Bioinformatics",
+      "year": "2026",
+      "first_online": "2026-11-24",
+      "doi": "10.1093/bioinformatics/btag860",
+      "url": "https://doi.org/10.1093/bioinformatics/btag860",
+      "publication_status": {
+        "en": "Accepted manuscript",
+        "zh": "接受稿"
+      },
+      "read_scope": {
+        "en": "Abstract",
+        "zh": "摘要"
+      },
+      "commentary": {
+        "zh": "NovoTax 从自下而上的蛋白质组谱图做从头肽段测序，再匹配大规模参考蛋白组，给常规搜索引擎构建样本特异的紧凑数据库。分离株基准中多数样本的物种和近缘菌株与报告一致，混合群落中也找到了部分最丰成员；这些结果不等于完整鉴定低丰度物种，且核心方法已有 4 月预印本。",
+        "en": "NovoTax uses de novo peptide sequences from bottom-up spectra to search a large reference-proteome collection, then builds a compact sample-specific database for conventional searches. On isolates it usually recovered the reported species and strain neighborhood, and in mixtures it recovered abundant members, not a complete inventory of rare organisms. The core method previously appeared as an April preprint."
+      }
+    },
+    {
+      "title": "MSRyzen: An Agentic Platform for Unified Proteomics Analysis and Evidence-Centric Visualization",
+      "authors": [
+        "Yucheng Liao",
+        "Jubao Cheng",
+        "Zexu Xiao",
+        "Tao Yi",
+        "Jiaxiang Ding",
+        "Weijie Zhang"
+      ],
+      "journal": "arXiv",
+      "year": "2026",
+      "first_online": "2026-11-20",
+      "doi": "10.48550/arXiv.2611.27246",
+      "url": "https://arxiv.org/abs/2611.27246v1",
+      "publication_status": {
+        "en": "Preprint (v1)",
+        "zh": "预印本（v1）"
+      },
+      "read_scope": {
+        "en": "Abstract and selected methods and results",
+        "zh": "摘要及部分方法与结果"
+      },
+      "commentary": {
+        "zh": "MSRyzen 把自然语言请求转为工作流图，将参数搜索和逐峰、逐序列证据浏览串联起来。四套公开 top-down 数据上，在名义 proteoform FDR 1% 时，自动调参比默认配置多鉴定 3.6–15.8%；目标函数使用被调数据上的鉴定数，这不是独立数据上的增益或对真实 FDR 的验证。",
+        "en": "MSRyzen turns natural-language requests into workflow graphs and connects parameter tuning with peak-level and sequence-level evidence inspection. Across four public top-down datasets it reported 3.6–15.8% more identifications than defaults at a nominal proteoform FDR of 1%. The tuning objective uses identification counts on the data being tuned, so this is neither an independent gain estimate nor a validation of realized FDR."
+      }
+    }
+  ]
+}
