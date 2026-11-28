@@ -1,0 +1,193 @@
+{
+  "category": "Latest",
+  "date": "2026-11-28",
+  "slug": "literature-2026-11-28",
+  "title": {
+    "en": "Literature Brief (November 28, 2026)",
+    "zh": "2026年11月28日文献简报"
+  },
+  "summary": {
+    "en": "Today’s studies examine how to distinguish binding from spectral background, estimate concentrations from signals, and make evidence from mass spectrometry and imaging workflows easier to verify.",
+    "zh": "今天的研究关注如何区分真实结合与谱图背景、从信号估计浓度，以及如何把多种质谱和成像数据变成可核查的证据。"
+  },
+  "body": {
+    "en": [
+      "Correlated signals can support assignment without proving structure, and semiquantitation and imaging QC still need validation for the matrix, tissue, and platform. Coverage draws on accessible journal listings, preprints, and indexes. Individual entries identify the reading scope when access was limited."
+    ],
+    "zh": [
+      "这些工作各自解决一个边界问题：相关信号能辅助归属，但不能替代结构确证；半定量和图像质控也要按基质、组织及平台验证。检查了可访问的期刊在线版、预印本和文献索引；部分出版方页面不可访问，相关条目注明了阅读范围。"
+    ]
+  },
+  "links": [],
+  "papers": [
+    {
+      "title": "Defining state-selective lipid binding to brain GPCRs using REVEAL",
+      "authors": [
+        "Sophie A. S. Lawrence",
+        "Carla Kirschbaum",
+        "Corinne A. Lutomski",
+        "Haigang Song",
+        "Joshua D. Hinkle",
+        "Frances I. Butroid",
+        "Rafael Melani",
+        "John. E. P. Syka",
+        "Christopher Mullen",
+        "Tarick J. El-Baba",
+        "Carol. V. Robinson"
+      ],
+      "journal": "Nature Chemical Biology",
+      "year": "2026",
+      "first_online": "2026-11-27",
+      "doi": "10.1038/s41589-026-02402-y",
+      "url": "https://www.nature.com/articles/s41589-026-02402-y",
+      "publication_status": {
+        "en": "Journal article",
+        "zh": "期刊论文"
+      },
+      "read_scope": {
+        "en": "Abstract and selected methods and results",
+        "zh": "摘要及部分方法与结果"
+      },
+      "commentary": {
+        "en": "REVEAL reconstructs release profiles for individual lipids across precursor isolation windows, then compares them with the receptor MS1 envelope using a permutation threshold and a signal-to-noise filter. In a brain lipid extract with over 1,000 components, the authors tested two neuronal receptors and classified 48 lipid annotations as specific mGlyR binders. Acquisition is automated, but some profile extraction and structural annotation remain manual, and these experiments do not establish binding in vivo.",
+        "zh": "REVEAL 将逐个隔离窗释放出的脂质信号重建到前体 m/z 轴，与受体 MS1 包络相关，并结合置换阈值和信噪比区分特异结合与共分离背景。在含逾千种成分的脑脂提取物中，作者研究了两种神经受体，并报告有 48 个脂质注释被判为与 mGlyR 特异结合。采集自动化不等于整条流程自动化：部分色谱提取和脂质结构判读仍靠人工，这些结果也不是体内结合或结构异构体的普遍确证。"
+      }
+    },
+    {
+      "title": "A reference-standard-free semi-quantitative workflow for pesticide residue analysis by LC-QTOF/MS using machine learning-based prediction of ionization efficiency: application to banana screening",
+      "authors": [
+        "Kaixuan Tong",
+        "Tongxin Zhi",
+        "Meiling Lu",
+        "Xingqiang Wu",
+        "Yujie Xie",
+        "Mengjie Shi",
+        "Hui Chen"
+      ],
+      "journal": "Analytical Methods",
+      "year": "2026",
+      "first_online": "2026-11-24",
+      "doi": "10.1039/d6ay01823h",
+      "url": "https://doi.org/10.1039/d6ay01823h",
+      "publication_status": {
+        "en": "Advance online article",
+        "zh": "期刊在线先行"
+      },
+      "read_scope": {
+        "en": "Publisher-deposited metadata and PubMed abstract",
+        "zh": "出版方提交的元数据及 PubMed 摘要"
+      },
+      "commentary": {
+        "en": "The workflow predicts relative ionization efficiency from molecular descriptors and mobile-phase properties, then converts LC-QTOF/MS signals to approximate concentrations. Gradient boosting reached a test-set R² of 0.756; estimates for 11 detected pesticides in an external banana proficiency sample had a median error of 2.74-fold. This supports order-of-magnitude screening, not replacement of targeted quantification or transfer across matrices.",
+        "zh": "该流程用分子描述符和流动相性质预测相对电离效率，再把 LC-QTOF/MS 信号换成半定量浓度；梯度提升模型在测试集上的 R² 为 0.756。在外部能力验证的香蕉样本中，11 种检出农药的估计误差中位数为 2.74 倍，适合做数量级筛查，不能替代靶向定量或推定可跨基质使用。"
+      }
+    },
+    {
+      "title": "Accelerated Characterization of Active Natural Extracts with Single-Step microfractionation Coupled to Mass Spectrometry and Bioassays",
+      "authors": [
+        "Joshua David Smith",
+        "Erik Bouchal",
+        "Zdeněk Knejzlík",
+        "Martin Dračínský",
+        "Tito Damiani",
+        "Roman Bushuiev",
+        "Eva Tikalová",
+        "Eva Tloušťová",
+        "Marcela Pávová",
+        "Jan Hodek",
+        "Artur Jasanský",
+        "Matouš Soldát",
+        "Erika Kužmová",
+        "Alžběta Kadlecová",
+        "Vendula Tvrdoňová Stillerová",
+        "Jan Weber",
+        "Pavel Šácha",
+        "Tomáš Pluskal",
+        "Téo Hebra"
+      ],
+      "journal": "Analytical Chemistry",
+      "year": "2026",
+      "first_online": "2026-11-27",
+      "doi": "10.1021/acs.analchem.6c04527",
+      "url": "https://doi.org/10.1021/acs.analchem.6c04527",
+      "publication_status": {
+        "en": "Journal article",
+        "zh": "期刊论文"
+      },
+      "read_scope": {
+        "en": "Publisher-deposited abstract and selected preprint sections",
+        "zh": "出版方提交的期刊摘要及部分预印本章节"
+      },
+      "commentary": {
+        "en": "This microfractionation workflow uses an open-source graphical interface to combine single-quadrupole and high-resolution MS data with fraction-level bioactivity, narrowing the candidates for structural follow-up. The journal article expands the earlier preprint’s two plant species to seven and reports 17 structures from proton NMR dereplication. Co-occurrence in a fraction helps prioritize candidates but does not identify the compound responsible for activity on its own.",
+        "zh": "这套微分馏流程用开源图形界面整合单四极杆、高分辨质谱及分馏活性数据，以缩小后续鉴定范围。期刊版的应用由旧预印本的两种植物扩至七种，并报告用氢一核磁辅助去重鉴定 17 种结构；分馏共现可帮助挑选候选物，但不能证明单个化合物是活性来源。"
+      }
+    },
+    {
+      "title": "Large-scale quantitative assessment of tissue preparation and staining conditions for robust multiplexed imaging of FFPE tissue samples",
+      "authors": [
+        "Jia Le Lee",
+        "Johanna Schaffenrath",
+        "Cankun Wang",
+        "Lollija Gladiseva",
+        "Jia-Ying Joey Lee",
+        "Wenrui Wu",
+        "Yuzhou Chang",
+        "Shaohong Feng",
+        "Dingani Nkosi",
+        "José A. Galván",
+        "Jahanbanoo Shahryari",
+        "Jason Yeung",
+        "Huaying Qiu",
+        "Yao Yu Yeo",
+        "Lindsay Parmelee",
+        "Chi Ngai Chan",
+        "Precious Cramer",
+        "Hendrik Michel",
+        "Pierre Stephan",
+        "Yang Wang",
+        "Li Yen Chong",
+        "Stephen Capodilupo",
+        "Jean Loebelenz",
+        "Christine Camacho Fullaway",
+        "Candace C. Liu",
+        "Joe Yeong",
+        "Jakob Einhaus",
+        "Dorien Feyaerts",
+        "Dana Napier",
+        "Giorgio Basile",
+        "Nadja Kopp",
+        "Wendy Fantl",
+        "Karen Wang",
+        "Brice Gaudillière",
+        "Derek Allison",
+        "Michael Angelo",
+        "Sean C. Bendall",
+        "Lit-Hsin Loo",
+        "Jeremy Fisher",
+        "Scott Rodig",
+        "Brooke Howitt",
+        "Qin Ma",
+        "Kerstin Hahn",
+        "Sizun Jiang"
+      ],
+      "journal": "Nature Methods",
+      "year": "2026",
+      "first_online": "2026-11-26",
+      "doi": "10.1038/s41592-026-03317-1",
+      "url": "https://www.nature.com/articles/s41592-026-03317-1",
+      "publication_status": {
+        "en": "Registered Report",
+        "zh": "注册报告"
+      },
+      "read_scope": {
+        "en": "Abstract and selected methods and results",
+        "zh": "摘要及部分方法与结果"
+      },
+      "commentary": {
+        "en": "This multisite benchmark evaluated 24 tissue-preparation and staining combinations using signal, variability, and marker failure. A subset of conditions was validated on optical platforms and imaging mass cytometry. The results inform image-based QC and experimental design, but the study primarily compares sample preparation rather than introducing a segmentation method or establishing transfer to every tissue and antibody.",
+        "zh": "这项多中心基准用信号强度、变异和标志物失效衡量 24 种组织处理与染色组合，并在光学平台及成像质谱流式上验证部分候选条件。它为质谱成像的质控指标和实验设计提供了参考，但主要比较样品处理，不能把验证结果解读为新的分割算法或泛化到所有组织和抗体。"
+      }
+    }
+  ]
+}
